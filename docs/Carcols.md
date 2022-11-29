@@ -1,8 +1,34 @@
 # Carcols.meta
 
-## Siren Sequencers
+- [Carcols.meta](#carcolsmeta)
+- [Siren Sequencers](#siren-sequencers)
+  - [Overview](#overview)
+  - [Sequencer Example](#sequencer-example)
+  - [Ways to Create Sequencers](#ways-to-create-sequencers)
+- [Siren Deltas](#siren-deltas)
+- [Rotations](#rotations)
+- [Siren Grouping](#siren-grouping)
+- [Light Colors](#light-colors)
+- [Carcols Variables](#carcols-variables)
+  - [id](#id)
+  - [timeMultiplier](#timemultiplier)
+  - [Environment Lighting](#environment-lighting)
+  - [lightFalloffMax](#lightfalloffmax)
+  - [lightFalloffExponent](#lightfalloffexponent)
+  - [lightInnerConeAngle](#lightinnerconeangle)
+  - [lightOuterConeAngle](#lightouterconeangle)
+  - [lightOffset](#lightoffset)
+- [Texture Name](#texture-name)
+  - [textureName](#texturename)
+  - [sequencerBpm](#sequencerbpm)
+- [Headlights and Taillights](#headlights-and-taillights)
+- [Custom Light IDs](#custom-light-ids)
+- [Siren Walkthrough](#siren-walkthrough)
 
-### Overview
+
+# Siren Sequencers
+
+## Overview
 
 Siren Sequencers are decimal values that represent 32-bit binary strings. The sequencers are converted to binary and used by emergency vehicles to represent the pattern of their flashing lights.
 
@@ -13,16 +39,16 @@ The sequencer value in Carcols.meta is represented as a decimal value, but a dec
 You can use a converter such as this one to accomplish this.
 https://www.rapidtables.com/convert/number/binary-to-decimal.html
 
-### Sequencer Example
+## Sequencer Example
 
 Binary Sequence: 10101010101010101010101010101010
 
 Decimal Value from Sequence: 2863311530
 
-### Ways to Create Sequencers
+## Ways to Create Sequencers
 There are 2 common methods of creating sequencers for patterns.
 *   Using [Siren Tool](https://dwnstr.com/sirentool)
-*   Torture (Straining your eyes in nodepad)
+*   Torture (Straining your eyes in notepad)
 
 # Siren Deltas
 
@@ -59,18 +85,17 @@ _Lightbar Featured in example "EX.2" is a "42" Code 3 Pursuit, Top View" taken f
 
   
 
-## Rotations
+# Rotations
 
 Good Rotary BPM is 120 BPM with Flash set to False
 
   
 
-## Siren Grouping
+# Siren Grouping
 
   
 
-## Light Colors
-============
+# Light Colors
 
 These values go here: `<color value="0xFF0000FF"/>`
 
@@ -80,8 +105,11 @@ These values go here: `<color value="0xFF0000FF"/>`
 > 
 > [Find the full list of colors here](https://www.se7ensins.com/forums/threads/vehicle-colors.1169166/)
 
+> Note: I have no idea why these RGB values seem to be RGBA values with arbitrary A values. Luckily, we don't really need them!
+> 
+
   
-### Most Used Colors
+**Most Used Colors**
 
 | Color Name | Hex | RGB |
 | --- | --- | --- |
@@ -93,12 +121,7 @@ These values go here: `<color value="0xFF0000FF"/>`
 | Green |  |  |
 | Purple |  |  |
 
-  
-
-### Standard Colors
-
-> Note: I have no idea why these RGB values seem to be RGBA values with arbitrary A values. Luckily, we don't really need them.
-> 
+**Standard Colors**
 
 | Color Name | Hex | RGB |
 | ---| ---| --- |
@@ -116,85 +139,76 @@ These values go here: `<color value="0xFF0000FF"/>`
 | MetallicGold | `0xFFAD7B47` | 255, 173, 123, 71 |
 | ClassicWhite | `0xFFF0F0F0` | 255, 240, 240, 240 |
 
-### Classic Colors
+**Classic Colors**
+
 | Color Name | Hex | RGB |
 |---|---|---|
-| RED | 0xFF690000 | 255, 105, 0, 0 |
-| TORINO_RED | 0xFF8A0B00 | 255, 138, 11, 0 |
-| FORMULA_RED | 0xFF6B0000 | 255, 107, 0, 0 |
-| LAVA_RED | 0xFF6B0B00 | 255, 107, 11, 0 |
-| BLAZE_RED | 0xFF611009 | 255, 97, 16, 9 |
-| GRACE_RED | 0xFF4A0A0A | 255, 74, 10, 10 |
-| GARNET_RED | 0xFF470E0E | 255, 71, 14, 14 |
-| SUNSET_RED | 0xFF380C00 | 255, 56, 12, 0 |
-| CABERNET_RED | 0xFF26030B | 255, 38, 3, 11 |
-| WINE_RED | 0xFF080000 | 255, 8, 0, 0 |
-| CANDY_RED | 0xFF630012 | 255, 99, 0, 18 |
-| HOT PINK | 0xFFB01259 | 255, 176, 18, 89 |
-| PINK | 0xFF8F2F55 | 255, 143, 47, 85 |
-| SALMON_PINK | 0xFFF69799 | 255, 246, 151, 153 |
-| SUNRISE_ORANGE | 0xFF802800 | 255, 128, 40, 0 |
-| BRIGHT_ORANGE | 0xFFC26610 | 255, 194, 102, 16 |
-| GOLD | 0xFF5E5343 | 255, 94, 83, 67 |
-| BRONZE | 0xFF4A341B | 255, 74, 52, 27 |
-| YELLOW | 0xFFF5890F | 255, 245, 137, 15 |
-| FLUR_YELLOW | 0xFFA2A827 | 255, 162, 168, 39 |
-| DARK_GREEN | 0xFF001207 | 255, 0, 18, 7 |
-| SEA_GREEN | 0xFF00211E | 255, 0, 33, 30 |
-| OLIVE_GREEN | 0xFF1F261E | 255, 31, 38, 30 |
-| BRIGHT_GREEN | 0xFF003805 | 255, 0, 56, 5 |
-| PETROL_GREEN | 0xFF0B4145 | 255, 11, 65, 69 |
-| LIME_GREEN | 0xFF568F00 | 255, 86, 143, 0 |
-| MIDNIGHT_BLUE | 0xFF000108 | 255, 0, 1, 8 |
-| GALAXY_BLUE | 0xFF000D14 | 255, 0, 13, 20 |
-| DARK_BLUE | 0xFF001029 | 255, 0, 16, 41 |
-| SAXON_BLUE | 0xFF1C2F4F | 255, 28, 47, 79 |
-| BLUE | 0xFF001B57 | 255, 0, 27, 87 |
-| MARINER_BLUE | 0xFF3B4E78 | 255, 59, 78, 120 |
-| HARBOR_BLUE | 0xFF272D3B | 255, 39, 45, 59 |
-| DIAMOND_BLUE | 0xFF95B2DB | 255, 149, 178, 219 |
-| SURF_BLUE | 0xFF3E627A | 255, 62, 98, 122 |
-| NAUTICAL_BLUE | 0xFF1C3140 | 255, 28, 49, 64 |
-| RACING_BLUE | 0xFF0E316D | 255, 14, 49, 109 |
-| LIGHT_BLUE | 0xFF395A83 | 255, 57, 90, 131 |
-| PURPLE | 0xFF1A182E | 255, 26, 24, 46 |
-| SPIN_PURPLE | 0xFF161629 | 255, 22, 22, 41 |
-| MIGHT_PURPLE | 0xFF050008 | 255, 5, 0, 8 |
-| BRIGHT_PURPLE | 0xFF320642 | 255, 50, 6, 66 |
-| CREAM | 0xFFCFC0A5 | 255, 207, 192, 165 |
-| FROST_WHITE | 0xFFB3B9C9 | 255, 179, 185, 201 |
+| RED | `0xFF690000` | 255, 105, 0, 0 |
+| TORINO_RED | `0xFF8A0B00` | 255, 138, 11, 0 |
+| FORMULA_RED | `0xFF6B0000` | 255, 107, 0, 0 |
+| LAVA_RED | `0xFF6B0B00` | 255, 107, 11, 0 |
+| BLAZE_RED | `0xFF611009` | 255, 97, 16, 9 |
+| GRACE_RED | `0xFF4A0A0A` | 255, 74, 10, 10 |
+| GARNET_RED | `0xFF470E0E` | 255, 71, 14, 14 |
+| SUNSET_RED | `0xFF380C00` | 255, 56, 12, 0 |
+| CABERNET_RED | `0xFF26030B` | 255, 38, 3, 11 |
+| WINE_RED | `0xFF080000` | 255, 8, 0, 0 |
+| CANDY_RED | `0xFF630012` | 255, 99, 0, 18 |
+| HOT PINK | `0xFFB01259` | 255, 176, 18, 89 |
+| PINK | `0xFF8F2F55` | 255, 143, 47, 85 |
+| SALMON_PINK | `0xFFF69799` | 255, 246, 151, 153 |
+| SUNRISE_ORANGE | `0xFF802800` | 255, 128, 40, 0 |
+| BRIGHT_ORANGE | `0xFFC26610` | 255, 194, 102, 16 |
+| GOLD | `0xFF5E5343` | 255, 94, 83, 67 |
+| BRONZE | `0xFF4A341B` | 255, 74, 52, 27 |
+| YELLOW | `0xFFF5890F` | 255, 245, 137, 15 |
+| FLUR_YELLOW | `0xFFA2A827` | 255, 162, 168, 39 |
+| DARK_GREEN | `0xFF001207` | 255, 0, 18, 7 |
+| SEA_GREEN | `0xFF00211E` | 255, 0, 33, 30 |
+| OLIVE_GREEN | `0xFF1F261E` | 255, 31, 38, 30 |
+| BRIGHT_GREEN | `0xFF003805` | 255, 0, 56, 5 |
+| PETROL_GREEN | `0xFF0B4145` | 255, 11, 65, 69 |
+| LIME_GREEN | `0xFF568F00` | 255, 86, 143, 0 |
+| MIDNIGHT_BLUE | `0xFF000108` | 255, 0, 1, 8 |
+| GALAXY_BLUE | `0xFF000D14` | 255, 0, 13, 20 |
+| DARK_BLUE | `0xFF001029` | 255, 0, 16, 41 |
+| SAXON_BLUE | `0xFF1C2F4F` | 255, 28, 47, 79 |
+| BLUE | `0xFF001B57` | 255, 0, 27, 87 |
+| MARINER_BLUE | `0xFF3B4E78` | 255, 59, 78, 120 |
+| HARBOR_BLUE | `0xFF272D3B` | 255, 39, 45, 59 |
+| DIAMOND_BLUE | `0xFF95B2DB` | 255, 149, 178, 219 |
+| SURF_BLUE | `0xFF3E627A` | 255, 62, 98, 122 |
+| NAUTICAL_BLUE | `0xFF1C3140` | 255, 28, 49, 64 |
+| RACING_BLUE | `0xFF0E316D` | 255, 14, 49, 109 |
+| LIGHT_BLUE | `0xFF395A83` | 255, 57, 90, 131 |
+| PURPLE | `0xFF1A182E` | 255, 26, 24, 46 |
+| SPIN_PURPLE | `0xFF161629` | 255, 22, 22, 41 |
+| MIGHT_PURPLE | `0xFF050008` | 255, 5, 0, 8 |
+| BRIGHT_PURPLE | `0xFF320642` | 255, 50, 6, 66 |
+| CREAM | `0xFFCFC0A5` | 255, 207, 192, 165 |
+| FROST_WHITE | `0xFFB3B9C9` | 255, 179, 185, 201 |
 
-## Values
+# Carcols Variables
 
-  
-
-### `id value=`
+## id
 
 Value must match siren ID value in [Carvariations.meta](https://github.com/dwnstr/vehicle-docs/wiki/Carvariations) for the same vehicle.
 
 Should be between 1000-40000 for most consistent results. Some numbers don't work inexplicably.
 
-  
+``<id value="2121"/>``
 
-ex. <id value="2121"/>
-
-### `timeMultiplier value=`
+## timeMultiplier
 
 Multiplies the BPM by the value specified.
 
-  
+``<timeMultiplier value="1.00000000"/>`` Time x BPM (Ex. 1.0 x 600 = 600 BPM)
 
-ex.  <timeMultiplier value="1.00000000"/> Time x BPM (Ex. 1.0 x 600 = 600 BPM)
-
-  
-
-### Environment Lighting
+## Environment Lighting
 
 ![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-_tjAgQWRtn/e151c016eeec2162f59c60f62d688f70c3bb7eb3094241fc667105f1ae358f236ee00911d3ed3adde344e4c6570158689af0224637472323f949a5df02253526b328f9860bdf2afc98b53ba952720860a41c4b0224a012bda264fbb3ca349aaecd9b1f22)
 
-  
-
-### ``lightFalloffMax value=``
+## lightFalloffMax
 
 Controls the maximum distance that the light can reach. Works like a “power” value in the right conditions.
 
@@ -202,7 +216,7 @@ Value should be between 40 and 100 for best results.
 
 ``<lightFalloffMax value="100.00000000"/>``
 
-### ``lightFalloffExponent value=``
+## lightFalloffExponent
 
 Controls how fast light reaches 0% after traveling away from source.
 
@@ -210,59 +224,45 @@ Value should ALWAYS be lower than FalloffMax!!!!!!
 
 Value should be about 65% of FalloffMax for best results.
 
-  
+``<lightFalloffExponent value="100.00000000"/>``
 
-```plain
-<lightFalloffExponent value="100.00000000"/>
-```
-
-### `lightInnerConeAngle value=`
-
-  
+## lightInnerConeAngle
 
 Controls where light starts to fall off . Before this point, light will be at 100% horizontally/parallel to the source/inside to outside.
 
 Value should ALWAYS be LOWER than LightOuterConeAngle!!!!
 
-Value should be between 2 and 10 for best results.
+Value should be between 2 and 10 for best results
 
-  
+```<lightInnerConeAngle value="2.29061000"/>``` 
 
-     <lightInnerConeAngle value="2.29061000"/> (in degrees)       --Values that effect Environment Lighting
-
-### `lightOuterConeAngle value=`
+## lightOuterConeAngle
 
 Controls the maximum width of the light cone, where light will be 0%
 
 Value should be between 60 and 90 for best results
 
-     <lightOuterConeAngle value="70.00000000"/> (in degrees)
+```<lightOuterConeAngle value="70.00000000"/>```
 
-### `lightOffset value=`
+## lightOffset
 
-     <lightOffset value="0.00000000"/>
+```<lightOffset value="0.00000000"/>```
 
-  
+# Texture Name
 
-Texture Name
-------------
-
-### `textureName`
+## textureName
 
 Don't Change this! Specifies corona texture.
 
-ex. <textureName>VehicleLight\_sirenlight</textureName>
+``<textureName>VehicleLight\_sirenlight</textureName>``
 
-  
+## sequencerBpm
 
-     <sequencerBpm value="600"/> --Light Flash Frequency
+``<sequencerBpm value="600"/>``
 
-  
+# Headlights and Taillights
 
-Headlights and Taillights
--------------------------
-
-```sql
+```xml
       <leftHeadLight>
         <sequencer value="0"/>
       </leftHeadLight>
@@ -282,12 +282,9 @@ Headlights and Taillights
       <useRealLights value="true"/>     --If you want the Flashes to actually use the Headlights
 ```
 
-  
+# Custom Light IDs
 
-Custom Light IDs
-================
-
-```plain
+```xml
 <CVehicleModelInfoVarGlobal>
       <Kits />
     <Lights>
@@ -461,12 +458,9 @@ _
 <textureName>VehicleLight_sirenlight</textureName>
 ```
 
-Siren Walkthrough
-=================
+# Siren Walkthrough
 
-  
-
-```sql
+```xml
 <Item> --siren#
   <rotation>
     <delta value="0.000000"/> --Rotation of Emissive
