@@ -98,6 +98,8 @@ _Data gathered by Zero parsed by, HairyMineFart, and Organized by Dawnstar_
 
 ### Standard Colors
 
+> Note: I have no idea why these RGB values seem to be RGBA values with arbitrary A values. Luckily, we don't really need them.
+
 | Color Name | Hex | RGB |
 | ---| ---| --- |
 | BlackGraphite | `0xFF0F0F0F` | 255, 15, 15, 15 |
@@ -107,41 +109,25 @@ _Data gathered by Zero parsed by, HairyMineFart, and Organized by Dawnstar_
 | FormulaRed | `0xFF6B0000` | 255, 107, 0, 0 |
 | MetallicBlue | `0xFF001B57` | 255, 0, 27, 87 |
 | UltraBlue | `0xFF2070D8` | 255, 32, 112, 216 |
+| RacingGreen | `0xFF00441B` | 255, 0, 68, 27 |
+| LimeGreen | `0xFF418503` | 255, 65, 133, 3 |
+| RaceYellow | `0xFFD9A600` | 255, 217, 166, 0 |
+| ClassicOrange | `0xFFBD4800` | 255, 189, 72, 0 |
+| MetallicGold | `0xFFAD7B47` | 255, 173, 123, 71 |
+| ClassicWhite | `0xFFF0F0F0` | 255, 240, 240, 240 |
 
-RacingGreen  = `0xFF00441B` (255, 0, 68, 27)
+### Metallic Colors
 
-LimeGreen  = `0xFF418503` (255, 65, 133, 3)
-
-RaceYellow  = `0xFFD9A600` (255, 217, 166, 0)
-
-ClassicOrange  = `0xFFBD4800` (255, 189, 72, 0)
-
-MetallicGold  = `0xFFAD7B47` (255, 173, 123, 71)
-
-ClassicWhite  = `0xFFF0F0F0` (255, 240, 240, 240)
-
-  
-
-1: Metallic Colors
-------------------
-
-  
-
-RED = `0xFF690000` (255, 105, 0, 0)
-
-TORINO\_RED = `0xFF8A0B00` (255, 138, 11, 0)
-
-LAVA\_RED = `0xFF6B0B00` (255, 107, 11, 0)
-
-BLAZE\_RED = `0xFF611009` (255, 97, 16, 9)
-
-GRACE\_RED = `0xFF4A0A0A` (255, 74, 10, 10)
-
-GARNET\_RED = `0xFF470E0E` (255, 71, 14, 14)
-
-SUNSET\_RED = `0xFF380C00` (255, 56, 12, 0)
-
-CABERNET\_RED = `0xFF26030B` (255, 38, 3, 11)
+| Color Name | Hex | RGB |
+|---|---|---|
+| Red | `0xFF690000` | 255, 105, 0, 0 |
+| TorinoRed | `0xFF8A0B00` | 255, 138, 11, 0 |
+| LavaRed | `0xFF6B0B00` | 255, 107, 11, 0 |
+| BlazeRed | `0xFF611009` | 255, 97, 16, 9 |
+| GraceRed | `0xFF4A0A0A` | 255, 74, 10, 10 |
+| GarnetRed | `0xFF470E0E` | 255, 71, 14, 14 |
+| SunsetRed | `0xFF380C00` | 255, 56, 12, 0 |
+| CabernetRed | `0xFF26030B` | 255, 38, 3, 11 |
 
 WINE\_RED = `0xFF080000` (255, 8, 0, 0)
 
