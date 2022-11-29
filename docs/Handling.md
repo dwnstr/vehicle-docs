@@ -4,28 +4,27 @@ The content of [Handling.meta](https://github.com/Flohhhhh/vehicle-docs/new/main
 
   
 
-_Everything in the_ **_Handling Variables_** _section was initially found and compiled by_ [_V4D3R_](https://forums.gta5-mods.com/user/v4d3r) _and can be found_ [_here on 5MODS_](https://forums.gta5-mods.com/topic/3842/tutorial-handling-meta)_. We have made edits to add more information._
 
-Handling Variables
-==================
+> _Everything in the Handling Variables section was initially found and compiled by [V4D3R](https://forums.gta5-mods.com/user/v4d3r) and can be found [here on 5MODS](https://forums.gta5-mods.com/topic/3842/tutorial-handling-meta). We have made edits to add more information._
 
-Physical Attributes
--------------------
+# Handling Variables
 
-THE FOLLOWING REPRESENT A VEHICLE'S PHYSICAL PROPORTIONS IN THE GAME.
+## Physical Attributes
+
+The following values represent a vehicle's physical traits
+
+### `HANDLINGNAME`
+
+Used by the Vehicles.meta file, to identify the handling line of the particular vehicle and bind them.
+
+*   A string with max length of 14 characters. The Vanilla vehicles use uppercase letters by default.
+* Examples: 
+  * ``ADDER`` 
+  * ``DINGHY``
 
   
 
-**`HANDLINGNAME`**
-
-Used by the Vehicles.meta ([https://doc.clickup.com/d/h/841f5-35/66cbfa324380b75/841f5-127](https://doc.clickup.com/d/h/841f5-35/66cbfa324380b75/841f5-127)) , to identify the handling line of the particular vehicle.
-
-*   Any text no more than 14 characters can be used. The Vanilla vehicles use uppercase letters by default.
-*   Example: ADDER, DINGHY
-
-  
-
-**`FMASS`**
+### `FMASS`
 
 The weight of the vehicle. Values should be given in Kilograms.
 
@@ -33,7 +32,7 @@ The weight of the vehicle. Values should be given in Kilograms.
 
   
 
-**`FINITIALDRAGCOEFF`**
+### `FINITIALDRAGCOEFF`
 
 Sets the drag coefficient of the vehicle. Increase to simulate aerodynamic drag.
 
@@ -41,7 +40,7 @@ Sets the drag coefficient of the vehicle. Increase to simulate aerodynamic drag.
 
   
 
-**`FPERCENTSUBMERGED`**
+### `FPERCENTSUBMERGED`
 
 The percentage of the vehicle's "floating height" after it falls into the water, before sinking.
 
@@ -53,7 +52,7 @@ The percentage of the vehicle's "floating height" after it falls into the water,
 
   
 
-**`VECCENTREOFMASSOFFSET`**
+### `VECCENTREOFMASSOFFSET`
 
 Shifts the center of gravity in meters from side to side.
 
@@ -65,9 +64,7 @@ Values:
 *   Y: -10.0 to 10.0. Positive values move the center of gravity **forwards**.
 *   Z: -10.0 to 10.0. Positive values move the center of gravity **upwards**.
 
-  
-
-**`VECINERTIAMULTIPLIER`**
+### `VECINERTIAMULTIPLIER`
 
 _I have no idea what this means, if someone knows, please let me know._
 
@@ -79,16 +76,12 @@ Y: -10.0 to 10.0.
 
 Z: -10.0 to 10.0.
 
-  
-
-Transmission
-------------
+## Transmission
 
 These values represent the vehicle's **straight line** performance.
 
   
-
-**`FDRIVEBIASFRONT`**
+### `FDRIVEBIASFRONT`
 
 This is used to determine whether a vehicle is front, rear, or four wheel drive.
 
@@ -101,17 +94,13 @@ Values:
 *   Any value between 0.01 and 0.99 is four wheel drive.
 *   0.5 give both front and rear axles equal force, being the perfect 4WD.
 
-  
-
-**`NINITIALDRIVEGEARS`**
+### `NINITIALDRIVEGEARS`
 
 Obviously, this line determines how many forward speeds/gears a vehicle's transmission contains.
 
 Values: 1 or more.
 
-  
-
-**`FINITIALDRIVEFORCE`**
+### `FINITIALDRIVEFORCE`
 
 This modifies the game's calculation of drive force (from the output of the transmission).
 
@@ -121,9 +110,7 @@ Values: 0.01 - 2.0 and _above_.
 *   Values less than 1.0 will in effect give the vehicle less drive force.
 *   Values greater than 1.0 will produce more drive force.
 
-  
-
-**`FDRIVEINERTIA`**
+### `FDRIVEINERTIA`
 
 Describes how fast an engine will rev.
 
@@ -132,25 +119,19 @@ Values: 0.01 - 2.0.
 *   Default value is 1.0, (or no modification of drive intertia).
 *   Bigger values = quicker Redline (maximum engine speed)
 
-  
-
-**`FCLUTCHCHANGERATESCALEUPSHIFT`**
+### `FCLUTCHCHANGERATESCALEUPSHIFT`
 
 Clutch speed multiplier on **up** shifts.
 
 *   Bigger numbers = faster shifts.
 
-  
-
-**`FCLUTCHCHANGERATESCALEDOWNSHIFT`**
+### `FCLUTCHCHANGERATESCALEDOWNSHIFT`
 
 Clutch speed multiplier on **down** shifts.
 
 *   Bigger numbers = faster shifts
 
-  
-
-**`INITIALDRIVEMAXFLATVEL`**
+### `INITIALDRIVEMAXFLATVEL`
 
 This determines the vehicle speed at redline in the top gear (_not the show_).
 
@@ -161,9 +142,7 @@ This determines the vehicle speed at redline in the top gear (_not the show_).
 
 Values: 0.00 and above.
 
-  
-
-**`FBRAKEFORCE`**
+### `FBRAKEFORCE`
 
 Obvious one. Multiplies the game's calculation of deceleration.
 
@@ -173,9 +152,7 @@ Values: 0.01 - 2.0 and above.
 
 *   1.0 uses brake force calculation unmodified.
 
-  
-
-**`FBRAKEBIASFRONT`**
+### `FBRAKEBIASFRONT`
 
 This line controls the distribution of braking force between the front and rear axles.
 
@@ -189,18 +166,14 @@ Similar to `fDriveBiasFront`,
 *   Values between 0.01 and 0.49 means the rear axle will receive more brake force.
 *   Values between 0.51 and 0.99 means the front axles will receive more brake force than the rear.
 
-  
-
-**`FHANDBRAKEFORCE`**
+### `FHANDBRAKEFORCE`
 
 _Another_ obvious one. Braking power of the handbrake.
 
 *   Bigger numbers = harder braking.
-*   Values: 0.o or above.
+*   Values: 0.0 or above.
 
-  
-
-**`FSTEERINGLOCK`**
+### `FSTEERINGLOCK`
 
 This multiplies the game's calculation of the **angle of the steer wheel** will turn while at full turn.
 
@@ -213,40 +186,27 @@ Values:
 *   Values between 0.1 - 0.2 will simulate a **long wheelbase**.
 *   Values around 0.75 and above will turn extremely fast. Higher values will cause the vehicle to spin out easily.
 
-  
-
-Wheel Traction
---------------
+## Wheel Traction
 
 The following attributes describe how the vehicle will behave when cornering, accelerating and decelerating etc.
 
-  
-
-**`FTRACTIONCURVEMAX`**
+### `FTRACTIONCURVEMAX`
 
 Cornering grip of the vehicle as a multiplier of the tire surface friction.
 
-  
-
-**`FTRACTIONCURVEMIN`**
+### `FTRACTIONCURVEMIN`
 
 Accelerating/braking grip of the vehicle as a multiplier of the tire surface friction.
 
-  
-
-**`FTRACTIONCURVELATERAL`**
+### `FTRACTIONCURVELATERAL`
 
 Shape of lateral traction curve.
 
-  
-
-**`FTRACTIONSPRINGDELTAMAX`**
+### `FTRACTIONSPRINGDELTAMAX`
 
 This value determines at what distance **above the ground** the car will **lose traction.**
 
-  
-
-**`FLOWSPEEDTRACTIONLOSSMULT`**
+### `FLOWSPEEDTRACTIONLOSSMULT`
 
 How much traction is reduced at low speed.
 
@@ -254,9 +214,7 @@ How much traction is reduced at low speed.
 *   Decreasing value will cause less burnout, less sliding at start.
 *   Higher value will cause more burnout.
 
-  
-
-**`FCAMBERSTIFFNESSS`**
+### `FCAMBERSTIFFNESSS`
 
 This value modify the grip of the car when you're **drifting**.
 
@@ -264,9 +222,7 @@ This value modify the grip of the car when you're **drifting**.
 *   Less than 0 make your car oversteer
 *   **Not recommended to modify it for grip.**
 
-  
-
-**`FTRACTIONBIASFRONT`**
+### `FTRACTIONBIASFRONT`
 
 Determines the distribution of traction from front to rear.
 
@@ -277,40 +233,30 @@ Values: 0.01 - 0.99.
 *   0.5 = both axles have equal traction.
 *   Entering a value of 0.0 or 1.0 causes the vehicle to have no traction.
 *     
-    
 
-**`FTRACTIONLOSSMULT`**
+### `FTRACTIONLOSSMULT`
 
 Affects how much grip is changed when driving on asphalt and mud
 
 *   Higher values make the car less responsive and prone to sliding.
 
-  
-
-Suspension
-----------
+## Suspension
 
 The following attributes determine a vehicle's system of springs and shock absorbers.
 
-  
-
-**`FSUSPENSIONFORCE`**
+### `FSUSPENSIONFORCE`
 
 Affects how strong suspension is.
 
 1/(Force × Wheels) = Lower limit for zero force at full extension.
 
-  
-
-**`FSUSPENSIONCOMPDAMP`**
+### `FSUSPENSIONCOMPDAMP`
 
 Damping during strut compression.
 
 *   Bigger values = stiffer.
-*     
     
-
-**`FSUSPENSIONREBOUNDDAMP`**
+### `FSUSPENSIONREBOUNDDAMP`
 
 Damping during strut rebound.
 
@@ -318,52 +264,38 @@ Damping during strut rebound.
 
 _What the hell is this about? Read_ [_this_](https://en.wikipedia.org/wiki/Shock_absorber) _and_ [_this_](https://en.wikipedia.org/wiki/Suspension_(vehicle)) _and maybe_ [_this_](https://en.wikipedia.org/wiki/Strut)_._
 
-  
-
-**`FSUSPENSIONUPPERLIMIT`** **AND** **`FSUSPENSIONLOWERLIMIT`**
+### `FSUSPENSIONUPPERLIMIT` AND `FSUSPENSIONLOWERLIMIT`
 
 _Visual limit_ of how far can wheels move up / down from original position.
 
-  
-
-**`FSUSPENSIONRAISE`**
+### `FSUSPENSIONRAISE`
 
 The amount that the suspension raises the body off the wheels.
 
-  
-
-**`FSUSPENSIONBIASFRONT`**
+### `FSUSPENSIONBIASFRONT`
 
 This value determines which suspension is **stronger**, front or rear.
 
 *   If value is above 0.50 then front is stiffer, when below, rear is stiffer.
 
-  
-
-**`FANTIROLLBARFORCE`**
+### `FANTIROLLBARFORCE`
 
 Larger Numbers = less body roll.
 
-  
-
-**`FANTIROLLBARBIASFRONT`**
+### `FANTIROLLBARBIASFRONT`
 
 The bias between front and rear for the anti-roll bar
 
 *   0 = front
 *   1 = rear
 
-  
-
-**`FROLLCENTREHEIGHTFRONT`**
+### `FROLLCENTREHEIGHTFRONT`
 
 *   Larger Numbers = less rollovers.
 
 Values: (Recommended) -0.15 to 0.15.
 
-  
-
-**`FROLLCENTREHEIGHTREAR`**
+### `FROLLCENTREHEIGHTREAR`
 
 This value modify the weight transmission during an acceleration between the front and rear. _high positive value can make your car able to do wheelies._
 
@@ -371,79 +303,53 @@ This value modify the weight transmission during an acceleration between the fro
 
 Values: (Recommended) -0.15 to 0.15.
 
-Damage.
--------
+## Damage
 
-  
-
-**`FCOLLISIONDAMAGEMULT`**
+### `FCOLLISIONDAMAGEMULT`
 
 Multiplies the game's calculation of damage to the vehicle by collision.
 
-  
-
-**`FWEAPONDAMAGEMULT`**
+### `FWEAPONDAMAGEMULT`
 
 Multiplies the game's calculation of damage to the vehicle by weapons.
 
-  
-
-**`FDEFORMATIONDAMAGEMULT`**
+### `FDEFORMATIONDAMAGEMULT`
 
 Multiplies the game's calculation of deformation damage.
 
-  
-
-**`FENGINEDAMGEMULT`**
+### `FENGINEDAMGEMULT`
 
 Multiplies the game's calculation of damage to the engine, causing explosion or engine failure.
 
 *   Values for the above four: 0.0 - 10.0.
-*     
-    
 
-**`FPETROLTANKVOLUME`**
+### `FPETROLTANKVOLUME`
 
 Amount of petrol that will leak after damaging a vehicle's tank.
 
-  
-
-**`FOILVOLUME`**
+### `FOILVOLUME`
 
 Amount of oil.
 
-  
+## Misc.
 
-Misc.
------
-
-  
-
-**`FSEATOFFSETDISTX`**
+### `FSEATOFFSETDISTX`
 
 Value: Driver > passenger
 
-  
-
-**`FSEATOFFSETDISTY`**
+### `FSEATOFFSETDISTY`
 
 Value: Trunk > hood
 
-  
-
-**`FSEATOFFSETDISTZ`**
+### `FSEATOFFSETDISTZ`
 
 Value: Undercarriage > roof
 
-  
-
-**`NMONETARYVALUE`**
+### `NMONETARYVALUE`
 
 Not sure.
 
-  
-
-### **`STRMODELFLAGS`**
+### `STRMODELFLAGS`
 
 The following are written in HEX.
 
@@ -464,11 +370,9 @@ Example:
 | 5th | AXLE\_F\_TORSION | AXLE\_F\_SOLID | AXLE\_F\_MCPHERSON | ATTACH\_PED\_TO\_BODYSHELL |
 | 6th | AXLE\_R\_TORSION | AXLE\_R\_SOLID | AXLE\_R\_MCPHERSON | DONT\_FORCE\_GRND\_CLEARANCE |
 | 7th | DONT\_RENDER\_STEER | NO\_WHEEL\_BURST | INDESTRUCTIBLE | DOUBLE\_FRONT\_WHEELS |
-| 8th | RC | DOUBLE\_RWHEELS | MF\_NO\_WHEEL\_BREAK | IS\_HATCHBACK |
+| 8th | RC | DOUBLE\_RWHEELS | MF\_NO\_WHEEL\_BREAK | IS\_HATCHBACK |   
 
-###   
-
-### **`STRHANDLINGFLAGS`**
+### `STRHANDLINGFLAGS`
 
 The following are written in HEX.
 
@@ -491,9 +395,7 @@ Example:
 | 7th | ENABLE\_LEAN | HEAVYARMOUR |  | ARMOURED |
 | 8th | SELF\_RIGHTING\_IN\_WATER | IMPROVED\_RIGHTING\_FORCE |  |  |
 
-###   
-
-### **`STRDAMAGEFLAGS`**
+### `STRDAMAGEFLAGS`
 
 Mentioned doors will be unbreakable.
 
@@ -512,33 +414,24 @@ Example:
 | 1st | DRIVER\_SIDE\_FRONT\_DOOR | DRIVER\_SIDE\_REAR\_DOOR | DRIVER\_PASSENGER\_SIDE\_FRONT\_DOOR | DRIVER\_PASSENGER\_SIDE\_REAR\_DOOR |
 | 2st | BONNET | BOOT |  |  |
 
-###   
-
-### **`AIHANDLING`**
+### `AIHANDLING`
 
 There are 4 profiles, which AI use when driving the vehicle.
 
 *   AVERAGE
 *   CRAP
 *   TRUCK
-*   SPORTS\_CAR
-
-  
+*   SPORTS_CAR
 
 * * *
-
-  
 
 The **SubHandlingData** section has been entirely excluded.  
 This section covers less common variables and special vehicles like boats and bikes.  
 [Click here](https://forums.gta5-mods.com/topic/3842/tutorial-handling-meta) or [here](https://gtamods.com/wiki/Handling.meta) to view full documentation by other authors.
 
-  
-
 * * *
 
-Handling File Example
-=====================
+# Handling File Example
 
 ```plain
 <?xml version="1.0" encoding="UTF-8"?>

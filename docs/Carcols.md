@@ -1,77 +1,42 @@
 # Carcols.meta
 
-Siren Binaries
-==============
+## Siren Sequencers
 
-Overview
---------
+### Overview
 
-Siren binaries are 32-bit, or digit, sequences for replicating a pattern within a game, as shown below in **example 1**. Siren binaries express light pattern using values '0' and '1'. For every '0', the light will be disabled, thus for every '1', the light will be enabled.
+Siren Sequencers are decimal values that represent 32-bit binary strings. The sequencers are converted to binary and used by emergency vehicles to represent the pattern of their flashing lights.
 
-  
+The patterns are expressed by using each digit of the binary value, one for each of 32 "ticks" (similar to frames) as an on or off value, and using a BPM value to determine the length of each tick.
 
-Once the sequence/light pattern shows 32-bit/digits total consisting of '0' and '1', the entire sequence is converted from binary to decimal values using the binary to decimal converter provided. [https://www.rapidtables.com/convert/number/binary-to-decimal.html](https://www.rapidtables.com/convert/number/binary-to-decimal.html)
+The sequencer value in Carcols.meta is represented as a decimal value, but a decimal value is unreadable as a pattern to us mere humans, there for we must construct them in binary, and convert them for use.
 
-  
+You can use a converter such as this one to accomplish this.
+https://www.rapidtables.com/convert/number/binary-to-decimal.html
 
-Key Points
-
-0=off
-
-1=on
-
-32 total digits present in 1 siren sequence
-
-Binary sequences must be converted to decimal values
-
-  
-
-**Example 1**
+### Sequencer Example
 
 Binary Sequence: 10101010101010101010101010101010
 
 Decimal Value from Sequence: 2863311530
 
-  
+### Ways to Create Sequencers
+There are 2 common methods of creating sequencers for patterns.
+*   Using [Siren Tool](https://dwnstr.com/sirentool)
+*   Torture (Straining your eyes in nodepad)
 
-Ways to design patterns?
-------------------------
+# Siren Deltas
 
-*   Use [Floh's Sexy software](https://www.nightshiftstudios.us/p/sirentool) ;) -- agreed
-*   Torture (straining your eyes in text)
+Siren deltas determine the rotation of the emissive mesh, and the environment lighting. 
 
-  
+There are 8 commonly used delta values.
 
-Siren Deltas
-============
-
-Siren deltas are used to determine the rotation of the light emissive texture and to ensure the environmental lighting emits correctly. There are a total of 8 different siren delta values. 3 From the Front, 2 Horizontal and 3 From the rear. The delta Values will be charted with rotation Degrees below. All rotations below will be from **Top** using **X,Y** Rotation of the Dummy **Axis ONLY** (See EX.1 & EX.2). The Dummy's must be rotated in ZModeler before they will follow Delta values in Carcols. You will need to change the </Delta> line 2 times in each siren, once under </Flashiness> and the other under </Rotation>(EX.3).
-
-  
-
-**Front Rotations**
-
-*   ```javascript
-    Straight Forward, 0° = 0.00000000
-    ```
+| Direction | Side |  Degrees | Delta |
+|---|---|---|---|
+|Front | Front | 0 | 0.00000000|
+|Right | Passenger | 90 | -1.57079633|
+|Back | Rear | 180 | 3.14159265|
+|Left | Driver | -90 | 1.57079633|
     
-
-**Horizontal Rotations**
-
-*   ```javascript
-    Passenger Side, 90° = 1.57079633
-    ```
-    
-
-**Rear Rotations**
-
-*   ```javascript
-    Straight Backwards, 180° = 3.14159265
-    ```
-    
-
-  
-
 _Delta Values Research from "EX.1" was originally found by Glitch Gamer on LCPDFR_
 
   
@@ -117,11 +82,10 @@ _Data gathered by Zero parsed by, HairyMineFart, and Organized by Dawnstar_
 
   
 
-Most Used Colors
-----------------
+### Most Used Colors
 
 | Color Name | Hex | RGB |
-| ---| ---| --- |
+| --- | --- | --- |
 | Red | `0xFFFF0000` |  |
 | Blue | `0xFF0000FF` |  |
 | White | `0xFFFFFFFF` |  |
@@ -132,26 +96,17 @@ Most Used Colors
 
   
 
-0: Standard Colors
-------------------
+### Standard Colors
 
 | Color Name | Hex | RGB |
 | ---| ---| --- |
-| BlackGraphite<br> | `0xFF0F0F0F` | 255, 15, 15, 15 |
+| BlackGraphite | `0xFF0F0F0F` | 255, 15, 15, 15 |
 | ChocolateBrown | `0xFF3F2D18` | 255, 63, 45, 24 |
 | MetallicPurple | `0xFF320642` | 255, 50, 6, 66 |
-
-  
-
-  
-
-HotPink  = `0xFFB01259` (255, 176, 18, 89)
-
-FormulaRed  = `0xFF6B0000` (255, 107, 0, 0)
-
-MetallicBlue  = `0xFF001B57` (255, 0, 27, 87)
-
-UltraBlue  = `0xFF2070D8` (255, 32, 112, 216)
+| HotPink | `0xFFB01259` | 255, 176, 18, 89 |
+| FormulaRed | `0xFF6B0000` | 255, 107, 0, 0 |
+| MetallicBlue | `0xFF001B57` | 255, 0, 27, 87 |
+| UltraBlue | `0xFF2070D8` | 255, 32, 112, 216 |
 
 RacingGreen  = `0xFF00441B` (255, 0, 68, 27)
 
