@@ -1,2 +1,2 @@
-- name: github-docs-to-wiki
+- name: sync
   uses: cmbrose/github-docs-to-wiki@v0.24
