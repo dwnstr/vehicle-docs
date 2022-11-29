@@ -32,10 +32,14 @@ There are 8 commonly used delta values.
 
 | Direction | Side |  Degrees | Delta |
 |---|---|---|---|
-|Front | Front | 0 | 0.00000000|
-|Right | Passenger | 90 | -1.57079633|
-|Back | Rear | 180 | 3.14159265|
-|Left | Driver | -90 | 1.57079633|
+| Front | Front | 0 | 0.00000000 |
+| Right | Passenger | 90 | -1.57079633 |
+| Back | Rear | 180 | 3.14159265 |
+| Left | Driver | -90 | 1.57079633 |
+| Front Right | Passenger | -45 | -0.78539816 |
+| Back Right | Passenger | -135 | -2.35619449 |
+| Back Left | Driver | 135 | 2.35619449 |
+| Front Left | Driver | 45 | 0.78539816 |
     
 _Delta Values Research from "EX.1" was originally found by Glitch Gamer on LCPDFR_
 
