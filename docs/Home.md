@@ -1,5 +1,7 @@
-# Welcome to the GTA5/FiveM Vehicle Documentation!
+# GTA5/FiveM Vehicle Documentation!
 This wiki is organized by Dawnstar FiveM
+
+Welcome to the new home of our vehicle documentation! We have been growing these documents privately for some time now, and it's about time we make this public to contributions. Feel free to fork our docs and suggest changes!
 
 Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
 
