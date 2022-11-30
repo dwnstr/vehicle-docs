@@ -84,8 +84,6 @@ Used in conjunction with Siren Tool you can make some extremely advanced pattern
 
 Not to mention, you can make some really sexy **renders** of your vehicles in Blender like this one...
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/36643b68-af96-4ed8-8c59-4b31f0b4266c/image.png)
-
 which will make you feel like this:
 
 ![](https://t8521189.p.clickup-attachments.com/t8521189/bd3d3d80-bba3-46d1-a5e3-78f1e5aedd6c/giphy.gif)
