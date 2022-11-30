@@ -3,6 +3,10 @@ This wiki is organized by Dawnstar FiveM
 
 Welcome to the new home of our vehicle documentation! We have been growing these documents privately for some time now, and it's about time we make this public to contributions. Feel free to fork our docs and suggest changes!
 
+This documentation is meant to serve as more than an exhaustive list of variables and values. The goal of these documents is to help developers learn and understand the development process with a focus on FiveM, as well as provide best practices and tutorials.
+
+If you're looking for a a full record of all variables and values without commentary or best practices, see [the GTAMods Wiki.](https://gtamods.com/wiki/Main_Page)
+
 Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
 
 *****
@@ -20,5 +24,5 @@ Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
 *   Feel free to copy-paste things from other places, but ensure you credit the original author, and provide a link to the original content
 
 *****
-### Want to become a maintainer?
+## Want to become a maintainer?
 [Join our Discord and make a ticket!](https://discord.gg/zH3k624aSv)

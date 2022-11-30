@@ -18,7 +18,6 @@
   - [lightInnerConeAngle](#lightinnerconeangle)
   - [lightOuterConeAngle](#lightouterconeangle)
   - [lightOffset](#lightoffset)
-- [Texture Name](#texture-name)
   - [textureName](#texturename)
   - [sequencerBpm](#sequencerbpm)
 - [Headlights and Taillights](#headlights-and-taillights)
@@ -104,14 +103,10 @@ These values go here: `<color value="0xFF0000FF"/>`
 > Metallic Colors and Matte Colors have been excluded as they serve no purpose in siren colors.
 > 
 > [Find the full list of colors here](https://www.se7ensins.com/forums/threads/vehicle-colors.1169166/)
-
-> Note: I have no idea why these RGB values seem to be RGBA values with arbitrary A values. Luckily, we don't really need them!
-> 
-
   
 **Most Used Colors**
 
-| Color Name | Hex | RGB |
+| Color Name | Hex | ARGB |
 | --- | --- | --- |
 | Red | `0xFFFF0000` |  |
 | Blue | `0xFF0000FF` |  |
@@ -123,7 +118,7 @@ These values go here: `<color value="0xFF0000FF"/>`
 
 **Standard Colors**
 
-| Color Name | Hex | RGB |
+| Color Name | Hex | ARGB |
 | ---| ---| --- |
 | BlackGraphite | `0xFF0F0F0F` | 255, 15, 15, 15 |
 | ChocolateBrown | `0xFF3F2D18` | 255, 63, 45, 24 |
@@ -141,7 +136,7 @@ These values go here: `<color value="0xFF0000FF"/>`
 
 **Classic Colors**
 
-| Color Name | Hex | RGB |
+| Color Name | Hex | ARGB |
 |---|---|---|
 | RED | `0xFF690000` | 255, 105, 0, 0 |
 | TORINO_RED | `0xFF8A0B00` | 255, 138, 11, 0 |
@@ -247,8 +242,6 @@ Value should be between 60 and 90 for best results
 ## lightOffset
 
 ```<lightOffset value="0.00000000"/>```
-
-# Texture Name
 
 ## textureName
 
