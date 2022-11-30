@@ -84,10 +84,11 @@ Used in conjunction with Siren Tool you can make some extremely advanced pattern
 
 Not to mention, you can make some really sexy **renders** of your vehicles in Blender like this one...
 
+![image](https://user-images.githubusercontent.com/48927090/204692465-e9ca58fe-3e82-4603-957a-42adf3f19215.png)
+
 which will make you feel like this:
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/bd3d3d80-bba3-46d1-a5e3-78f1e5aedd6c/giphy.gif)
-
+![](https://i.imgur.com/yGevBzN.gif)
 
 You can use any other 3D software and accomplish all of the same things as Blender.
 
@@ -103,11 +104,11 @@ Example: Sometimes white textures are too blinding and lack contrast, so you can
 
 Most devs make their white textures look like this:
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/12e82878-ab9c-4296-a1c0-d69b21660661/image.png)
+![image](https://user-images.githubusercontent.com/48927090/204695733-c22a7135-2ac0-4c70-9287-6a7e4a273f7a.png)
 
 In reality, this is the ideal value range for a white emissive:
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/647ce2c3-8518-4693-93af-f91b2c9ae4d9/image.png)
+![image](https://user-images.githubusercontent.com/48927090/204695774-8eb0c623-cead-4e15-bb1c-e9d94be019d6.png)
 
 Photoshop is great for fixing "issues" like this.
 
@@ -172,27 +173,25 @@ Very good, your brain is on the right track.
 
 Imagine this is your emissive mesh:
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/6ecebedb-8cb7-4b55-a0ea-7fbd23747eea/image.png)
+![image](https://user-images.githubusercontent.com/48927090/204694391-79d83f8b-2e10-474a-b6bf-57ad62931eac.png)
 
 Let's make it look nicer so you don't have to imagine as hard,
 
 This is your emissive mesh scaled at 1.0 (or 100%):
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/738b974c-3b9f-443f-a3ee-c3b27aca6f3a/image.png)
+![image](https://user-images.githubusercontent.com/48927090/204694490-6d12779d-c3ad-4ec1-aab8-2754bb0c48c6.png)
 
 This is your emissive mesh scaled to 0.1 (or 10%):
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/e491df7c-4387-428e-bc8d-bcd82cb6ef52/image.png)
+![image](https://user-images.githubusercontent.com/48927090/204694555-da1386b8-2d83-4f3d-90a0-ebdffc40f654.png)
 
 This is what your mesh does in game when the pattern is running:
 
-![](https://t8521189.p.clickup-attachments.com/t8521189/9ac3223a-e4cb-4c18-8810-3791229e6dc1/scaling.gif)
+![](https://i.imgur.com/pjWJc6T.gif)
 
 See that orange dot? That's called the **origin** of the object (the mesh (the emissive)).![](https://t8521189.p.clickup-attachments.com/t8521189/9cdd36af-e11a-46d8-bdb6-88077cc2a5b7/image.png)
 
 Notice how when the mesh is scaled, it moves towards the origin.
-
-![](https://t8521189.p.clickup-attachments.com/t8521189/438e1152-47ea-4ec7-98ca-1c7d63f700d5/scaling2.gif)
 
 This is why it's so important to not mess up the "axes"/"pivot" of your mesh in ZModeler after you have positioned your object. Otherwise your mesh will not scale to the proper location.
 
