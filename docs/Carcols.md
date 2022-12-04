@@ -8,7 +8,7 @@
 - [Siren Deltas](#siren-deltas)
 - [Rotator Lights](#rotator-lights)
   - [Rotator Speed](#rotator-speed)
-- [Siren Grouping](#siren-grouping)
+- [Light Groups](#light-groups)
 - [Light Colors](#light-colors)
 - [Carcols Variables](#carcols-variables)
   - [id](#id)
@@ -105,8 +105,11 @@ required speed value, use the following formula:
 
 Good Rotary BPM is 120 BPM with Flash set to False
 
-# Siren Grouping
+# Light Groups
+*This section needs contributors*
+*If you know anything about Light Groups, fork the repository to contribute!*
 
+*Alternatively, join our Discord and contact us!*
 
 # Light Colors
 
