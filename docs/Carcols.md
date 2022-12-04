@@ -6,7 +6,8 @@
   - [Sequencer Example](#sequencer-example)
   - [Ways to Create Sequencers](#ways-to-create-sequencers)
 - [Siren Deltas](#siren-deltas)
-- [Rotations](#rotations)
+- [Rotator Lights](#rotator-lights)
+  - [Rotator Speed](#rotator-speed)
 - [Siren Grouping](#siren-grouping)
 - [Light Colors](#light-colors)
 - [Carcols Variables](#carcols-variables)
@@ -21,6 +22,7 @@
   - [textureName](#texturename)
   - [sequencerBpm](#sequencerbpm)
 - [Headlights and Taillights](#headlights-and-taillights)
+  - [Headlights Example](#headlights-example)
 - [Custom Light IDs](#custom-light-ids)
 - [Siren Walkthrough](#siren-walkthrough)
 
@@ -68,31 +70,43 @@ There are 8 commonly used delta values.
     
 _Delta Values Research from "EX.1" was originally found by Glitch Gamer on LCPDFR_
 
-  
-
 Pay attention to the fact that driver side is actually left and passenger side is actually right
-
-  
 
 ![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-7F9l4_3ls4/4b5976cc8ed838dbf79a66e640e1ca82b9c85c5f254918fbd671f7a3c6e37d6a67a62cd4b65df69ee90dded72920d5a4f6f4fb32fd7580a2f6646da4a97e8d128f9ecc13d360849ef9f718fd025d108181debe018954bb28c04d53059dac3e154a0ede1b)
 
 _Lightbar Featured in example "EX.2" is a "42" Code 3 Pursuit, Top View" taken from_ [_https://www.code3esg.com/us/en/products/Lightbars/dual-level/Pursuit_](https://www.code3esg.com/us/en/products/Lightbars/dual-level/Pursuit)
 
-  
-
 ![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-Uy1Gr9c8qa/bc5fd14e9657a648a3a8fb084d88a338f8ffc357fa24bb624d5d9119a13a3c885db963b646d56274ee83c0e0179a99aac822c3e87db51fae210e604cb8ac3a708755c4948d14405ce9c2a03d554defc9a97a40c96791ffc0772b9f7db943552647f6d6cf)
 
-  
+# Rotator Lights
 
-# Rotations
+> For information on rotators click through to the content [originally hosted here](https://www.modding-forum.com/guide/20-emergency-lights-rotator-lightbars-and-wig-wags/) by [Smanbg](https://www.modding-forum.com/user/915-smanbg/), [Cj24](https://www.modding-forum.com/user/2-cj24/) and 
+[PNWParksFan](https://www.modding-forum.com/user/2672-pnwparksfan/). A small snippet is shown below.
+
+> In comparison to your traditional strobe or LED lightbar with flashing lights, rotating lights require quite a different approach when using them, in particular, the sirens have to be covered, rather than scaled down. This guide is going to walk through the two common methods for rotator lightbars.
+> 
+> First and foremost, the rotating modules have to be attached to the emissives, as that is what forms the siren - a rotating module and the emissive itself, and lastly - reset the local axis. After that is done, set your lightbar up as you would any lightbar, this also applies to any modules that are not rotatable.
+> 
+> The next step on the list is covering the emissives. The rotator lightbar is a constant-spinning bar that relies on the rotation section of your siren in the carcols, which is also why it cannot be scaled and why the emissives should be covered when the lights are not on.
+
+
+## Rotator Speed
+
+It is possible to decrease the speed of rotators without decreasing the BPM and instead using the speed value and adjusted sequencers. In the rotation settings, syncToBpm must be turned off to be able to use the speed value. The exact speed value required depends on your BPM and the sequencer.
+
+To slow down the lights, slower sequencers must be used, the more 1s are in the sequencer, the higher the speed. 1s must always be separated by an equal number of 0s. This results in the following sequencers and speed values:
+
+![](https://i.imgur.com/GDZjwps.png)
+
+The speed value must be set proportionally to the BPM and the sequencer. To calculate the
+required speed value, use the following formula:
+
+![](https://i.imgur.com/hhlsHs7.png)
 
 Good Rotary BPM is 120 BPM with Flash set to False
 
-  
-
 # Siren Grouping
 
-  
 
 # Light Colors
 
@@ -254,6 +268,17 @@ Don't Change this! Specifies corona texture.
 ``<sequencerBpm value="600"/>``
 
 # Headlights and Taillights
+
+When working with headlight and taillight sequencers you have to account for a delay for the fade in and out of the lights. 
+
+The default/standard sequencers that will give you the typical back and forth wig-wag effect are:
+
+``10000000100000001000000010000000`` and
+``00001000000010000000100000001000``
+
+> If you have other good sequencers please contribute them!
+
+## Headlights Example
 
 ```xml
       <leftHeadLight>
