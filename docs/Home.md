@@ -10,10 +10,11 @@ If you're looking for a a full record of all variables and values without commen
 Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
 
 *****
-## How to Contribute:
-* Fork this repo
-* Make your changes to markdown files
-* Commit changes to your fork and create a pull request
+# How to Contribute
+
+1. [Create an issue](https://github.com/dwnstr/vehicle-docs/issues/new?labels=Suggestion&template=suggestion.md&title=%5BSuggestion%5D) with a suggested change or addition.
+
+2. Fork the repo and make your changes, then create a pull request for review.
 
 ## Contribution Guidelines:
 
