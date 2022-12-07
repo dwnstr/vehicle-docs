@@ -1,3 +1,9 @@
+# How to Contribute
+
+1. [Create an issue](https://github.com/dwnstr/vehicle-docs/issues/new?labels=Suggestion&template=suggestion.md&title=%5BSuggestion%5D) with a suggested change or addition.
+
+2. Fork the repo and make your changes, then create a pull request for review.
+
 # Contribution Guidelines
 
 These documents are meant to be as objective as possible, any opinions or first person writing is frowned upon. 
