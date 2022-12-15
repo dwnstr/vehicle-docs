@@ -2,19 +2,25 @@
 ## Overview
 
 The vehicles.meta defines the main features / functions of the vehicle. This includes:
-* [The name & handling of the vehicle,](#vehicle-naming)
-* [Vehicle sound](#vehicle-audio)
-* [Animations](#animations)
-* [The vfxInfo,](#vfx-info)
-* [The wheel scale,](#wheel-scale)
-* [The LOD distances,](#lod-distances)
-* [The flags,](#flags)
-* [The type of vehicle,](#type)
-* [The plate type,](#plate-type)
-* [The vehicle type,](#vehicle-class)
-* [What trailers the vehicle is compatible with,](#trailers)
-* [Foring extras / not forcing extras](#forcing-extras)
-* [And txd relationships](#txd-relationships)
+- [Vehicles.meta](#vehiclesmeta)
+  - [Overview](#overview)
+  - [Vehicle naming](#vehicle-naming)
+  - [Animations](#animations)
+  - [Vehicle Audio](#vehicle-audio)
+  - [VFX Info](#vfx-info)
+  - [Wheel Scale](#wheel-scale)
+  - [LOD Distances](#lod-distances)
+  - [Swankness](#swankness)
+  - [Extras](#extras)
+    - [Flags](#flags)
+  - [Type](#type)
+  - [Plate Type](#plate-type)
+  - [Vehicle class](#vehicle-class)
+  - [Trailers](#trailers)
+  - [Forcing Extras](#forcing-extras)
+      - [HOW THESE EDITS WORK IN COMBINATION WITH FLAGS](#how-these-edits-work-in-combination-with-flags)
+    - [STOPPING SPECIFIC EXTRAS FROM SPAWNING](#stopping-specific-extras-from-spawning)
+  - [TXD Relationships](#txd-relationships)
 
 This is just to name a few of the important parts. A lot of the values / options will never be used. 
 

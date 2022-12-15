@@ -614,7 +614,7 @@ Now we can define individual parts:
  | Tag Name | What is is? |  Accepted value type | Options
 |---|---|---|---|
 | modelName | This is the name of the file in the stream folder.  | Name | N/a | 
-| modShopLabel | This is the name that will show up in the customisations screens. This is not really used in FiveM / GTA unless its being customised within a Los Santos Customs | Name | N/a |
+| modShopLabel | This is the name that will show up in the customization screens. This is not really used in FiveM / GTA unless its being customized within a Los Santos Customs | Name | N/a |
 | linkedModels | This links two modkits together allowing you to turn two or more things on when you turn on option on. | Items | Items |
 | turnOffBones | This allows you to turn off bones within the car. For example, turning off a mirror when replacing the option. This has to be a misc item. | Item | Items |
 | type | This defines the type of the modkit. | Name | Find a list of types [here](https://gtamods.com/wiki/Carcols.ymt#type) |
@@ -632,7 +632,7 @@ Now we can define individual parts:
   
 If in the event your modkits do not work, here are some tips on how to fix it:
   
-*   Ensure your modkit ID at [Step 3](#step-3) is unique to the individual vehucle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep chaning the ID until your options show up for you. You do not need to restart the server to update this.
-*   The kiteName at [Step 3](#step-3) is not in the carvariations. 
+*   Ensure your modkit ID at [Step 3](#step-3) is unique to the individual vehicle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep changing the ID until your options show up for you. You do not need to restart the server to update this.
+*   The kiteName at [Step 3](#step-3) is not in the carvariations.meta. 
 *   The .yft modkit is not in the stream folder. Ensure they are all in there.
 *   The modelName is not the same as the name of the .yft modkit in the stream folder. Ensure they are both the same.
