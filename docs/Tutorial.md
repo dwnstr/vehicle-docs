@@ -136,7 +136,7 @@ I think it's still free for students with a school email.
 
 ## ZModeler3
 
-Zmod is vital piece of software for creating any type of vehicles within GTA. The main things you need to know about zmod are:
+Zmod is vital piece of software for creating any type of vehicles within GTA. Some tips to help you while using zmodeler include:
 
 *  Save backups as often as possible, 
 *  Ensure you have your autosave settings set to as soon as possible but not too often to affect your work flow,
@@ -162,10 +162,6 @@ Now that the basics of zmod has been covered, to create Non ELS vehicles it gets
 
 [Creating Non ELS Vehicles](https://www.youtube.com/watch?v=1a9vSk89RL4)
 
-The video is fairly old so ignore the young sounding voice. 
-
-
-Over the next few days I'll add some tips & tricks from within zmod to help your vehicle development journey.
 
 
 
