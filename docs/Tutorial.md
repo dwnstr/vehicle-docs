@@ -1,6 +1,6 @@
 # Workflow / Tutorial
 
-This page will be the home of a walkthrough of Floh's _workfloh_ using Blender , [Siren Tool](https://www.nightshiftstudios.us/p/sirentool), and zModeler. Full disclosure, some details are left out, as they will likely be included as part of a future paid course.
+This page will be the home of a walkthrough using Blender , [Siren Tool](https://www.nightshiftstudios.us/p/sirentool), and zModeler. Full disclosure, some details are left out, as they will likely be included as part of a future paid course.
 
 - [Workflow / Tutorial](#workflow--tutorial)
 - [Intro](#intro)
