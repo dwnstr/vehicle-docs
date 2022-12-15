@@ -144,7 +144,7 @@ Zmod is vital piece of software for creating any type of vehicles within GTA. So
 *  Tred slowely and carefully while using it to ensure you crash the software as little as possible,
 
 
-There isn't a lot of video tutorials on zmod as its a very specific software to a few games (GTA / ETS / Watch Dogs / Emergency 4 / Mafia 2 & Sims 3). A good channel i've found is [13StewartC (No Pixel Dev).](https://www.youtube.com/@13Stewartc) his videos include:
+There isn't a lot of video tutorials on zmod as its a very specific software to a few games (GTA / ETS / Watch Dogs / Emergency 4 / Mafia 2 & Sims 3). A good channel i've found is [13StewartC (A No Pixel Dev).](https://www.youtube.com/@13Stewartc) his videos include:
 
 *  [Learning the basics of zmod](https://www.youtube.com/watch?v=a6Rb9WEQz1g)
 *  [Importing / working with / creating custom vehicle animations,](https://www.youtube.com/watch?v=jxWz4wcYM0E&t=257s)
@@ -158,7 +158,7 @@ There isn't a lot of video tutorials on zmod as its a very specific software to 
 
 He has a lot more videos on his channel and its worth a check out if you are looking to get into vehicle development for GTA. 
 
-Now that the basics of zmod has been covered, to create Non ELS vehicles it gets a tad more complicated and is where zmod comes in very handy but can crash very easily. I have a vide on how to create non ELS vehicles that you can watch here: 
+Now that the basics of zmod has been covered, to create Non ELS vehicles it gets a tad more complicated and is where zmod comes in very handy. I have a video on how to create non ELS vehicles that you can watch here: 
 
 [Creating Non ELS Vehicles](https://www.youtube.com/watch?v=1a9vSk89RL4)
 
