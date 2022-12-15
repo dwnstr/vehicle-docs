@@ -27,6 +27,104 @@
 - [Siren Walkthrough](#siren-walkthrough)
 
 
+# Modkits
+
+## Overview
+
+The carcols controlls the modkits items that are on the vehicle. This includes things like aftermarket parts such as exhausts, trims, steering wheels etc. There are a lot of options avaliable to control what the modkits do. 
+
+### Step 1
+
+To keep the file formatted in a way that aligns with GTA, the modkit items should be put at the very beginning of the carcols file. Below the following lines:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleModelInfoVarGlobal>
+  ```
+
+### Step 2
+
+On line 3 write:
+  
+```xml 
+<Kits>
+  <Item>
+    
+  </Item>
+</Kits>
+```
+
+This will tell the carcols we are starting the options for the modkits. Once you have thise in place, on the line below the opening <Item> tag, we will now define the modkit name. This modkit name will allow the modkit set up that you will create be used anywhere as long as the vehicle & modkits are actively streamed.
+ 
+### Step 3
+  
+```xml
+<kitName>myVehicle_modkit</kitName>
+<id value="47543" />
+<kitType>MKT_SPECIAL</kitType>
+```
+
+The modkit name can be anything. Normally, the name will end in _modkit. 
+
+The ID value below it is very similar to the siren ID value. It uniquely identifies the modkit and makes sure the modkits are unique to the vehicle. 
+  
+For the kitType there isn't a lot of information on what this does, therefore its best to leave it as MKT_SPECIAL. 
+ 
+### Step 4
+  
+Now we shall get into defining the individual modkit parts. Once you have exported the modkit items and have put them in your stream folder we can move on. First, you will need to define you are making visable mods by opening the following tags:
+  
+  
+```xml
+<visibleMods>
+
+</visibleMods>
+```
+  
+This will allow us to create individual items for each individual parts. 
+  
+### Step 5
+  
+Now we can define individual parts:
+```xml
+<Item>
+  <modelName>MODKIT_NAME</modelName>
+  <modShopLabel>MODKIT_SHOP_LABEL</modShopLabel>
+  <linkedModels />
+  <turnOffBones>
+    <Item>misc_*</Item>
+  </turnOffBones>
+  <type>VMT_*</type>
+  <bone>chassis</bone>
+  <collisionBone>chassis</collisionBone>
+  <cameraPos>VMCP_DEFAULT</cameraPos>
+  <audioApply value="1.000000" />
+  <weight value="20" />
+  <turnOffExtra value="false" />
+  <disableBonnetCamera value="false" />
+  <allowBonnetSlide value="true" />
+ </Item>
+ ```
+
+ This is the meat and bones of the modkits. 
+  
+ | Tag Name | What is is? |  Accepted value type | Options
+|---|---|---|---|
+| modelName | This is the name of the file in the stream folder.  | Name | N/a | 
+| modShopLabel | This is the name that will show up in the customisations screens. This is not really used in FiveM / GTA unless its being customised within a Los Santos Customs | Name | N/a |
+| linkedModels | This links two modkits together allowing you to turn two or more things on when you turn on option on. | Items | Items |
+| turnOffBones | This allows you to turn off bones within the car. For example, turning off a mirror when replacing the option. This has to be a misc item. | Item | Items |
+| type | This defines the type of the modkit. | Name | Find a list of types [here](https://gtamods.com/wiki/Carcols.ymt#type) |
+| bone | This defines what bone the modkit is linked to. Chassis is standard if you are just adding something on. | String | Find a list of bones [here](https://gtamods.com/wiki/Carcols.ymt#bone) |
+| collisionBone | This defines what collision the modkit item will use. Once again, the chassis is normally standard but you can add different collisions. | Name | Fin a lit of collisions [here](https://gtamods.com/wiki/Carcols.ymt#collisionBone) |
+| cameraPos | This allows you to change how the camera works with the modkit enables. This isn't normally changed from VMCP_DEFAULT though. | Name | N/a |
+| audioApply | This options isn't used very often alongside that there isn't a lot of information about it. It's best to leave the value at 1. | Name | N/a |
+| weight | The weight is what is applied to the vehicle once the modkit item is on. For example, if you add a massive wing onto your car you can add a bit more weight to slow the vehicle down. This option directly affects the handling. | String | N/a |
+| turnOffExtra | There isn't a lot of information on this but I'd assume it links with the vehicles.meta turnOffExtra.  | Boolean | true / false |
+| disableBonnetCamera | This option turns off the bonnet camera off when the modkit item in enabled in game. | Boolean | true / false |
+| allowBonnetSlide | This will stop players from sliding over the bonnet when the modkit item is enabled. | Boolean | true / false |
+  
+
 # Siren Sequencers
 
 ## Overview
