@@ -136,22 +136,36 @@ I think it's still free for students with a school email.
 
 ## ZModeler3
 
-I don't want to talk about it for very long.
+Zmod is vital piece of software for creating any type of vehicles within GTA. Some tips to help you while using zmodeler include:
 
-Basically it fills in the rest of the things you can't do in the preceding software.
+*  Save backups as often as possible, 
+*  Ensure you have your autosave settings set to as soon as possible but not too often to affect your work flow,
+*  Make sure you have more than 1 autosave files generated, this reduces the possibility of autosave file corruption
+*  Tred slowely and carefully while using it to ensure you crash the software as little as possible,
 
-It sucks, but it's required for the final steps of making a Non-ELS vehicle. If you follow my advice, and use other software as much as possible, you might survive making a car with all of your hair still on your head.
 
-Stay away from this software as much as possible
+There isn't a lot of video tutorials on zmod as its a very specific software to a few games (GTA / ETS / Watch Dogs / Emergency 4 / Mafia 2 & Sims 3). A good channel i've found is [13StewartC (No Pixel Dev).](https://www.youtube.com/@13Stewartc) his videos include:
 
-Even if you get the hang of it, it's a pain in the butt.
+*  [Learning the basics of zmod](https://www.youtube.com/watch?v=a6Rb9WEQz1g)
+*  [Importing / working with / creating custom vehicle animations,](https://www.youtube.com/watch?v=jxWz4wcYM0E&t=257s)
+*  [Using VehFuncs to make car parts work,](https://www.youtube.com/watch?v=P1CX4_iLAmI)
+*  [Fixing issues such as window tint on vehicles,](https://www.youtube.com/watch?v=jPzcflA0-mE)
+*  [Making mirrors look pretty good,](https://www.youtube.com/watch?v=aQuQftteH2o)
+*  [Creating animated UVs,](https://www.youtube.com/watch?v=5to7OEGBek4)
+*  [Creating LODs](https://www.youtube.com/watch?v=Awx6l_gXRpo)
+*  [Converting vehicles from other games to GTA,](https://www.youtube.com/watch?v=uC4TTi5oINM)
+*  [How to use the attach tool,](https://www.youtube.com/watch?v=S2ODnOiWBvA)
 
-Tips:
+He has a lot more videos on his channel and its worth a check out if you are looking to get into vehicle development for GTA. 
 
-*   save backups often
-*   save a new file, don't overwrite your old one
-*   use as little as possible
-*   work very carefully and slowly (otherwise you will touch something that breaks everything permanently.)
+Now that the basics of zmod has been covered, to create Non ELS vehicles it gets a tad more complicated and is where zmod comes in very handy but can crash very easily. I have a vide on how to create non ELS vehicles that you can watch here: 
+
+[Creating Non ELS Vehicles](https://www.youtube.com/watch?v=1a9vSk89RL4)
+
+
+
+
+
 
 # What is Actually Happening?
 
@@ -214,7 +228,6 @@ There many different locations to obtain assets. Some are very high quality and 
 | LCPDFR | [https://www.lcpdfr.com/downloads/dev-resources/](https://www.lcpdfr.com/downloads/dev-resources/) |
 | ---| --- |
 | Modding Forum | [https://www.modding-forum.com/forums/board/47-development-resources/](https://www.modding-forum.com/forums/board/47-development-resources/) |
-| GTAPoliceMods | [https://gtapolicemods.com/files/category/11-dev-support/](https://gtapolicemods.com/files/category/11-dev-support/) |
 
 ## 2. Make Assets
 
