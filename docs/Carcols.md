@@ -3,14 +3,14 @@
 - [Carcols.meta](#carcolsmeta)
 - [Modkits](#modkits)
   - [Overview](#overview)
-  - [Step 1](#step-1)
-  - [Step 2](#step-2)
-  - [Step 3](#step-3)
-  - [Step 4](#step-4)
-  - [Step 5](#step-5)
-  - [Debugging](#debugging-modkits)
+    - [Step 1](#step-1)
+    - [Step 2](#step-2)
+    - [Step 3](#step-3)
+    - [Step 4](#step-4)
+    - [Step 5](#step-5)
+    - [Debugging modkits](#debugging-modkits)
 - [Siren Sequencers](#siren-sequencers)
-  - [Overview](#overview)
+  - [Overview](#overview-1)
   - [Sequencer Example](#sequencer-example)
   - [Ways to Create Sequencers](#ways-to-create-sequencers)
 - [Siren Deltas](#siren-deltas)
@@ -62,7 +62,7 @@ On line 3 write:
 </Kits>
 ```
 
-This will tell the carcols we are starting the options for the modkits. Once you have thise in place, on the line below the opening <Item> tag, we will now define the modkit name. This modkit name will allow the modkit set up that you will create be used anywhere as long as the vehicle & modkits are actively streamed.
+This will tell the carcols we are starting the options for the modkits. Once you have this in place, on the line below the opening <Item> tag, we will now define the modkit name. This modkit name will allow the modkit set up that you will create be used anywhere as long as the vehicle & modkits are actively streamed.
  
 ### Step 3
   
