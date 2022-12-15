@@ -1,6 +1,7 @@
 # Carcols.meta
 
 - [Carcols.meta](#carcolsmeta)
+- [Modkits](#modkits)
 - [Siren Sequencers](#siren-sequencers)
   - [Overview](#overview)
   - [Sequencer Example](#sequencer-example)
@@ -123,6 +124,16 @@ Now we can define individual parts:
 | turnOffExtra | There isn't a lot of information on this but I'd assume it links with the vehicles.meta turnOffExtra.  | Boolean | true / false |
 | disableBonnetCamera | This option turns off the bonnet camera off when the modkit item in enabled in game. | Boolean | true / false |
 | allowBonnetSlide | This will stop players from sliding over the bonnet when the modkit item is enabled. | Boolean | true / false |
+  
+  
+### Debugging modkits
+  
+If in the event your modkits do not work, here are some tips on how to fix it:
+  
+*   Ensure your modkit ID at [Step 3](#step-3) is unique to the individual vehucle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep chaning the ID until your options show up for you. You do not need to restart the server to update this.
+*   The kiteName at [Step 3](#step-3) is not in the carvariations. 
+*   The .yft modkit is not in the stream folder. Ensure they are all in there.
+*   The modelName is not the same as the name of the .yft modkit in the stream folder. Ensure they are both the same.
   
 
 # Siren Sequencers
