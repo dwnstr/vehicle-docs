@@ -26,7 +26,7 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
   - [How to Setup ULC in your Server](#how-to-setup-ulc-in-your-server)
     - [Installation](#installation)
     - [Configuration](#configuration)
-      - [How to Import an Included Config](#how-to-import-an-included-config)
+      - [How to Import an Included Config File](#how-to-import-an-included-config-file)
       - [How to Manually Configure a Vehicle](#how-to-manually-configure-a-vehicle)
 - [ULC for Vehicle Developers](#ulc-for-vehicle-developers)
   - [How to Share ULC Configurations with Users](#how-to-share-ulc-configurations-with-users)
@@ -66,7 +66,7 @@ The only necessary configuration step is to add or configure vehicles. There are
 1. Automatically import vehicle configurations from vehicle resources.
 2. Manually add vehicle configurations to the ``Config.Vehicles`` table.
 
-#### How to Import an Included Config
+#### How to Import an Included Config File
 Some vehicle resources may come with a ``ulc.lua`` file. 
 
 If this is the case all you have to do to configure the vehicle is add the resource name to the ``Config.ExternalVehResources`` table.
