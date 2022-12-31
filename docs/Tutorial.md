@@ -1,7 +1,3 @@
----
-layout: editorial
----
-
 # Tutorial
 
 ## Workflow / Tutorial
