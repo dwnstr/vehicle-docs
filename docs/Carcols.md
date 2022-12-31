@@ -1,42 +1,44 @@
-# Carcols.meta
+# carcols.meta
 
-- [Carcols.meta](#carcolsmeta)
-- [Siren Sequencers](#siren-sequencers)
-  - [Overview](#overview)
-  - [Sequencer Example](#sequencer-example)
-  - [Ways to Create Sequencers](#ways-to-create-sequencers)
-- [Siren Deltas](#siren-deltas)
-- [Rotator Lights](#rotator-lights)
-  - [Rotator Speed](#rotator-speed)
-- [Light Groups](#light-groups)
-- [Light Colors](#light-colors)
-- [Carcols Variables](#carcols-variables)
-  - [id](#id)
-  - [timeMultiplier](#timemultiplier)
-  - [Environment Lighting](#environment-lighting)
-  - [lightFalloffMax](#lightfalloffmax)
-  - [lightFalloffExponent](#lightfalloffexponent)
-  - [lightInnerConeAngle](#lightinnerconeangle)
-  - [lightOuterConeAngle](#lightouterconeangle)
-  - [lightOffset](#lightoffset)
-  - [textureName](#texturename)
-  - [sequencerBpm](#sequencerbpm)
-- [Headlights and Taillights](#headlights-and-taillights)
-  - [Headlights Example](#headlights-example)
-- [Custom Light IDs](#custom-light-ids)
-- [Siren Walkthrough](#siren-walkthrough)
-- [Modkits](#modkits)
-  - [Overview](#overview-1)
-    - [Step 1](#step-1)
-    - [Step 2](#step-2)
-    - [Step 3](#step-3)
-    - [Step 4](#step-4)
-    - [Step 5](#step-5)
-    - [Debugging modkits](#debugging-modkits)
+## Carcols.meta
 
-# Siren Sequencers
+* [Carcols.meta](Carcols.md#carcolsmeta)
+* [Siren Sequencers](Carcols.md#siren-sequencers)
+  * [Overview](Carcols.md#overview)
+  * [Sequencer Example](Carcols.md#sequencer-example)
+  * [Ways to Create Sequencers](Carcols.md#ways-to-create-sequencers)
+* [Siren Deltas](Carcols.md#siren-deltas)
+* [Rotator Lights](Carcols.md#rotator-lights)
+  * [Rotator Speed](Carcols.md#rotator-speed)
+* [Light Groups](Carcols.md#light-groups)
+* [Light Colors](Carcols.md#light-colors)
+* [Carcols Variables](Carcols.md#carcols-variables)
+  * [id](Carcols.md#id)
+  * [timeMultiplier](Carcols.md#timemultiplier)
+  * [Environment Lighting](Carcols.md#environment-lighting)
+  * [lightFalloffMax](Carcols.md#lightfalloffmax)
+  * [lightFalloffExponent](Carcols.md#lightfalloffexponent)
+  * [lightInnerConeAngle](Carcols.md#lightinnerconeangle)
+  * [lightOuterConeAngle](Carcols.md#lightouterconeangle)
+  * [lightOffset](Carcols.md#lightoffset)
+  * [textureName](Carcols.md#texturename)
+  * [sequencerBpm](Carcols.md#sequencerbpm)
+* [Headlights and Taillights](Carcols.md#headlights-and-taillights)
+  * [Headlights Example](Carcols.md#headlights-example)
+* [Custom Light IDs](Carcols.md#custom-light-ids)
+* [Siren Walkthrough](Carcols.md#siren-walkthrough)
+* [Modkits](Carcols.md#modkits)
+  * [Overview](Carcols.md#overview-1)
+    * [Step 1](Carcols.md#step-1)
+    * [Step 2](Carcols.md#step-2)
+    * [Step 3](Carcols.md#step-3)
+    * [Step 4](Carcols.md#step-4)
+    * [Step 5](Carcols.md#step-5)
+    * [Debugging modkits](Carcols.md#debugging-modkits)
 
-## Overview
+## Siren Sequencers
+
+### Overview
 
 Siren Sequencers are decimal values that represent 32-bit binary strings. The sequencers are converted to binary and used by emergency vehicles to represent the pattern of their flashing lights.
 
@@ -44,60 +46,59 @@ The patterns are expressed by using each digit of the binary value, one for each
 
 The sequencer value in Carcols.meta is represented as a decimal value, but a decimal value is unreadable as a pattern to us mere humans, there for we must construct them in binary, and convert them for use.
 
-You can use a converter such as this one to accomplish this.
-https://www.rapidtables.com/convert/number/binary-to-decimal.html
+You can use a converter such as this one to accomplish this. https://www.rapidtables.com/convert/number/binary-to-decimal.html
 
-## Sequencer Example
+### Sequencer Example
 
 Binary Sequence: 10101010101010101010101010101010
 
 Decimal Value from Sequence: 2863311530
 
-## Ways to Create Sequencers
+### Ways to Create Sequencers
+
 There are 2 common methods of creating sequencers for patterns.
-*   Using [Siren Tool](https://dwnstr.com/sirentool)
-*   Torture (Straining your eyes in notepad)
 
-# Siren Deltas
+* Using [Siren Tool](https://dwnstr.com/sirentool)
+* Torture (Straining your eyes in notepad)
 
-Siren deltas determine the rotation of the emissive mesh, and the environment lighting. 
+## Siren Deltas
+
+Siren deltas determine the rotation of the emissive mesh, and the environment lighting.
 
 There are 8 commonly used delta values.
 
-| Direction | Side |  Degrees | Delta |
-|---|---|---|---|
-| Front | Front | 0 | 0.00000000 |
-| Right | Passenger | 90 | -1.57079633 |
-| Back | Rear | 180 | 3.14159265 |
-| Left | Driver | -90 | 1.57079633 |
-| Front Right | Passenger | -45 | -0.78539816 |
-| Back Right | Passenger | -135 | -2.35619449 |
-| Back Left | Driver | 135 | 2.35619449 |
-| Front Left | Driver | 45 | 0.78539816 |
-    
+| Direction   | Side      | Degrees | Delta       |
+| ----------- | --------- | ------- | ----------- |
+| Front       | Front     | 0       | 0.00000000  |
+| Right       | Passenger | 90      | -1.57079633 |
+| Back        | Rear      | 180     | 3.14159265  |
+| Left        | Driver    | -90     | 1.57079633  |
+| Front Right | Passenger | -45     | -0.78539816 |
+| Back Right  | Passenger | -135    | -2.35619449 |
+| Back Left   | Driver    | 135     | 2.35619449  |
+| Front Left  | Driver    | 45      | 0.78539816  |
+
 _Delta Values Research from "EX.1" was originally found by Glitch Gamer on LCPDFR_
 
 Pay attention to the fact that driver side is actually left and passenger side is actually right
 
-![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-7F9l4_3ls4/4b5976cc8ed838dbf79a66e640e1ca82b9c85c5f254918fbd671f7a3c6e37d6a67a62cd4b65df69ee90dded72920d5a4f6f4fb32fd7580a2f6646da4a97e8d128f9ecc13d360849ef9f718fd025d108181debe018954bb28c04d53059dac3e154a0ede1b)
+![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-7F9l4\_3ls4/4b5976cc8ed838dbf79a66e640e1ca82b9c85c5f254918fbd671f7a3c6e37d6a67a62cd4b65df69ee90dded72920d5a4f6f4fb32fd7580a2f6646da4a97e8d128f9ecc13d360849ef9f718fd025d108181debe018954bb28c04d53059dac3e154a0ede1b)
 
 _Lightbar Featured in example "EX.2" is a "42" Code 3 Pursuit, Top View" taken from_ [_https://www.code3esg.com/us/en/products/Lightbars/dual-level/Pursuit_](https://www.code3esg.com/us/en/products/Lightbars/dual-level/Pursuit)
 
 ![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-Uy1Gr9c8qa/bc5fd14e9657a648a3a8fb084d88a338f8ffc357fa24bb624d5d9119a13a3c885db963b646d56274ee83c0e0179a99aac822c3e87db51fae210e604cb8ac3a708755c4948d14405ce9c2a03d554defc9a97a40c96791ffc0772b9f7db943552647f6d6cf)
 
-# Rotator Lights
+## Rotator Lights
 
-> For information on rotators click through to the content [originally hosted here](https://www.modding-forum.com/guide/20-emergency-lights-rotator-lightbars-and-wig-wags/) by [Smanbg](https://www.modding-forum.com/user/915-smanbg/), [Cj24](https://www.modding-forum.com/user/2-cj24/) and 
-[PNWParksFan](https://www.modding-forum.com/user/2672-pnwparksfan/). A small snippet is shown below.
+> For information on rotators click through to the content [originally hosted here](https://www.modding-forum.com/guide/20-emergency-lights-rotator-lightbars-and-wig-wags/) by [Smanbg](https://www.modding-forum.com/user/915-smanbg/), [Cj24](https://www.modding-forum.com/user/2-cj24/) and [PNWParksFan](https://www.modding-forum.com/user/2672-pnwparksfan/). A small snippet is shown below.
 
 > In comparison to your traditional strobe or LED lightbar with flashing lights, rotating lights require quite a different approach when using them, in particular, the sirens have to be covered, rather than scaled down. This guide is going to walk through the two common methods for rotator lightbars.
-> 
+>
 > First and foremost, the rotating modules have to be attached to the emissives, as that is what forms the siren - a rotating module and the emissive itself, and lastly - reset the local axis. After that is done, set your lightbar up as you would any lightbar, this also applies to any modules that are not rotatable.
-> 
+>
 > The next step on the list is covering the emissives. The rotator lightbar is a constant-spinning bar that relies on the rotation section of your siren in the carcols, which is also why it cannot be scaled and why the emissives should be covered when the lights are not on.
 
-
-## Rotator Speed
+### Rotator Speed
 
 It is possible to decrease the speed of rotators without decreasing the BPM and instead using the speed value and adjusted sequencers. In the rotation settings, syncToBpm must be turned off to be able to use the speed value. The exact speed value required depends on your BPM and the sequencer.
 
@@ -105,137 +106,136 @@ To slow down the lights, slower sequencers must be used, the more 1s are in the 
 
 ![](https://i.imgur.com/GDZjwps.png)
 
-The speed value must be set proportionally to the BPM and the sequencer. To calculate the
-required speed value, use the following formula:
+The speed value must be set proportionally to the BPM and the sequencer. To calculate the required speed value, use the following formula:
 
 ![](https://i.imgur.com/hhlsHs7.png)
 
 Good Rotary BPM is 120 BPM with Flash set to False
 
-# Light Groups
-*This section needs contributors*
-*If you know anything about Light Groups, fork the repository to contribute!*
+## Light Groups
 
-*Alternatively, join our Discord and contact us!*
+_This section needs contributors_ _If you know anything about Light Groups, fork the repository to contribute!_
 
-# Light Colors
+_Alternatively, join our Discord and contact us!_
+
+## Light Colors
 
 These values go here: `<color value="0xFF0000FF"/>`
 
 > Data gathered by Zero parsed by, HairyMineFart, and Organized by Dawnstar
-> 
+>
 > Metallic Colors and Matte Colors have been excluded as they serve no purpose in siren colors.
-> 
+>
 > [Find the full list of colors here](https://www.se7ensins.com/forums/threads/vehicle-colors.1169166/)
-  
+
 **Most Used Colors**
 
-| Color Name | Hex | ARGB |
-| --- | --- | --- |
-| Red | `0xFFFF0000` |  |
-| Blue | `0xFF0000FF` |  |
-| White | `0xFFFFFFFF` |  |
-| Amber | `0xFFFFD700` |  |
-| Yellow | `0xFFFFFF00` |  |
-| Green |  |  |
-| Purple |  |  |
+| Color Name | Hex          | ARGB |
+| ---------- | ------------ | ---- |
+| Red        | `0xFFFF0000` |      |
+| Blue       | `0xFF0000FF` |      |
+| White      | `0xFFFFFFFF` |      |
+| Amber      | `0xFFFFD700` |      |
+| Yellow     | `0xFFFFFF00` |      |
+| Green      |              |      |
+| Purple     |              |      |
 
 **Standard Colors**
 
-| Color Name | Hex | ARGB |
-| ---| ---| --- |
-| BlackGraphite | `0xFF0F0F0F` | 255, 15, 15, 15 |
-| ChocolateBrown | `0xFF3F2D18` | 255, 63, 45, 24 |
-| MetallicPurple | `0xFF320642` | 255, 50, 6, 66 |
-| HotPink | `0xFFB01259` | 255, 176, 18, 89 |
-| FormulaRed | `0xFF6B0000` | 255, 107, 0, 0 |
-| MetallicBlue | `0xFF001B57` | 255, 0, 27, 87 |
-| UltraBlue | `0xFF2070D8` | 255, 32, 112, 216 |
-| RacingGreen | `0xFF00441B` | 255, 0, 68, 27 |
-| LimeGreen | `0xFF418503` | 255, 65, 133, 3 |
-| RaceYellow | `0xFFD9A600` | 255, 217, 166, 0 |
-| ClassicOrange | `0xFFBD4800` | 255, 189, 72, 0 |
-| MetallicGold | `0xFFAD7B47` | 255, 173, 123, 71 |
-| ClassicWhite | `0xFFF0F0F0` | 255, 240, 240, 240 |
+| Color Name     | Hex           | ARGB               |
+| -------------- | ------------- | ------------------ |
+| BlackGraphite  | `0xFF0F0F0F`  | 255, 15, 15, 15    |
+| ChocolateBrown | `0xFF3F2D18`  | 255, 63, 45, 24    |
+| MetallicPurple | `0xFF320642`  | 255, 50, 6, 66     |
+| HotPink        | `0xFFB01259`  | 255, 176, 18, 89   |
+| FormulaRed     | `0xFF6B0000`  | 255, 107, 0, 0     |
+| MetallicBlue   | `0xFF001B57`  | 255, 0, 27, 87     |
+| UltraBlue      | `0xFF2070D8`  | 255, 32, 112, 216  |
+| RacingGreen    | `0xFF00441B`  | 255, 0, 68, 27     |
+| LimeGreen      | `0xFF418503`  | 255, 65, 133, 3    |
+| RaceYellow     | `0xFFD9A600`  | 255, 217, 166, 0   |
+| ClassicOrange  |  `0xFFBD4800` | 255, 189, 72, 0    |
+| MetallicGold   | `0xFFAD7B47`  | 255, 173, 123, 71  |
+| ClassicWhite   | `0xFFF0F0F0`  | 255, 240, 240, 240 |
 
 **Classic Colors**
 
-| Color Name | Hex | ARGB |
-|---|---|---|
-| RED | `0xFF690000` | 255, 105, 0, 0 |
-| TORINO_RED | `0xFF8A0B00` | 255, 138, 11, 0 |
-| FORMULA_RED | `0xFF6B0000` | 255, 107, 0, 0 |
-| LAVA_RED | `0xFF6B0B00` | 255, 107, 11, 0 |
-| BLAZE_RED | `0xFF611009` | 255, 97, 16, 9 |
-| GRACE_RED | `0xFF4A0A0A` | 255, 74, 10, 10 |
-| GARNET_RED | `0xFF470E0E` | 255, 71, 14, 14 |
-| SUNSET_RED | `0xFF380C00` | 255, 56, 12, 0 |
-| CABERNET_RED | `0xFF26030B` | 255, 38, 3, 11 |
-| WINE_RED | `0xFF080000` | 255, 8, 0, 0 |
-| CANDY_RED | `0xFF630012` | 255, 99, 0, 18 |
-| HOT PINK | `0xFFB01259` | 255, 176, 18, 89 |
-| PINK | `0xFF8F2F55` | 255, 143, 47, 85 |
-| SALMON_PINK | `0xFFF69799` | 255, 246, 151, 153 |
-| SUNRISE_ORANGE | `0xFF802800` | 255, 128, 40, 0 |
-| BRIGHT_ORANGE | `0xFFC26610` | 255, 194, 102, 16 |
-| GOLD | `0xFF5E5343` | 255, 94, 83, 67 |
-| BRONZE | `0xFF4A341B` | 255, 74, 52, 27 |
-| YELLOW | `0xFFF5890F` | 255, 245, 137, 15 |
-| FLUR_YELLOW | `0xFFA2A827` | 255, 162, 168, 39 |
-| DARK_GREEN | `0xFF001207` | 255, 0, 18, 7 |
-| SEA_GREEN | `0xFF00211E` | 255, 0, 33, 30 |
-| OLIVE_GREEN | `0xFF1F261E` | 255, 31, 38, 30 |
-| BRIGHT_GREEN | `0xFF003805` | 255, 0, 56, 5 |
-| PETROL_GREEN | `0xFF0B4145` | 255, 11, 65, 69 |
-| LIME_GREEN | `0xFF568F00` | 255, 86, 143, 0 |
-| MIDNIGHT_BLUE | `0xFF000108` | 255, 0, 1, 8 |
-| GALAXY_BLUE | `0xFF000D14` | 255, 0, 13, 20 |
-| DARK_BLUE | `0xFF001029` | 255, 0, 16, 41 |
-| SAXON_BLUE | `0xFF1C2F4F` | 255, 28, 47, 79 |
-| BLUE | `0xFF001B57` | 255, 0, 27, 87 |
-| MARINER_BLUE | `0xFF3B4E78` | 255, 59, 78, 120 |
-| HARBOR_BLUE | `0xFF272D3B` | 255, 39, 45, 59 |
-| DIAMOND_BLUE | `0xFF95B2DB` | 255, 149, 178, 219 |
-| SURF_BLUE | `0xFF3E627A` | 255, 62, 98, 122 |
-| NAUTICAL_BLUE | `0xFF1C3140` | 255, 28, 49, 64 |
-| RACING_BLUE | `0xFF0E316D` | 255, 14, 49, 109 |
-| LIGHT_BLUE | `0xFF395A83` | 255, 57, 90, 131 |
-| PURPLE | `0xFF1A182E` | 255, 26, 24, 46 |
-| SPIN_PURPLE | `0xFF161629` | 255, 22, 22, 41 |
-| MIGHT_PURPLE | `0xFF050008` | 255, 5, 0, 8 |
-| BRIGHT_PURPLE | `0xFF320642` | 255, 50, 6, 66 |
-| CREAM | `0xFFCFC0A5` | 255, 207, 192, 165 |
-| FROST_WHITE | `0xFFB3B9C9` | 255, 179, 185, 201 |
+| Color Name      | Hex          | ARGB               |
+| --------------- | ------------ | ------------------ |
+| RED             | `0xFF690000` | 255, 105, 0, 0     |
+| TORINO\_RED     | `0xFF8A0B00` | 255, 138, 11, 0    |
+| FORMULA\_RED    | `0xFF6B0000` | 255, 107, 0, 0     |
+| LAVA\_RED       | `0xFF6B0B00` | 255, 107, 11, 0    |
+| BLAZE\_RED      | `0xFF611009` | 255, 97, 16, 9     |
+| GRACE\_RED      | `0xFF4A0A0A` | 255, 74, 10, 10    |
+| GARNET\_RED     | `0xFF470E0E` | 255, 71, 14, 14    |
+| SUNSET\_RED     | `0xFF380C00` | 255, 56, 12, 0     |
+| CABERNET\_RED   | `0xFF26030B` | 255, 38, 3, 11     |
+| WINE\_RED       | `0xFF080000` | 255, 8, 0, 0       |
+| CANDY\_RED      | `0xFF630012` | 255, 99, 0, 18     |
+| HOT PINK        | `0xFFB01259` | 255, 176, 18, 89   |
+| PINK            | `0xFF8F2F55` | 255, 143, 47, 85   |
+| SALMON\_PINK    | `0xFFF69799` | 255, 246, 151, 153 |
+| SUNRISE\_ORANGE | `0xFF802800` | 255, 128, 40, 0    |
+| BRIGHT\_ORANGE  | `0xFFC26610` | 255, 194, 102, 16  |
+| GOLD            | `0xFF5E5343` | 255, 94, 83, 67    |
+| BRONZE          | `0xFF4A341B` | 255, 74, 52, 27    |
+| YELLOW          | `0xFFF5890F` | 255, 245, 137, 15  |
+| FLUR\_YELLOW    | `0xFFA2A827` | 255, 162, 168, 39  |
+| DARK\_GREEN     | `0xFF001207` | 255, 0, 18, 7      |
+| SEA\_GREEN      | `0xFF00211E` | 255, 0, 33, 30     |
+| OLIVE\_GREEN    | `0xFF1F261E` | 255, 31, 38, 30    |
+| BRIGHT\_GREEN   | `0xFF003805` | 255, 0, 56, 5      |
+| PETROL\_GREEN   | `0xFF0B4145` | 255, 11, 65, 69    |
+| LIME\_GREEN     | `0xFF568F00` | 255, 86, 143, 0    |
+| MIDNIGHT\_BLUE  | `0xFF000108` | 255, 0, 1, 8       |
+| GALAXY\_BLUE    | `0xFF000D14` | 255, 0, 13, 20     |
+| DARK\_BLUE      | `0xFF001029` | 255, 0, 16, 41     |
+| SAXON\_BLUE     | `0xFF1C2F4F` | 255, 28, 47, 79    |
+| BLUE            | `0xFF001B57` | 255, 0, 27, 87     |
+| MARINER\_BLUE   | `0xFF3B4E78` | 255, 59, 78, 120   |
+| HARBOR\_BLUE    | `0xFF272D3B` | 255, 39, 45, 59    |
+| DIAMOND\_BLUE   | `0xFF95B2DB` | 255, 149, 178, 219 |
+| SURF\_BLUE      | `0xFF3E627A` | 255, 62, 98, 122   |
+| NAUTICAL\_BLUE  | `0xFF1C3140` | 255, 28, 49, 64    |
+| RACING\_BLUE    | `0xFF0E316D` | 255, 14, 49, 109   |
+| LIGHT\_BLUE     | `0xFF395A83` | 255, 57, 90, 131   |
+| PURPLE          | `0xFF1A182E` | 255, 26, 24, 46    |
+| SPIN\_PURPLE    | `0xFF161629` | 255, 22, 22, 41    |
+| MIGHT\_PURPLE   | `0xFF050008` | 255, 5, 0, 8       |
+| BRIGHT\_PURPLE  | `0xFF320642` | 255, 50, 6, 66     |
+| CREAM           | `0xFFCFC0A5` | 255, 207, 192, 165 |
+| FROST\_WHITE    | `0xFFB3B9C9` | 255, 179, 185, 201 |
 
-# Carcols Variables
+## Carcols Variables
 
-## id
+### id
 
 Value must match siren ID value in [Carvariations.meta](https://github.com/dwnstr/vehicle-docs/wiki/Carvariations) for the same vehicle.
 
 Should be between 1000-40000 for most consistent results. Some numbers don't work inexplicably.
 
-``<id value="2121"/>``
+`<id value="2121"/>`
 
-## timeMultiplier
+### timeMultiplier
 
 Multiplies the BPM by the value specified.
 
-``<timeMultiplier value="1.00000000"/>`` Time x BPM (Ex. 1.0 x 600 = 600 BPM)
+`<timeMultiplier value="1.00000000"/>` Time x BPM (Ex. 1.0 x 600 = 600 BPM)
 
-## Environment Lighting
+### Environment Lighting
 
-![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-_tjAgQWRtn/e151c016eeec2162f59c60f62d688f70c3bb7eb3094241fc667105f1ae358f236ee00911d3ed3adde344e4c6570158689af0224637472323f949a5df02253526b328f9860bdf2afc98b53ba952720860a41c4b0224a012bda264fbb3ca349aaecd9b1f22)
+![](https://codahosted.io/docs/IEZ3CWmYBK/blobs/bl-\_tjAgQWRtn/e151c016eeec2162f59c60f62d688f70c3bb7eb3094241fc667105f1ae358f236ee00911d3ed3adde344e4c6570158689af0224637472323f949a5df02253526b328f9860bdf2afc98b53ba952720860a41c4b0224a012bda264fbb3ca349aaecd9b1f22)
 
-## lightFalloffMax
+### lightFalloffMax
 
 Controls the maximum distance that the light can reach. Works like a “power” value in the right conditions.
 
 Value should be between 40 and 100 for best results.
 
-``<lightFalloffMax value="100.00000000"/>``
+`<lightFalloffMax value="100.00000000"/>`
 
-## lightFalloffExponent
+### lightFalloffExponent
 
 Controls how fast light reaches 0% after traveling away from source.
 
@@ -243,9 +243,9 @@ Value should ALWAYS be lower than FalloffMax!!!!!!
 
 Value should be about 65% of FalloffMax for best results.
 
-``<lightFalloffExponent value="100.00000000"/>``
+`<lightFalloffExponent value="100.00000000"/>`
 
-## lightInnerConeAngle
+### lightInnerConeAngle
 
 Controls where light starts to fall off . Before this point, light will be at 100% horizontally/parallel to the source/inside to outside.
 
@@ -253,42 +253,41 @@ Value should ALWAYS be LOWER than LightOuterConeAngle!!!!
 
 Value should be between 2 and 10 for best results
 
-```<lightInnerConeAngle value="2.29061000"/>``` 
+`<lightInnerConeAngle value="2.29061000"/>`
 
-## lightOuterConeAngle
+### lightOuterConeAngle
 
 Controls the maximum width of the light cone, where light will be 0%
 
 Value should be between 60 and 90 for best results
 
-```<lightOuterConeAngle value="70.00000000"/>```
+`<lightOuterConeAngle value="70.00000000"/>`
 
-## lightOffset
+### lightOffset
 
-```<lightOffset value="0.00000000"/>```
+`<lightOffset value="0.00000000"/>`
 
-## textureName
+### textureName
 
 Don't Change this! Specifies corona texture.
 
-``<textureName>VehicleLight\_sirenlight</textureName>``
+`<textureName>VehicleLight\_sirenlight</textureName>`
 
-## sequencerBpm
+### sequencerBpm
 
-``<sequencerBpm value="600"/>``
+`<sequencerBpm value="600"/>`
 
-# Headlights and Taillights
+## Headlights and Taillights
 
-When working with headlight and taillight sequencers you have to account for a delay for the fade in and out of the lights. 
+When working with headlight and taillight sequencers you have to account for a delay for the fade in and out of the lights.
 
 The default/standard sequencers that will give you the typical back and forth wig-wag effect are:
 
-``10000000100000001000000010000000`` and
-``00001000000010000000100000001000``
+`10000000100000001000000010000000` and `00001000000010000000100000001000`
 
 > If you have other good sequencers please contribute them!
 
-## Headlights Example
+### Headlights Example
 
 ```xml
       <leftHeadLight>
@@ -310,7 +309,7 @@ The default/standard sequencers that will give you the typical back and forth wi
       <useRealLights value="true"/>     --If you want the Flashes to actually use the Headlights
 ```
 
-# Custom Light IDs
+## Custom Light IDs
 
 ```xml
 <CVehicleModelInfoVarGlobal>
@@ -486,7 +485,7 @@ _
 <textureName>VehicleLight_sirenlight</textureName>
 ```
 
-# Siren Walkthrough
+## Siren Walkthrough
 
 ```xml
 <Item> --siren#
@@ -530,26 +529,26 @@ _
 </Item>
 ```
 
-# Modkits
+## Modkits
 
-## Overview
+### Overview
 
-The carcols controlls the modkits items that are on the vehicle. This includes things like aftermarket parts such as exhausts, trims, steering wheels etc. There are a lot of options avaliable to control what the modkits do. 
+The carcols controlls the modkits items that are on the vehicle. This includes things like aftermarket parts such as exhausts, trims, steering wheels etc. There are a lot of options avaliable to control what the modkits do.
 
-### Step 1
+#### Step 1
 
 To keep the file formatted in a way that aligns with GTA, the modkit items should be put at the very beginning of the carcols file. Below the following lines:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <CVehicleModelInfoVarGlobal>
-  ```
+```
 
-### Step 2
+#### Step 2
 
 On line 3 write:
-  
-```xml 
+
+```xml
 <Kits>
   <Item>
     
@@ -557,38 +556,38 @@ On line 3 write:
 </Kits>
 ```
 
-This will tell the carcols we are starting the options for the modkits. Once you have this in place, on the line below the opening <Item> tag, we will now define the modkit name. This modkit name will allow the modkit set up that you will create be used anywhere as long as the vehicle & modkits are actively streamed.
- 
-### Step 3
-  
+This will tell the carcols we are starting the options for the modkits. Once you have this in place, on the line below the opening tag, we will now define the modkit name. This modkit name will allow the modkit set up that you will create be used anywhere as long as the vehicle & modkits are actively streamed.
+
+#### Step 3
+
 ```xml
 <kitName>myVehicle_modkit</kitName>
 <id value="47543" />
 <kitType>MKT_SPECIAL</kitType>
 ```
 
-The modkit name can be anything. Normally, the name will end in _modkit. 
+The modkit name can be anything. Normally, the name will end in \_modkit.
 
-The ID value below it is very similar to the siren ID value. It uniquely identifies the modkit and makes sure the modkits are unique to the vehicle. 
-  
-For the kitType there isn't a lot of information on what this does, therefore its best to leave it as MKT_SPECIAL. 
- 
-### Step 4
-  
+The ID value below it is very similar to the siren ID value. It uniquely identifies the modkit and makes sure the modkits are unique to the vehicle.
+
+For the kitType there isn't a lot of information on what this does, therefore its best to leave it as MKT\_SPECIAL.
+
+#### Step 4
+
 Now we shall get into defining the individual modkit parts. Once you have exported the modkit items and have put them in your stream folder we can move on. First, you will need to define you are making visable mods by opening the following tags:
-  
-  
+
 ```xml
 <visibleMods>
 
 </visibleMods>
 ```
-  
-This will allow us to create individual items for each individual parts. 
-  
-### Step 5
-  
+
+This will allow us to create individual items for each individual parts.
+
+#### Step 5
+
 Now we can define individual parts:
+
 ```xml
 <Item>
   <modelName>MODKIT_NAME</modelName>
@@ -607,32 +606,31 @@ Now we can define individual parts:
   <disableBonnetCamera value="false" />
   <allowBonnetSlide value="true" />
  </Item>
- ```
+```
 
- This is the meat and bones of the modkits. 
-  
- | Tag Name | What is is? |  Accepted value type | Options
-|---|---|---|---|
-| modelName | This is the name of the file in the stream folder.  | Name | N/a | 
-| modShopLabel | This is the name that will show up in the customization screens. This is not really used in FiveM / GTA unless its being customized within a Los Santos Customs | Name | N/a |
-| linkedModels | This links two modkits together allowing you to turn two or more things on when you turn on option on. | Items | Items |
-| turnOffBones | This allows you to turn off bones within the car. For example, turning off a mirror when replacing the option. This has to be a misc item. | Item | Items |
-| type | This defines the type of the modkit. | Name | Find a list of types [here](https://gtamods.com/wiki/Carcols.ymt#type) |
-| bone | This defines what bone the modkit is linked to. Chassis is standard if you are just adding something on. | String | Find a list of bones [here](https://gtamods.com/wiki/Carcols.ymt#bone) |
-| collisionBone | This defines what collision the modkit item will use. Once again, the chassis is normally standard but you can add different collisions. | Name | Fin a lit of collisions [here](https://gtamods.com/wiki/Carcols.ymt#collisionBone) |
-| cameraPos | This allows you to change how the camera works with the modkit enables. This isn't normally changed from VMCP_DEFAULT though. | Name | N/a |
-| audioApply | This options isn't used very often alongside that there isn't a lot of information about it. It's best to leave the value at 1. | Name | N/a |
-| weight | The weight is what is applied to the vehicle once the modkit item is on. For example, if you add a massive wing onto your car you can add a bit more weight to slow the vehicle down. This option directly affects the handling. | String | N/a |
-| turnOffExtra | There isn't a lot of information on this but I'd assume it links with the vehicles.meta turnOffExtra.  | Boolean | true / false |
-| disableBonnetCamera | This option turns off the bonnet camera off when the modkit item in enabled in game. | Boolean | true / false |
-| allowBonnetSlide | This will stop players from sliding over the bonnet when the modkit item is enabled. | Boolean | true / false |
-  
-  
-### Debugging modkits
-  
+This is the meat and bones of the modkits.
+
+| Tag Name            | What is is?                                                                                                                                                                                                                      | Accepted value type | Options                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| modelName           | This is the name of the file in the stream folder.                                                                                                                                                                               | Name                | N/a                                                                                |
+| modShopLabel        | This is the name that will show up in the customization screens. This is not really used in FiveM / GTA unless its being customized within a Los Santos Customs                                                                  | Name                | N/a                                                                                |
+| linkedModels        | This links two modkits together allowing you to turn two or more things on when you turn on option on.                                                                                                                           | Items               | Items                                                                              |
+| turnOffBones        | This allows you to turn off bones within the car. For example, turning off a mirror when replacing the option. This has to be a misc item.                                                                                       | Item                | Items                                                                              |
+| type                | This defines the type of the modkit.                                                                                                                                                                                             | Name                | Find a list of types [here](https://gtamods.com/wiki/Carcols.ymt#type)             |
+| bone                | This defines what bone the modkit is linked to. Chassis is standard if you are just adding something on.                                                                                                                         | String              | Find a list of bones [here](https://gtamods.com/wiki/Carcols.ymt#bone)             |
+| collisionBone       | This defines what collision the modkit item will use. Once again, the chassis is normally standard but you can add different collisions.                                                                                         | Name                | Fin a lit of collisions [here](https://gtamods.com/wiki/Carcols.ymt#collisionBone) |
+| cameraPos           | This allows you to change how the camera works with the modkit enables. This isn't normally changed from VMCP\_DEFAULT though.                                                                                                   | Name                | N/a                                                                                |
+| audioApply          | This options isn't used very often alongside that there isn't a lot of information about it. It's best to leave the value at 1.                                                                                                  | Name                | N/a                                                                                |
+| weight              | The weight is what is applied to the vehicle once the modkit item is on. For example, if you add a massive wing onto your car you can add a bit more weight to slow the vehicle down. This option directly affects the handling. | String              | N/a                                                                                |
+| turnOffExtra        | There isn't a lot of information on this but I'd assume it links with the vehicles.meta turnOffExtra.                                                                                                                            | Boolean             | true / false                                                                       |
+| disableBonnetCamera | This option turns off the bonnet camera off when the modkit item in enabled in game.                                                                                                                                             | Boolean             | true / false                                                                       |
+| allowBonnetSlide    | This will stop players from sliding over the bonnet when the modkit item is enabled.                                                                                                                                             | Boolean             | true / false                                                                       |
+
+#### Debugging modkits
+
 If in the event your modkits do not work, here are some tips on how to fix it:
-  
-*   Ensure your modkit ID at [Step 3](#step-3) is unique to the individual vehicle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep changing the ID until your options show up for you. You do not need to restart the server to update this.
-*   The kiteName at [Step 3](#step-3) is not in the carvariations.meta. 
-*   The .yft modkit is not in the stream folder. Ensure they are all in there.
-*   The modelName is not the same as the name of the .yft modkit in the stream folder. Ensure they are both the same.
+
+* Ensure your modkit ID at [Step 3](Carcols.md#step-3) is unique to the individual vehicle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep changing the ID until your options show up for you. You do not need to restart the server to update this.
+* The kiteName at [Step 3](Carcols.md#step-3) is not in the carvariations.meta.
+* The .yft modkit is not in the stream folder. Ensure they are all in there.
+* The modelName is not the same as the name of the .yft modkit in the stream folder. Ensure they are both the same.
