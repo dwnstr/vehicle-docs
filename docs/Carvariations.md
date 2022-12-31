@@ -1,10 +1,13 @@
-# carvariations.meta
+# Carvariations.meta
 
 **THIS PAGE IS HEAVILY WIP, EXCUSE THE APPEARANCE**
 
 We just dumped documentation here for now, and are refining it slowly.
 
-## _Overview_
+_Overview_
+==========
+
+  
 
 ```xml
 <Item>
@@ -52,11 +55,16 @@ We just dumped documentation here for now, and are refining it slowly.
 </Item>
 ```
 
-## Vehicle Colors
+  
+
+Vehicle Colors
+==============
 
 There are ONLY 160 Primary colors that the vehicle can spawn in as, All colors can be found here: [https://imgur.com/a/F4Ptk](https://imgur.com/a/F4Ptk)
 
 _(We are unsure of the author, If you know who took the time to discover this please let us know!)_
+
+  
 
 ```xml
 <indices content="char_array"> <!--indices are color codes -->
@@ -83,6 +91,8 @@ _(We are unsure of the author, If you know who took the time to discover this pl
 </liveries>
 ```
 
+  
+
 Some basic color codes are below, to change the color simply replace the 3 digit number
 
 `<!-- Black - 000 -->`
@@ -95,9 +105,14 @@ Some basic color codes are below, to change the color simply replace the 3 digit
 
 `<!-- Default Alloy - 156 -->`
 
-## Light IDs
+  
+
+Light IDs
+=========
 
 _Originally found by MrGTAmodsgerman at_ [_https://gtaforums.com/_](https://gtaforums.com/)
+
+  
 
 `0`
 
@@ -111,6 +126,8 @@ Indicators = yellow (default) with corona
 
 Reversinglight = white (default)
 
+  
+
 `1`
 
 Headlights = default light(White) without extralights
@@ -122,6 +139,8 @@ Brakelights = modern brakelight (bright red)
 Indicators = yellow (default) with Corona
 
 Reversinglight = white (default)
+
+  
 
 `2`
 
@@ -135,6 +154,8 @@ Indicators = yellow (default) with Corona
 
 Reversinglight = white (default)
 
+  
+
 `3`
 
 Headlights = Extreem bright and wide (White) with extralights
@@ -146,6 +167,8 @@ Brakelights = WITHOUT CORONA
 Indicators = WITHOUT CORONA
 
 Reversinglight = default (White)
+
+  
 
 `4`
 
@@ -159,6 +182,8 @@ Indicators = yellow (default) with corona
 
 Reversinglight = white (default)
 
+  
+
 `5`
 
 Headlights = small (White) with extralights
@@ -170,6 +195,8 @@ Brakelights = WORK AS Headlight (white)
 Indicators = WORK AS Headlight (white)
 
 Reversinglight = default (White)
+
+  
 
 `6`
 
@@ -183,6 +210,8 @@ Indicators = yellow (default) with corona
 
 Reversinglight = white (default)
 
+  
+
 `7`
 
 Headlights = xeon light(Blue) with extralights
@@ -194,6 +223,8 @@ Brakelights = modern brakelight with 3 coronas(bright red)
 Indicators = yellow (default) with corona
 
 Reversinglight = white (default)
+
+  
 
 `8`
 
@@ -207,14 +238,22 @@ Indicators = yellow (default) with corona
 
 Reversinglight = white (default)
 
-## Custom Light IDs
+  
+
+Custom Light IDs
+================
 
 _Learn how to setup your own Light settings without using basic items, you will have the ability to move the corona and more!_
+
+  
 
 The definitions for Custom Light IDs go in Carcols.meta ([https://doc.clickup.com/d/h/841f5-35/66cbfa324380b75/841f5-49](https://doc.clickup.com/d/h/841f5-35/66cbfa324380b75/841f5-49))
 
 View that page for more info.
 
-## Siren IDs
+Siren IDs
+=========
+
+  
 
 Siren IDs are needed to tell the vehicle what lights are supposed to flash at which times. There are 22 Base game siren ids while there are also over 40,000 Custom ids we can choose from. The siren id must match the carcol id otherwise the lights will NOT work.
