@@ -1,39 +1,43 @@
-# Workflow / Tutorial
+---
+layout: editorial
+---
+
+# Tutorial
+
+## Workflow / Tutorial
 
 This page will be the home of a walkthrough using Blender , [Siren Tool](https://www.nightshiftstudios.us/p/sirentool), and zModeler. Full disclosure, some details are left out, as they will likely be included as part of a future paid course.
 
-- [Workflow / Tutorial](#workflow--tutorial)
-- [Intro](#intro)
-- [Workfloh Overview](#workfloh-overview)
-  - [Siren Tool](#siren-tool)
-  - [Blender](#blender)
-  - [Photoshop](#photoshop)
-  - [Substance Painter](#substance-painter)
-  - [ZModeler3](#zmodeler3)
-- [What is Actually Happening?](#what-is-actually-happening)
-- [Steps](#steps)
-  - [1. Get Assets](#1-get-assets)
-  - [2. Make Assets](#2-make-assets)
-  - [3. Plan Vehicle](#3-plan-vehicle)
-  - [4. Make Pattern](#4-make-pattern)
-  - [5. Create Emissive Meshes in Blender](#5-create-emissive-meshes-in-blender)
-  - [6. Position Lights in Blender](#6-position-lights-in-blender)
-  - [7. Export Assets to ZModeler3](#7-export-assets-to-zmodeler3)
-  - [8. Do ZModeler3 Things](#8-do-zmodeler3-things)
-  - [9. Position Other Assets in Blender](#9-position-other-assets-in-blender)
-  - [10. Model Wiring and Other Details in Blender](#10-model-wiring-and-other-details-in-blender)
-  - [11. Export Interior Assets and Details to ZModeler3](#11-export-interior-assets-and-details-to-zmodeler3)
-  - [12. Meta Files](#12-meta-files)
+* [Workflow / Tutorial](Tutorial.md#workflow--tutorial)
+* [Intro](Tutorial.md#intro)
+* [Workfloh Overview](Tutorial.md#workfloh-overview)
+  * [Siren Tool](Tutorial.md#siren-tool)
+  * [Blender](Tutorial.md#blender)
+  * [Photoshop](Tutorial.md#photoshop)
+  * [Substance Painter](Tutorial.md#substance-painter)
+  * [ZModeler3](Tutorial.md#zmodeler3)
+* [What is Actually Happening?](Tutorial.md#what-is-actually-happening)
+* [Steps](Tutorial.md#steps)
+  * [1. Get Assets](Tutorial.md#1-get-assets)
+  * [2. Make Assets](Tutorial.md#2-make-assets)
+  * [3. Plan Vehicle](Tutorial.md#3-plan-vehicle)
+  * [4. Make Pattern](Tutorial.md#4-make-pattern)
+  * [5. Create Emissive Meshes in Blender](Tutorial.md#5-create-emissive-meshes-in-blender)
+  * [6. Position Lights in Blender](Tutorial.md#6-position-lights-in-blender)
+  * [7. Export Assets to ZModeler3](Tutorial.md#7-export-assets-to-zmodeler3)
+  * [8. Do ZModeler3 Things](Tutorial.md#8-do-zmodeler3-things)
+  * [9. Position Other Assets in Blender](Tutorial.md#9-position-other-assets-in-blender)
+  * [10. Model Wiring and Other Details in Blender](Tutorial.md#10-model-wiring-and-other-details-in-blender)
+  * [11. Export Interior Assets and Details to ZModeler3](Tutorial.md#11-export-interior-assets-and-details-to-zmodeler3)
+  * [12. Meta Files](Tutorial.md#12-meta-files)
 
-
-# Intro
-
+## Intro
 
 Hello! Welcome to the guide/documentation/walkthrough on how to create Non-ELS based emergency vehicle lighting for GTA and FiveM. Though the name "Non-ELS" implies that it's less useful than ELS, this is completely false. Non-ELS is harder (easier than it looks), but far more versatile, and powerful than ELS. Especially for FiveM, since ELS barely works for it.
 
 This walkthrough will follow MY SPECIFIC workflow. You can use whatever workflow you want and/or not follow mine at all. The value from this walkthrough will be more from gaining an understanding of how Non-ELS works and learning basic 3D skills and concepts rather than just a step by step guide.
 
-# Workfloh Overview
+## Workfloh Overview
 
 My motto when it comes to software and your time spent is:
 
@@ -43,24 +47,23 @@ If you do this, you've already improved.
 
 The software I use for my workflow includes:
 
-*   Dawnstar Siren Tool
-*   Blender
-*   Photoshop
-*   Substance Painter (Rarely)
-*   ZModeler 3 :(
-  
-Notice how ZModeler 3 is last on my list. That's because I do literally as much as possible before ever going into ZModeler. This may sound harsh, but the program is literal trash. Anything you can do in **1 hour** in ZModeler you can do it **15 seconds** in Blender or any other 3D software.  
-  
+* Dawnstar Siren Tool
+* Blender
+* Photoshop
+* Substance Painter (Rarely)
+* ZModeler 3 :(
+
+Notice how ZModeler 3 is last on my list. That's because I do literally as much as possible before ever going into ZModeler. This may sound harsh, but the program is literal trash. Anything you can do in **1 hour** in ZModeler you can do it **15 seconds** in Blender or any other 3D software.
+
 Obviously ZModeler is required in order to create a functioning vehicle with lighting for GTA, but again, use it only as much as you absolutely must. If you gain nothing else from this tutorial, please remember this tip.
 
-## Siren Tool
+### Siren Tool
 
 If you're not familiar with Siren Tool, it's an application I made to aid in this exact workflow, or any workflow where you are making custom sequencers. It works especially well for the Blender workflow and when used properly, becomes immensely powerful.
 
 Here's a basic tutorial for Siren Tool so you can see how it works, and the basic controls.
 
 [https://www.youtube.com/watch?v=9o2ZMGoNrgM](https://www.youtube.com/watch?v=9o2ZMGoNrgM)
-
 
 When Siren Tool becomes really powerful is when you are trying to use complex techniques like siren layering, and siren reusing.
 
@@ -70,7 +73,7 @@ When Siren Tool becomes really powerful is when you are trying to use complex te
 
 I will cover these more in depth later (or in course)
 
-## Blender
+### Blender
 
 If you haven't heard of Blender, you may be living under a rock. It's an open-source 3D modeling software on its way to become the industry standard.
 
@@ -92,7 +95,7 @@ which will make you feel like this:
 
 You can use any other 3D software and accomplish all of the same things as Blender.
 
-## Photoshop
+### Photoshop
 
 Photoshop is used for editing images.
 
@@ -120,7 +123,7 @@ Also if you are skinning your cars yourself, this is a good tool for that.
 
 Pretty sure there's a discount for students on the full Adobe Suite.
 
-## Substance Painter
+### Substance Painter
 
 Substance Painter is a 3D texture painting software. I almost never need to use this for GTA or FiveM.
 
@@ -134,36 +137,34 @@ If you don't make your own assets you don't need to worry about this, and even i
 
 I think it's still free for students with a school email.
 
-## ZModeler3
+### ZModeler3
 
 Zmod is vital piece of software for creating any type of vehicles within GTA. Some tips to help you while using zmodeler include:
 
-*  Save backups as often as possible, 
-*  Ensure you have your autosave settings set to as soon as possible but not too often to affect your work flow,
-*  Make sure you have more than 1 autosave files generated, this reduces the possibility of autosave file corruption
-*  Tred slowely and carefully while using it to ensure you crash the software as little as possible,
-
-
+* Save backups as often as possible,
+* Ensure you have your autosave settings set to as soon as possible but not too often to affect your work flow,
+* Make sure you have more than 1 autosave files generated, this reduces the possibility of autosave file corruption
+* Tred slowely and carefully while using it to ensure you crash the software as little as possible,
 
 There isn't a lot of video tutorials on zmod as its a very specific software to a few games (GTA / ETS / Watch Dogs / Emergency 4 / Mafia 2 & Sims 3). A good channel i've found is [13StewartC (A No Pixel Dev).](https://www.youtube.com/@13Stewartc) his videos include:
 
-*  [Learning the basics of zmod](https://www.youtube.com/watch?v=a6Rb9WEQz1g)
-*  [Importing / working with / creating custom vehicle animations,](https://www.youtube.com/watch?v=jxWz4wcYM0E&t=257s)
-*  [Using VehFuncs to make car parts work,](https://www.youtube.com/watch?v=P1CX4_iLAmI)
-*  [Fixing issues such as window tint on vehicles,](https://www.youtube.com/watch?v=jPzcflA0-mE)
-*  [Making mirrors look pretty good,](https://www.youtube.com/watch?v=aQuQftteH2o)
-*  [Creating animated UVs,](https://www.youtube.com/watch?v=5to7OEGBek4)
-*  [Creating LODs](https://www.youtube.com/watch?v=Awx6l_gXRpo)
-*  [Converting vehicles from other games to GTA,](https://www.youtube.com/watch?v=uC4TTi5oINM)
-*  [How to use the attach tool,](https://www.youtube.com/watch?v=S2ODnOiWBvA)
+* [Learning the basics of zmod](https://www.youtube.com/watch?v=a6Rb9WEQz1g)
+* [Importing / working with / creating custom vehicle animations,](https://www.youtube.com/watch?v=jxWz4wcYM0E\&t=257s)
+* [Using VehFuncs to make car parts work,](https://www.youtube.com/watch?v=P1CX4\_iLAmI)
+* [Fixing issues such as window tint on vehicles,](https://www.youtube.com/watch?v=jPzcflA0-mE)
+* [Making mirrors look pretty good,](https://www.youtube.com/watch?v=aQuQftteH2o)
+* [Creating animated UVs,](https://www.youtube.com/watch?v=5to7OEGBek4)
+* [Creating LODs](https://www.youtube.com/watch?v=Awx6l\_gXRpo)
+* [Converting vehicles from other games to GTA,](https://www.youtube.com/watch?v=uC4TTi5oINM)
+* [How to use the attach tool,](https://www.youtube.com/watch?v=S2ODnOiWBvA)
 
-He has a lot more videos on his channel and its worth a check out if you are looking to get into vehicle development for GTA. 
+He has a lot more videos on his channel and its worth a check out if you are looking to get into vehicle development for GTA.
 
-Now that the basics of zmod has been covered, to create Non ELS vehicles it gets a tad more complicated and is where zmod comes in very handy. I have a video on how to create non ELS vehicles that you can watch here: 
+Now that the basics of zmod has been covered, to create Non ELS vehicles it gets a tad more complicated and is where zmod comes in very handy. I have a video on how to create non ELS vehicles that you can watch here:
 
 [Creating Non ELS Vehicles](https://www.youtube.com/watch?v=1a9vSk89RL4)
 
-# What is Actually Happening?
+## What is Actually Happening?
 
 If the most important tip in this tutorial is to use ZModeler as little as possible, this is the second most important... Actually this is probably the most important. If you are only going to take one thing from this tutorial, forget the thing about ZModeler and remember this section.
 
@@ -176,7 +177,7 @@ When Sirens "flash" in GTA/FiveM, they're not actually "flashing". What they're 
 Now you're probably saying:
 
 > Woah! "Scaling" I've heard that before, that's what I do to the sirens in ZModeler!
-> 
+
 ![](https://t8521189.p.clickup-attachments.com/t8521189/5b3042ec-65f5-419f-a164-6809fcf958aa/giphy.gif)
 
 Very good, your brain is on the right track.
@@ -213,19 +214,19 @@ In ZModeler the origin is the axis, the red green and blue lines that look somet
 
 So yeah, that's what is happening. **Remember this**.
 
-# Steps
+## Steps
 
 _Still a work in progress and will continue to be updated._
 
-## 1. Get Assets
+### 1. Get Assets
 
 There many different locations to obtain assets. Some are very high quality and some may not be depending on the creator. Be sure to check the NightShift Studios discord for any released assets. Below are links to assets on various different sites that are free. This list will continue to be updated as new information is released.
 
-| LCPDFR | [https://www.lcpdfr.com/downloads/dev-resources/](https://www.lcpdfr.com/downloads/dev-resources/) |
-| ---| --- |
+| LCPDFR        | [https://www.lcpdfr.com/downloads/dev-resources/](https://www.lcpdfr.com/downloads/dev-resources/)                                           |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Modding Forum | [https://www.modding-forum.com/forums/board/47-development-resources/](https://www.modding-forum.com/forums/board/47-development-resources/) |
 
-## 2. Make Assets
+### 2. Make Assets
 
 Couldn’t find the assets you wanted, at the quality you wanted in step 1? Or maybe you just prefer to make your own assets?
 
@@ -233,17 +234,17 @@ This is the time to use Blender or the 3D software if your choice to model your 
 
 I mostly only use my own assets, and I only use Federal Signal lighting, so I don’t usually have to spend much time deciding what assets to use, but if you prefer to mix it up, you may want to visit step 3 below and then come back to step 2. Repeat as needed!
 
-## 3. Plan Vehicle
+### 3. Plan Vehicle
 
 In this step, spend some time looking at inspiration, and planning out how you want to layout your lights, what features your finished product will have, and what you want your pattern to be.
 
 You may want to draw something simple out on paper or using software like Photoshop if you have a complex idea. Having something to refer back to when you’re confused later will definitely he helpful.
 
-## 4. Make Pattern
+### 4. Make Pattern
 
 There are several steps involved in making a pattern. Prior to the release of SirenTool, creating a siren was a painstaking process. You had to envision the pattern in your head and then attempt to apply that pattern to binary and complete it with many hours of trial and error. This section of the guide will help to create a pattern mostly using the SirenTool but will offer support for non-owning developers as well.
 
-## 5. Create Emissive Meshes in Blender
+### 5. Create Emissive Meshes in Blender
 
 Steps 5 and 6 are interchangeable!
 
@@ -253,24 +254,24 @@ This is helpful when it's something you will have to rotate, as once a mesh is r
 
 You can however position your lightbars where they need to be, just don't rotate them at all for now.
 
-## 6. Position Lights in Blender
+### 6. Position Lights in Blender
 
-## 7. Export Assets to ZModeler3
+### 7. Export Assets to ZModeler3
 
-## 8. Do ZModeler3 Things
+### 8. Do ZModeler3 Things
 
-## 9. Position Other Assets in Blender
+### 9. Position Other Assets in Blender
 
-## 10. Model Wiring and Other Details in Blender
+### 10. Model Wiring and Other Details in Blender
 
-## 11. Export Interior Assets and Details to ZModeler3
+### 11. Export Interior Assets and Details to ZModeler3
 
-## 12. Meta Files
+### 12. Meta Files
 
 For more details about the content in each .meta files, you can view the other pages of this documents.
 
 Direct links:
 
-*   [Carcols.meta](https://doc.clickup.com/p/h/841f5-49/fcc06adefbff139)
-*   [Carvariations.meta](https://doc.clickup.com/p/h/841f5-56/561f67429883b1c)
-*   [Vehicles.meta](https://doc.clickup.com/p/h/841f5-127/d4dca1dd6666ce6)
+* [Carcols.meta](https://doc.clickup.com/p/h/841f5-49/fcc06adefbff139)
+* [Carvariations.meta](https://doc.clickup.com/p/h/841f5-56/561f67429883b1c)
+* [Vehicles.meta](https://doc.clickup.com/p/h/841f5-127/d4dca1dd6666ce6)

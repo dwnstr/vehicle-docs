@@ -1,7 +1,3 @@
----
-layout: editorial
----
-
 # Home
 
 ## GTA5/FiveM Vehicle Documentation!
