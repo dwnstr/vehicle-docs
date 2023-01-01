@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [Tutorial](Tutorial.md)
+* [Walkthrough](Tutorial.md)
 
 ## Data Files
 

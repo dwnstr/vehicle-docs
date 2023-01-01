@@ -1,39 +1,22 @@
-# Tutorial
+---
+description: >-
+  A full walkthrough of a Non-ELS vehicle workflow. Includes Blender, Siren
+  Tool, ZModeler3, and ULC.
+---
 
-## Workflow / Tutorial
-
-This page will be the home of a walkthrough using Blender , [Siren Tool](https://www.nightshiftstudios.us/p/sirentool), and zModeler. Full disclosure, some details are left out, as they will likely be included as part of a future paid course.
-
-* [Workflow / Tutorial](Tutorial.md#workflow--tutorial)
-* [Intro](Tutorial.md#intro)
-* [Workfloh Overview](Tutorial.md#workfloh-overview)
-  * [Siren Tool](Tutorial.md#siren-tool)
-  * [Blender](Tutorial.md#blender)
-  * [Photoshop](Tutorial.md#photoshop)
-  * [Substance Painter](Tutorial.md#substance-painter)
-  * [ZModeler3](Tutorial.md#zmodeler3)
-* [What is Actually Happening?](Tutorial.md#what-is-actually-happening)
-* [Steps](Tutorial.md#steps)
-  * [1. Get Assets](Tutorial.md#1-get-assets)
-  * [2. Make Assets](Tutorial.md#2-make-assets)
-  * [3. Plan Vehicle](Tutorial.md#3-plan-vehicle)
-  * [4. Make Pattern](Tutorial.md#4-make-pattern)
-  * [5. Create Emissive Meshes in Blender](Tutorial.md#5-create-emissive-meshes-in-blender)
-  * [6. Position Lights in Blender](Tutorial.md#6-position-lights-in-blender)
-  * [7. Export Assets to ZModeler3](Tutorial.md#7-export-assets-to-zmodeler3)
-  * [8. Do ZModeler3 Things](Tutorial.md#8-do-zmodeler3-things)
-  * [9. Position Other Assets in Blender](Tutorial.md#9-position-other-assets-in-blender)
-  * [10. Model Wiring and Other Details in Blender](Tutorial.md#10-model-wiring-and-other-details-in-blender)
-  * [11. Export Interior Assets and Details to ZModeler3](Tutorial.md#11-export-interior-assets-and-details-to-zmodeler3)
-  * [12. Meta Files](Tutorial.md#12-meta-files)
+# Walkthrough
 
 ## Intro
 
-Hello! Welcome to the guide/documentation/walkthrough on how to create Non-ELS based emergency vehicle lighting for GTA and FiveM. Though the name "Non-ELS" implies that it's less useful than ELS, this is completely false. Non-ELS is harder (easier than it looks), but far more versatile, and powerful than ELS. Especially for FiveM, since ELS barely works for it.
+Hello! :wave:
 
-This walkthrough will follow MY SPECIFIC workflow. You can use whatever workflow you want and/or not follow mine at all. The value from this walkthrough will be more from gaining an understanding of how Non-ELS works and learning basic 3D skills and concepts rather than just a step by step guide.
+Welcome to the guide/documentation/walkthrough on how to create Non-ELS based emergency vehicles for GTA and FiveM.&#x20;
 
-## Workfloh Overview
+Though the name "Non-ELS" implies that it's less useful than ELS, this is completely false. Non-ELS is harder, but far more versatile, and powerful than ELS (Especially for FiveM, since ELS barely works for it.)
+
+This walkthrough will follow **my specific recommended workflow**. You can use whatever workflow you want and/or not follow mine at all. I will focus on helping you gain an understanding of how Non-ELS works and learning basic 3D skills and concepts rather than giving just a step-by-step guide.
+
+## Workflow Overview
 
 My motto when it comes to software and your time spent is:
 
