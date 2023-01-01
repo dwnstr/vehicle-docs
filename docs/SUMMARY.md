@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 * [Walkthrough](Tutorial.md)
+* [Join Discord](https://discord.gg/dwnstr-fivem)
 
 ## Data Files
 
@@ -24,10 +25,7 @@
   * [Cruise Lights](ulc/configuration/cruise-lights.md)
   * [Brake Patterns](ulc/configuration/brake-patterns.md)
   * [Horn Extras](ulc/configuration/horn-extras.md)
+* [In-Game Usage](ulc/in-game-usage.md)
 * [ULC for Server Owners](ulc/ulc-for-server-owners.md)
 * [ULC for Vehicle Devs](ulc/ulc-for-vehicle-devs.md)
 * [Download ULC](https://github.com/Flohhhhh/ultimate-lighting-controller/releases)
-
-***
-
-* [Join Discord](https://discord.gg/dwnstr-fivem)
