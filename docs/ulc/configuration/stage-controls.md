@@ -1,5 +1,7 @@
 # Stage Controls
 
+<figure><img src="../../.gitbook/assets/ulc_stages.png" alt=""><figcaption></figcaption></figure>
+
 Stage controls allow the driver of the vehicle to dynamically switch between extras at the press of a button using the number pad. This is not a new concept to vehicle developers, but ULC focuses on a great user experience, and flexibility.
 
 You can individually assign each extra you want to use to any numpad key, and assign a custom label to it.

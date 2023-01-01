@@ -16,6 +16,10 @@ The resource aims to make it as seamless as possible for vehicle developers to s
 See something wrong? Create an issue or edit on GitHub!
 {% endhint %}
 
+## Preview
+
+
+
 ULC focuses on being as customizable as possible, to fit every possible scenario. You can individually configure every vehicle you choose to use this resource with.
 
 Each vehicle can use just one feature, or 3, or all of them. It's completely up to you.
