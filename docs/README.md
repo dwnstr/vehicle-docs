@@ -1,7 +1,3 @@
----
-layout: landing
----
-
 # Home
 
 ## GTA5/FiveM Vehicle Documentation!
