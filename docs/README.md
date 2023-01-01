@@ -1,3 +1,7 @@
+---
+layout: landing
+---
+
 # Home
 
 ## GTA5/FiveM Vehicle Documentation!
@@ -8,9 +12,25 @@ Welcome to the new home of our vehicle documentation! We have been growing these
 
 This documentation is meant to serve as more than an exhaustive list of variables and values. The goal of these documents is to help developers learn and understand the development process with a focus on FiveM, as well as provide best practices and tutorials.
 
-If you're looking for a a full record of all variables and values without commentary or best practices, see [the GTAMods Wiki.](https://gtamods.com/wiki/Main\_Page)
+If you're looking for a full record of all variables and values without commentary or best practices, see [the GTAMods Wiki.](https://gtamods.com/wiki/Main\_Page)
 
 Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
+
+{% content-ref url="Tutorial.md" %}
+[Tutorial.md](Tutorial.md)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 ***
 

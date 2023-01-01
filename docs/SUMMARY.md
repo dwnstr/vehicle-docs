@@ -12,12 +12,14 @@
 
 ## Siren Tool
 
-* [What is Siren Tool](siren-tool/intro.md)
+* [What is Siren Tool?](siren-tool/intro.md)
 * [Get Siren Tool!](https://dwnstr.com/sirentool)
 
 ## ULC
 
 * [What is ULC?](ulc/intro.md)
+* [ULC for Server Owners](ulc/ulc-for-server-owners.md)
+* [ULC for Vehicle Devs](ulc/ulc-for-vehicle-devs.md)
 * [Download ULC](https://github.com/Flohhhhh/ultimate-lighting-controller/releases)
 
 ***
