@@ -28,4 +28,4 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 
 ## Learn How to Use ULC
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Server Owners</h3></td><td>Learn how to configure ULC for your server.</td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><h3>Vehicle Devs</h3></td><td>Learn how to configure vehicles for ULC.</td><td></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Server Owners</h3></td><td>Learn how to configure ULC for your server.</td><td></td><td><a href="configuration/#adding-vehicle-configurations-to-a-server">#adding-vehicle-configurations-to-a-server</a></td></tr><tr><td><h3>Vehicle Devs</h3></td><td>Learn how to configure vehicles for ULC.</td><td></td><td><a href="configuration/#configuring-vehicles-for-ulc">#configuring-vehicles-for-ulc</a></td></tr></tbody></table>
