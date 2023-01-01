@@ -79,26 +79,43 @@ There are 2 methods for configuring a vehicle for use with ULC.
 {% hint style="success" %}
 Preferred Method\
 \
-Load `ulc.lua` config file directly from vehicle resource by adding the resource name to the `ExternalVehResources` table
+Load a `ulc.lua` config file directly from vehicle resource by adding the resource name to the `ExternalVehResources` table
 {% endhint %}
 
-This method makes ULC extremely user-friendly. This allows for plug-and-play ULC functionality with vehicles you download that are ULC ready.
+Example:
+
+```lua
+ExternalVehResources = {
+  "my-vehicle-resource",
+},
+```
+
+
+
+This method makes ULC extremely user-friendly. This allows for plug-and-play ULC functionality with vehicles you download that are ULC ready. \
+\
+Of course, in order for this to work there has to be a ulc.lua file in the resource. In the case a vehicle did not have a ulc.lua config, you can opt to create one instead of using the other method. Follow [instructions for vehicle developers](./#configuring-vehicles-for-ulc) for more info.
 
 
 
 {% hint style="info" %}
-Acceptable Method
+Other Method
 
 Manually add a vehicle configuration object to the `Vehicles` table in `config.lua`
 {% endhint %}
 
-This method is not as user-friendly.
+This method is not as user-friendly.&#x20;
 {% endtab %}
 
 {% tab title=" Vehicle Developers" %}
 ## Configuring Vehicles for ULC
 
-Vehicle developers who are creating vehicles compatible with ULC can provide a local configuration file within their vehicle resources for use by users.\
+Vehicle developers who are creating vehicles compatible with ULC can provide a local configuration file within their vehicle resources for use by users.
+
+
+
+By providing a configuration file your vehicle will be pre-configured for all users who use it. Users will be able to simply plug-and-play your vehicle with ULC functionality.
+
 \
 Create a file named `ulc.lua` in your vehicle resource and paste the template below.&#x20;
 
@@ -136,8 +153,18 @@ return {name = "",
 ```
 
 The user now just has to add the resource name of the vehicle to their `Config.ExternalVehResources` table.
+
+
+
+#### Extras with Sirens
+
+The concept of nesting Sirens into an Extra is critical to proper usage of ULC. Most of the features of ULC require sirens to be contained within extras.
+
+All you have to do to set this up is parent your Sirens to an Extra once they are compounded. Your extra can have any other parts also attached. I.E you could have a divider to block the emissives behind the emissives you want to show, such as in the case of a traffic advisor.
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
