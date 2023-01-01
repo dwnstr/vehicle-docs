@@ -2,24 +2,24 @@
 
 The vehicles.meta defines the main features / functions of the vehicle. This includes:
 
-* [Vehicles.meta](vehicles.md#vehiclesmeta)
-  * [Overview](vehicles.md#overview)
-  * [Vehicle naming](vehicles.md#vehicle-naming)
-  * [Animations](vehicles.md#animations)
-  * [Vehicle Audio](vehicles.md#vehicle-audio)
-  * [VFX Info](vehicles.md#vfx-info)
-  * [Wheel Scale](vehicles.md#wheel-scale)
-  * [LOD Distances](vehicles.md#lod-distances)
-  * [Swankness](vehicles.md#swankness)
-  * [Extras](vehicles.md#extras)
-    * [Flags](vehicles.md#flags)
-    * [Forcing Extras](vehicles.md#forcing-extras)
-    * [Preventing Specific Extras from Spawning](vehicles.md#preventing-specific-extras-from-spawning)
-  * [Type](vehicles.md#type)
-  * [Plate Type](vehicles.md#plate-type)
-  * [Vehicle class](vehicles.md#vehicle-class)
-  * [Trailers](vehicles.md#trailers)
-  * [TXD Relationships](vehicles.md#txd-relationships)
+* [Vehicles.meta](Vehicles.md#vehiclesmeta)
+  * [Overview](Vehicles.md#overview)
+  * [Vehicle naming](Vehicles.md#vehicle-naming)
+  * [Animations](Vehicles.md#animations)
+  * [Vehicle Audio](Vehicles.md#vehicle-audio)
+  * [VFX Info](Vehicles.md#vfx-info)
+  * [Wheel Scale](Vehicles.md#wheel-scale)
+  * [LOD Distances](Vehicles.md#lod-distances)
+  * [Swankness](Vehicles.md#swankness)
+  * [Extras](Vehicles.md#extras)
+    * [Flags](Vehicles.md#flags)
+    * [Forcing Extras](Vehicles.md#forcing-extras)
+    * [Preventing Specific Extras from Spawning](Vehicles.md#preventing-specific-extras-from-spawning)
+  * [Type](Vehicles.md#type)
+  * [Plate Type](Vehicles.md#plate-type)
+  * [Vehicle class](Vehicles.md#vehicle-class)
+  * [Trailers](Vehicles.md#trailers)
+  * [TXD Relationships](Vehicles.md#txd-relationships)
 
 This is just to name a few of the important parts. A lot of the values / options will never be used.
 
@@ -224,7 +224,7 @@ I was able to enter '**FLAG\_EXTRAS\_RARE**' & '**FLAG\_EXTRAS\_SCRIPT**' in the
 
 ## Type
 
-The type flag defines what type of vehicle it is. This works in conjunction with the [txdRelationships](vehicles.md#txd-relationships). You can set the following values within the type flag:
+The type flag defines what type of vehicle it is. This works in conjunction with the [txdRelationships](Vehicles.md#txd-relationships). You can set the following values within the type flag:
 
 | Enum | Name                                  | Description                                                                                                                     |
 | ---- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |

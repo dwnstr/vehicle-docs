@@ -5,11 +5,21 @@
 
 ## Data Files
 
-* [carcols.meta](data-files/carcols.md)
-* [carvariations.meta](data-files/carvariations.md)
-* [handling.meta](data-files/handling.md)
-* [vehicles.meta](data-files/vehicles.md)
+* [carcols.meta](Carcols.md)
+* [carvariations.meta](Carvariations.md)
+* [handling.meta](Handling.md)
+* [vehicles.meta](Vehicles.md)
 
 ## ULC
 
-* [What is ULC?](ulc/ulc-intro.md)
+* [What is ULC?](ulc/intro.md)
+* [Download ULC](https://github.com/Flohhhhh/ultimate-lighting-controller/releases)
+
+***
+
+* [Join Discord](https://discord.gg/dwnstr-fivem)
+
+## Siren Tool
+
+* [What is Siren Tool](siren-tool/intro.md)
+* [Get Siren Tool!](https://dwnstr.com/sirentool)

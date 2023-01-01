@@ -1,38 +1,38 @@
 # carcols.meta
 
-* [Carcols.meta](carcols.md#carcolsmeta)
-* [Siren Sequencers](carcols.md#siren-sequencers)
-  * [Overview](carcols.md#overview)
-  * [Sequencer Example](carcols.md#sequencer-example)
-  * [Ways to Create Sequencers](carcols.md#ways-to-create-sequencers)
-* [Siren Deltas](carcols.md#siren-deltas)
-* [Rotator Lights](carcols.md#rotator-lights)
-  * [Rotator Speed](carcols.md#rotator-speed)
-* [Light Groups](carcols.md#light-groups)
-* [Light Colors](carcols.md#light-colors)
-* [Carcols Variables](carcols.md#carcols-variables)
-  * [id](carcols.md#id)
-  * [timeMultiplier](carcols.md#timemultiplier)
-  * [Environment Lighting](carcols.md#environment-lighting)
-  * [lightFalloffMax](carcols.md#lightfalloffmax)
-  * [lightFalloffExponent](carcols.md#lightfalloffexponent)
-  * [lightInnerConeAngle](carcols.md#lightinnerconeangle)
-  * [lightOuterConeAngle](carcols.md#lightouterconeangle)
-  * [lightOffset](carcols.md#lightoffset)
-  * [textureName](carcols.md#texturename)
-  * [sequencerBpm](carcols.md#sequencerbpm)
-* [Headlights and Taillights](carcols.md#headlights-and-taillights)
-  * [Headlights Example](carcols.md#headlights-example)
-* [Custom Light IDs](carcols.md#custom-light-ids)
-* [Siren Walkthrough](carcols.md#siren-walkthrough)
-* [Modkits](carcols.md#modkits)
-  * [Overview](carcols.md#overview-1)
-    * [Step 1](carcols.md#step-1)
-    * [Step 2](carcols.md#step-2)
-    * [Step 3](carcols.md#step-3)
-    * [Step 4](carcols.md#step-4)
-    * [Step 5](carcols.md#step-5)
-    * [Debugging modkits](carcols.md#debugging-modkits)
+* [Carcols.meta](Carcols.md#carcolsmeta)
+* [Siren Sequencers](Carcols.md#siren-sequencers)
+  * [Overview](Carcols.md#overview)
+  * [Sequencer Example](Carcols.md#sequencer-example)
+  * [Ways to Create Sequencers](Carcols.md#ways-to-create-sequencers)
+* [Siren Deltas](Carcols.md#siren-deltas)
+* [Rotator Lights](Carcols.md#rotator-lights)
+  * [Rotator Speed](Carcols.md#rotator-speed)
+* [Light Groups](Carcols.md#light-groups)
+* [Light Colors](Carcols.md#light-colors)
+* [Carcols Variables](Carcols.md#carcols-variables)
+  * [id](Carcols.md#id)
+  * [timeMultiplier](Carcols.md#timemultiplier)
+  * [Environment Lighting](Carcols.md#environment-lighting)
+  * [lightFalloffMax](Carcols.md#lightfalloffmax)
+  * [lightFalloffExponent](Carcols.md#lightfalloffexponent)
+  * [lightInnerConeAngle](Carcols.md#lightinnerconeangle)
+  * [lightOuterConeAngle](Carcols.md#lightouterconeangle)
+  * [lightOffset](Carcols.md#lightoffset)
+  * [textureName](Carcols.md#texturename)
+  * [sequencerBpm](Carcols.md#sequencerbpm)
+* [Headlights and Taillights](Carcols.md#headlights-and-taillights)
+  * [Headlights Example](Carcols.md#headlights-example)
+* [Custom Light IDs](Carcols.md#custom-light-ids)
+* [Siren Walkthrough](Carcols.md#siren-walkthrough)
+* [Modkits](Carcols.md#modkits)
+  * [Overview](Carcols.md#overview-1)
+    * [Step 1](Carcols.md#step-1)
+    * [Step 2](Carcols.md#step-2)
+    * [Step 3](Carcols.md#step-3)
+    * [Step 4](Carcols.md#step-4)
+    * [Step 5](Carcols.md#step-5)
+    * [Debugging modkits](Carcols.md#debugging-modkits)
 
 ## Siren Sequencers
 
@@ -628,7 +628,7 @@ This is the meat and bones of the modkits.
 
 If in the event your modkits do not work, here are some tips on how to fix it:
 
-* Ensure your modkit ID at [Step 3](carcols.md#step-3) is unique to the individual vehicle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep changing the ID until your options show up for you. You do not need to restart the server to update this.
-* The kiteName at [Step 3](carcols.md#step-3) is not in the carvariations.meta.
+* Ensure your modkit ID at [Step 3](Carcols.md#step-3) is unique to the individual vehicle. The values can be from 0-1023 but some may overlap with other vehicles. Just keep changing the ID until your options show up for you. You do not need to restart the server to update this.
+* The kiteName at [Step 3](Carcols.md#step-3) is not in the carvariations.meta.
 * The .yft modkit is not in the stream folder. Ensure they are all in there.
 * The modelName is not the same as the name of the .yft modkit in the stream folder. Ensure they are both the same.
