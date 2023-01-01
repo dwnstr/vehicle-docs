@@ -10,6 +10,11 @@
 * [handling.meta](Handling.md)
 * [vehicles.meta](Vehicles.md)
 
+## Siren Tool
+
+* [What is Siren Tool](siren-tool/intro.md)
+* [Get Siren Tool!](https://dwnstr.com/sirentool)
+
 ## ULC
 
 * [What is ULC?](ulc/intro.md)
@@ -19,7 +24,4 @@
 
 * [Join Discord](https://discord.gg/dwnstr-fivem)
 
-## Siren Tool
 
-* [What is Siren Tool](siren-tool/intro.md)
-* [Get Siren Tool!](https://dwnstr.com/sirentool)
