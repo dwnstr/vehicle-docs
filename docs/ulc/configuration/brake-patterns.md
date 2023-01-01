@@ -10,6 +10,7 @@ An alternative use for this feature is to add brake light emissives. The recomme
 
 **Brake Pattern Config**
 
+{% code overflow="wrap" %}
 ```lua
 BrakeSettings = {
     -- brake patterns will not activate below this speed
@@ -17,6 +18,7 @@ BrakeSettings = {
     speedThreshold = 30
 },
 ```
+{% endcode %}
 
 **Brake Pattern Vehicle Config**
 

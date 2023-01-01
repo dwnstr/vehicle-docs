@@ -1,7 +1,3 @@
----
-layout: landing
----
-
 # Home
 
 ## GTA5/FiveM Vehicle Documentation!
@@ -16,17 +12,27 @@ If you're looking for a full record of all variables and values without commenta
 
 Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
 
+
+
+Check out our full Non-ELS vehicle workflow
+
 {% content-ref url="Tutorial.md" %}
 [Tutorial.md](Tutorial.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+View documentation the data files like carcols.meta and vehicles.meta
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
+
+View Ultimate Lighting Controller documentation
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+Learn about Siren Tool
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
@@ -48,7 +54,3 @@ Have questions? [Join our Discord!](https://discord.gg/zH3k624aSv)
 * Feel free to copy-paste things from other places, but ensure you credit the original author, and provide a link to the original content
 
 ***
-
-### Want to become a maintainer?
-
-[Join our Discord and make a ticket!](https://discord.gg/zH3k624aSv)

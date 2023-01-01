@@ -12,6 +12,7 @@ Then configure your vehicle to enable that extra. You can also choose to disable
 
 **Park Config**
 
+{% code overflow="wrap" %}
 ```lua
 ParkSettings = {
     -- extras will toggle below this speed
@@ -29,6 +30,7 @@ ParkSettings = {
     syncCooldown = 10,
 },
 ```
+{% endcode %}
 
 **Vehicle Park Config**
 
