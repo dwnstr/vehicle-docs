@@ -122,10 +122,6 @@ By providing a configuration file your vehicle will be pre-configured for all us
 
 Create a file named `ulc.lua` in your vehicle resource and paste the template below.&#x20;
 
-{% hint style="danger" %}
-The `ulc.lua` file MUST be in the `data` folder of your vehicle resource.
-{% endhint %}
-
 {% hint style="warning" %}
 Be sure to include the `return` tag!
 {% endhint %}
