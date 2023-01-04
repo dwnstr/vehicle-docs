@@ -126,6 +126,10 @@ Create a file named `ulc.lua` in your vehicle resource and paste the template be
 Be sure to include the `return` tag!
 {% endhint %}
 
+{% hint style="warning" %}
+In version 1.0.0 the`ulc.lua`file MUST be in the`data`folder of your vehicle resource.
+{% endhint %}
+
 ```lua
 return {name = "",
   steadyBurnConfig = {

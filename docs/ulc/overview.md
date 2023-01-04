@@ -16,7 +16,7 @@ The resource aims to make it as seamless as possible for vehicle developers to s
 See something wrong? Create an issue or edit on GitHub!
 {% endhint %}
 
-## Preview
+### Preview
 
 {% embed url="https://youtu.be/f1H6sohjTao" %}
 
@@ -24,31 +24,31 @@ ULC focuses on being as customizable as possible, to fit every possible scenario
 
 Each vehicle can use just one feature, or 3, or all of them. It's completely up to you.'
 
+### Features
 
+* Stage Controls
+* Park Patterns
+* Smart Cruise Lights
+* Brake Patterns
+* Horn Extras
 
-### Performance
+<details>
 
-{% tabs %}
-{% tab title="Outside of Vehicle" %}
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<summary>Coming Soon</summary>
 
+* Toggle Multiple Extras with 1 button
 
-{% endtab %}
-
-{% tab title="In Vehicle" %}
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-
-{% endtab %}
-{% endtabs %}
-
-
+</details>
 
 ## Installation
 
 1. [Download the latest release from here](https://github.com/Flohhhhh/ultimate-lighting-controller/releases)
 2. Extract `ulc` and place it in your resources folder
 3. Add `ensure ulc` to your `server.cfg`
+
+{% hint style="warning" %}
+This resources requires the `baseevents` default resource to be started!
+{% endhint %}
 
 ## Learn How to Use ULC
 
