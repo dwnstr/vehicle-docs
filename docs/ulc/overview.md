@@ -36,7 +36,7 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 
 <summary>Coming Soon</summary>
 
-* Toggle Multiple Extras with 1 button
+Nothing planned! [Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
 
 </details>
 
