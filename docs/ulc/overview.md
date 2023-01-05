@@ -36,7 +36,9 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 
 <summary>Coming Soon</summary>
 
-Nothing planned! [Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
+* Support for multiple vehicles in a single ulc.lua file for resources with more than one model (for now you have to add each vehicle to the Vehicles table in config.lua)
+
+&#x20;[Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
 
 </details>
 
@@ -47,7 +49,7 @@ Nothing planned! [Join our Discord](https://discord.gg/dwnstr-fivem) to make a s
 3. Add `ensure ulc` to your `server.cfg`
 
 {% hint style="warning" %}
-This resources requires the `baseevents` default resource to be started!
+This resource requires the `baseevents` default resource to be started!
 {% endhint %}
 
 ## Learn How to Use ULC
