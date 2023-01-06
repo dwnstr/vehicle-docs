@@ -35,6 +35,7 @@ Config = {
     -- the resource names of vehicle resources that include a ulc.lua config file
     ExternalVehResources = {
         -- ex. "my-police-vehicle",
+        "example3",
     },
 
     Vehicles = {

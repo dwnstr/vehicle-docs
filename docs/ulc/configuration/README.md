@@ -68,12 +68,14 @@ Let's start by setting up your first vehicle.
 
 There are two methods for configuring a vehicle. Using an external `ulc.lua` file in the vehicle resource or adding the vehicle to the `config.lua` manually. \
 \
-We will use the first method as it is much cleaner and easier.\
-\
-If your vehicle already has a `ulc.lua` file, skip to step 7!
+We will use the first method as it is much cleaner and easier.
+
+{% hint style="info" %}
+If your vehicle already has a `ulc.lua` file, [skip to step 6!](https://docs.dwnstr.com/ulc/configuration#6.-open-your-ulc-config.lua-file)
+{% endhint %}
 
 {% tabs %}
-{% tab title="Importing ulc.lua" %}
+{% tab title="Creating a ulc.lua file" %}
 {% hint style="success" %}
 #### Preferred Method
 
@@ -94,10 +96,13 @@ Follow the steps below to configure a vehicle using a ulc.lua file.
 In version 1.0.0 (old) the`ulc.lua`file MUST be in the`data`folder of your vehicle resource. Update to correct this.
 {% endhint %}
 
+###
 
+### 1. Create a new file in your vehicle resource and name it `ulc.lua`
 
-1. Create a new file in your vehicle resource and name it `ulc.lua`
-2. Open your new file and paste the below content.
+###
+
+### 2. Open your new file and paste the below content.
 
 
 
@@ -132,7 +137,9 @@ return {name = "",
 
 
 
-3\. Add the [model name](#user-content-fn-1)[^1] of your vehicle at the top at `name = ""`&#x20;
+### 3. Define the [model name](#user-content-fn-1)[^1]&#x20;
+
+Add the name of your vehicle model at `name = ""`&#x20;
 
 ex. `name = "pd4"`\
 
@@ -184,7 +191,9 @@ __
 
 
 
-### 8. Add the resource name of the vehicle you just configured!
+### 8. Import the Config!
+
+Add the resource name of the vehice you configured.
 
 This is how it should look:
 
@@ -194,15 +203,23 @@ ExternalVehResources = {
 },
 ```
 
+{% hint style="warning" %}
+Remember, this is not the model name/spawn name. The resource name is the name of the folder.
+{% endhint %}
 
 
-9\. Restart ULC, and you should see that your config has loaded in the server console!\
+
+### 9. Thats it!
+
+Restart ULC, and you should see that your config has loaded in the server console!\
 
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### 10. Repeat for your other vehicles!
 {% endtab %}
 
-{% tab title="Manual Addittions to config.lua" %}
+{% tab title="Manual Adittions to config.lua" %}
 {% hint style="info" %}
 Worse Method
 
@@ -219,42 +236,7 @@ Vehicle developers who are creating vehicles compatible with ULC can provide a l
 
 By providing a configuration file your vehicle will be pre-configured for all users who use it. Users will be able to simply plug-and-play your vehicle with ULC functionality.
 
-Create a file named `ulc.lua` in your vehicle resource and paste the template below.&#x20;
-
-{% hint style="warning" %}
-Be sure to include the `return` tag!
-{% endhint %}
-
-```lua
-return {name = "",
-  steadyBurnConfig = {
-      forceOn = false,
-      useTime = false,
-      sbExtras = {}
-  },
-  parkConfig = {
-      usePark = false,
-      useSync = false,
-      syncWith = {""},
-      pExtras = {},
-      dExtras = {}
-  },
-  hornConfig = {
-      useHorn = false,
-      hornExtras = {}
-  },
-  brakeConfig = {
-      useBrakes = false,
-      brakeExtras = {}
-  },
-  -- example button
-  -- {label = 'STAGE 2', key = 5, extra = 8},
-  buttons = {
-  }
-}
-```
-
-The user now just has to add the resource name of the vehicle to their `Config.ExternalVehResources` table.
+Follow steps 1 - 5 above to learn how to create a ulc.lua file.
 
 ### Extras with Sirens
 
