@@ -37,6 +37,7 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 <summary>Coming Soon</summary>
 
 * Support for multiple vehicles in a single ulc.lua file for resources with more than one model (for now you have to add each vehicle to the Vehicles table in config.lua)
+* Client customization (ability to reposition or disable the HUD)
 
 &#x20;[Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
 
