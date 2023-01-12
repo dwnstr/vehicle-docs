@@ -42,9 +42,10 @@ Other than that, the process is pretty straight forward.
     -- players can remap these keys on their own
     key = 5,
     -- the extra that this key will toggle
-    extra = 8 -- num 5
+    extra = 8,
+    -- extras that will turn off when stage activates
+    offExtras = {6, 7}
 },
-
 ```
 
 **Example Configuration**
@@ -55,12 +56,16 @@ Buttons cannot share the same extra.
 
 Keys don't have to be used in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted.
 
+
+
+Example:&#x20;
+
 ```lua
- buttons = {
-    {label = 'STAGE 2', key = 1, extra = 8},
-    {label = 'TA', key = 2, extra = 9},
-    {label = 'AUX1', key = 3, extra = 10},
-    {label = 'AUX 2', key = 4, extra = 11},
-    {label = 'SCENE', key = 5, extra = 12},
+buttons = {
+    {label = 'STAGE 2', key = 1, extra = 8, offExtras = {}},
+    {label = 'TA', key = 2, extra = 9, offExtras = {}},
+    {label = 'AUX1', key = 3, extra = 10, offExtras = {}},
+    {label = 'AUX 2', key = 4, extra = 11, offExtras = {}},
+    {label = 'SCENE', key = 5, extra = 12, offExtras = {8}},
 }
 ```

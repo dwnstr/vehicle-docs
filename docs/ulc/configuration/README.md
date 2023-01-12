@@ -10,8 +10,6 @@ Configuration is simple and extremely customizable.\
 \
 Vehicle developers can easily share vehicle configurations with users, and users can easily implement included configs in their server.
 
-
-
 ## 1. Review Global Settings
 
 The top section of the `config.lua` file contains a series of global settings. These settings determine the behavior of some features.&#x20;
@@ -26,6 +24,8 @@ If you are using Luxart Vehicle Controls or a similar resource that plays a tone
 ```lua
 -- whether to mute the tone that plays when lights are turned on, use if you have another resources that already plays a tone.
 muteBeepForLights = true,
+-- global toggle for UI (affects all clients)
+hideHud = false,
 -- whether to use KPH instead of MPH
 useKPH = false,
 -- health threshold for effect (probably don't touch this)
@@ -90,13 +90,11 @@ Additionally, this method means that vehicle developers can include a ulc.lua fi
 Follow the steps below to configure a vehicle using a ulc.lua file.
 {% endhint %}
 
-
-
-{% hint style="warning" %}
-In version 1.0.0 (old) the`ulc.lua`file MUST be in the`data`folder of your vehicle resource. Update to correct this.
-{% endhint %}
-
 ###
+
+Let's get started!
+
+
 
 ### 1. Create a new file in your vehicle resource and name it `ulc.lua`
 
@@ -129,7 +127,7 @@ return {name = "",
       brakeExtras = {}
   },
   -- example button
-  -- {label = 'STAGE 2', key = 5, extra = 8},
+  -- {label = 'STAGE 2', key = 5, extra = 8, offExtras = {1, 2}},
   buttons = {
   }
 }
@@ -168,14 +166,13 @@ For details on stage control buttons you can view the [Stage Controls page.](sta
 
 ```lua
 buttons = {
-    {label = 'STAGE 2', key = 1, extra = 8},
-    {label = 'TA', key = 2, extra = 9},
-    {label = 'TKD', key = 3, extra = 10},
+    {label = 'STAGE 2', key = 1, extra = 8, offExtras = {2}},
+    {label = 'TA', key = 2, extra = 9, offExtras = {}},
+    {label = 'TKD', key = 3, extra = 10, offExtras = {3, 4}},
 }
 ```
 
-This example vehicle has extra 8 as it's stage 2 pattern, extra 9 as it's traffic advisor, and extra 10 as takedown lights.\
-I assigned these extras to keys 1, 2 and 3 on the numpad.
+This example vehicle has extra 8 as it's stage 2 pattern, extra 9 as it's traffic advisor, and extra 10 as takedown lights. I assigned these extras to keys 1, 2 and 3 on the numpad.
 
 
 
@@ -230,7 +227,88 @@ This method is messier, but is totally acceptable if the vehicle you are setting
 {% endtab %}
 {% endtabs %}
 
-## Configuring Vehicles for ULC
+## Configuring a Vehicle Pack
+
+{% hint style="info" %}
+For resources with more than a single vehicle you can simply add multiple comma-separated configurations to a `ulc.lua` file.
+{% endhint %}
+
+<details>
+
+<summary>Multi-Config ulc.lua Example</summary>
+
+```lua
+return {name = "sp20",
+    steadyBurnConfig = {
+        forceOn = false,
+        useTime = false,
+        sbExtras = {}
+    },
+     parkConfig = {
+        usePark = true,
+        useSync = true,
+        syncWith = {'sp20', 'sp18chrg'},
+        pExtras = {10, 11},
+        dExtras = {}
+    },
+    hornConfig = {
+        useHorn = true,
+        hornExtras = {12}
+    },
+    brakeConfig = {
+        useBrakes = false,
+        brakeExtras = {}
+    },
+  -- example button
+  -- {label = 'STAGE 2', key = 5, extra = 8},
+    buttons = {
+        {label = 'stage 2', key = 5, extra = 8, offExtras = {10, 11}},
+        {label = 'TA', key = 6, extra = 9, offExtras = {}},
+        {label = 'AUX1', key = 7, extra = 10, offExtras = {}},
+        {label = 'AUX 2',key = 8,extra = 11, offExtras = {}},
+        {label = 'SCENE',key = 9,extra = 12, offExtras = {}},
+    }
+},
+{name = 'pdram', -- Vehicle Spawn Name
+        
+	steadyBurnConfig = {
+		forceOn = false,
+		useTime = false,
+		sbExtras = {}
+	},
+
+	parkConfig = {
+		usePark = true,
+		useSync = false,
+		syncWith = {},
+		pExtras = {9},
+		dExtras = {}
+	},
+
+	hornConfig = {
+		useHorn = true,
+		hornExtras = {12}
+	},
+
+	brakeConfig = {
+		useBrakes = false,
+		brakeExtras = {}
+	},
+
+	buttons = {
+		{label = 'AUX', key = 5, extra = 8, offExtras = {}},
+		{label = 'TA L', key = 6, extra = 9, offExtras = {}},
+		{label = 'TA R', key = 7, extra = 10, offExtras = {}},
+		{label = 'TKD', key = 8, extra = 11, offExtras = {}},
+	}
+}
+```
+
+
+
+</details>
+
+## Creating Non-ELS Vehicles for ULC
 
 Vehicle developers who are creating vehicles compatible with ULC can provide a local configuration file within their vehicle resources for use by users.
 

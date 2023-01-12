@@ -25,6 +25,5 @@
   * [Cruise Lights](ulc/configuration/cruise-lights.md)
   * [Brake Patterns](ulc/configuration/brake-patterns.md)
   * [Horn Extras](ulc/configuration/horn-extras.md)
-* [Example config.lua](ulc/example-config.lua.md)
 * [In-Game Usage](ulc/in-game-usage.md)
 * [Download ULC](https://github.com/Flohhhhh/ultimate-lighting-controller/releases)
