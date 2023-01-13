@@ -4,6 +4,9 @@ description: An overview of ULC features and configuration values
 
 # Configuration
 
+{% embed url="https://youtu.be/FIF3qqRY0Ts" %}
+
+\
 ULC was designed to be as user-friendly as possible.&#x20;
 
 Configuration is simple and extremely customizable.\
