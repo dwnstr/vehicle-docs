@@ -43,6 +43,8 @@ Other than that, the process is pretty straight forward.
     key = 5,
     -- the extra that this key will toggle
     extra = 8,
+    -- extras that will toggle along with the main extra
+    linkedExtras = {9, 10},
     -- extras that will turn off when stage activates
     offExtras = {6, 7}
 },
@@ -52,9 +54,9 @@ Other than that, the process is pretty straight forward.
 
 Each vehicle can have a minimum of 0 buttons, and a maximum of 9. Any buttons not configured will not show.
 
-Buttons cannot share the same extra.
+Buttons cannot share the same primary extra.
 
-Keys don't have to be used in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted.
+Keys don't have to be used in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted. However, they will render on the UI in ascending order left to right.
 
 
 
@@ -62,10 +64,10 @@ Example:&#x20;
 
 ```lua
 buttons = {
-    {label = 'STAGE 2', key = 1, extra = 8, offExtras = {}},
-    {label = 'TA', key = 2, extra = 9, offExtras = {}},
-    {label = 'AUX1', key = 3, extra = 10, offExtras = {}},
-    {label = 'AUX 2', key = 4, extra = 11, offExtras = {}},
-    {label = 'SCENE', key = 5, extra = 12, offExtras = {8}},
+    {label = 'STAGE 2', key = 1, extra = 8, linkedExtras = {10, 11}, offExtras = {}},
+    {label = 'TA', key = 2, extra = 9, linkedExtras = {}, offExtras = {}},
+    {label = 'AUX1', key = 3, extra = 10, linkedExtras = {}, offExtras = {}},
+    {label = 'AUX 2', key = 4, extra = 11, linkedExtras = {}, offExtras = {}},
+    {label = 'SCENE', key = 5, extra = 12, linkedExtras = {}, offExtras = {8}},
 }
 ```

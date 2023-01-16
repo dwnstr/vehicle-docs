@@ -107,34 +107,42 @@ Let's get started!
 
 
 
+````lua
 ```lua
-return {name = "",
-  steadyBurnConfig = {
-      forceOn = false,
-      useTime = false,
-      sbExtras = {}
-  },
-  parkConfig = {
-      usePark = false,
-      useSync = false,
-      syncWith = {""},
-      pExtras = {},
-      dExtras = {}
-  },
-  hornConfig = {
-      useHorn = false,
-      hornExtras = {}
-  },
-  brakeConfig = {
-      useBrakes = false,
-      brakeExtras = {}
-  },
-  -- example button
-  -- {label = 'STAGE 2', key = 5, extra = 8, offExtras = {1, 2}},
-  buttons = {
-  }
+return { name = "",
+    steadyBurnConfig = {
+        forceOn = false,
+        useTime = false,
+        sbExtras = {}
+    },
+    parkConfig = {
+        usePark = false,
+        useSync = false,
+        syncWith = { "" },
+        pExtras = {},
+        dExtras = {}
+    },
+    hornConfig = {
+        useHorn = false,
+        hornExtras = {}
+    },
+    brakeConfig = {
+        useBrakes = false,
+        brakeExtras = {}
+    },
+
+    --[[ example button
+        {label = 'STAGE 2', key = 5, extra = 8, linkedExtras = {}, offExtras = {1, 2}},
+    ]]
+
+    buttons = { --paste your buttons below
+
+
+    }
 }
+
 ```
+````
 
 
 
@@ -169,9 +177,10 @@ For details on stage control buttons you can view the [Stage Controls page.](sta
 
 ```lua
 buttons = {
-    {label = 'STAGE 2', key = 1, extra = 8, offExtras = {2}},
-    {label = 'TA', key = 2, extra = 9, offExtras = {}},
-    {label = 'TKD', key = 3, extra = 10, offExtras = {3, 4}},
+    {label = 'STAGE 2', key = 1, extra = 8, linkedExtras = {10, 11}, offExtras = {9}},
+    {label = 'TA', key = 2, extra = 9, linkedExtras = {}, offExtras = {}},
+    {label = 'AUX1', key = 3, extra = 10, linkedExtras = {}, offExtras = {}},
+    {label = 'TKD', key = 5, extra = 12, linkedExtras = {}, offExtras = {8}},
 }
 ```
 
