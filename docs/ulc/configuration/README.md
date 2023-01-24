@@ -107,10 +107,8 @@ Let's get started!
 
 
 
-````lua
-```lua
-return { name = "",
-    steadyBurnConfig = {
+<pre class="language-lua"><code class="lang-lua"><strong>return { name = "",
+</strong>    steadyBurnConfig = {
         forceOn = false,
         useTime = false,
         sbExtras = {}
@@ -140,9 +138,7 @@ return { name = "",
 
     }
 }
-
-```
-````
+</code></pre>
 
 
 
