@@ -2,38 +2,95 @@
 
 <figure><img src="../../.gitbook/assets/ulc_stages.png" alt=""><figcaption></figcaption></figure>
 
-Stage controls allow the driver of the vehicle to dynamically switch between extras at the press of a button using the number pad. This is not a new concept to vehicle developers, but ULC focuses on a great user experience, and flexibility.
+## What are Stage Controls?
 
-You can individually assign each extra you want to use to any numpad key, and assign a custom label to it.
+Stage Controls, or "Buttons" as they are referenced in the code, are the bread and butter of ULC. They enable you to provide the player with key-bindings that will interact directly with vehicle lighting extras in real time.&#x20;
 
-Only the keys you define will appear on the UI, and the extras are bound to them individually.
+Only the stage buttons you define will appear on screen, if none are defined the ULC ui will be hidden.
 
-**Example Usage**
+## Example Usage
 
+* Traditional Stage Lighting&#x20;
 * Traffic Advisors
 * Flood/Scene/Alley Lighting
 * Alternative Patterns
-* Stage 2 Lighting
-* Much more!
+* Anything else!
 
-Any stages you create can also be used by any other feature of the resource. For example, if you create a stage extra that has an alternate pattern, you can then use that pattern as your brake pattern.
+## Button Setup Guide
 
-Stages are fully state aware, meaning if your alt pattern was enabled before you started braking, it will remain on after you finish braking. The same logic applies other features, except park patterns.
+### Things to Keep in Mind before Starting
 
-**How to Create a Stage**
+Planning is key to a great Stage Control Buttons setup.
 
-The hardest part of creating stages is planning out your vehicle. Sirens parented to extras only show when the extra is enabled, so those Sirens are effectively eliminated from your workflow. They can't be re-used anywhere else.
+Due to the nature of sirens and extras, sirens parented to extras only show when the extra is enabled, so those Sirens are effectively eliminated from your workflow. They can't be re-used anywhere else.
 
-This can have you pretty short on sirens if you commit too many of them to extras that aren't used often. Siren Tool can help you with planning out your vehicle to be very efficient with sirens.
+This can leave you pretty short on sirens if you commit too many of them to extras that aren't used often. [Siren Tool](broken-reference) can help you with planning out your vehicle to be very efficient with sirens.
 
 Other than that, the process is pretty straight forward.
 
-* Compound sirens as usual
-* Parent sirens to your extra
+### Steps
 
-**Vehicle Stage Config**
+1. Plan, plan, plan!
+2. Compound your sirens as usual in ZModeler3.
+3. Parent your sirens to extras as needed.
+4. Configure your buttons in ULC!
 
-**Example Button**
+### Values
+
+#### label
+
+The label field represents the text that will be shown on the UI within the button.
+
+It is best to use short labels since longer labels will be cut-off and stretch the UI. Use abbreviations such as "TKD" in place of "Takedowns" whenever possible.
+
+The string will always be rendered in all-caps on the UI.
+
+```lua
+label = 'STAGE 2',
+```
+
+![](../../.gitbook/assets/image.png)
+
+#### key
+
+The key defines the numpad key that the button will be bound to.
+
+```lua
+key = 5,
+```
+
+#### extra
+
+The extra field specifies the primary extra for the button. This extra will always match the state of the button.
+
+```lua
+extra = 8,
+```
+
+#### linkedExtras
+
+Linked extras specifies extras that will match the state of the main extra when the key is pressed. Consider the example below:
+
+```lua
+extra = 8,
+linkedExtras = {9, 10},
+```
+
+If the player turns on extra 8, then extra 9 and 10 will also turn on. If you turn off extra 9 or 10, then press the key to disable 8, all 3 extras will be off.\
+\
+&#x20;Linked extras can be controlled independently from the primary extra, but when the state of the primary extra is changed by the player, the linked extras will match it.
+
+#### offExtras
+
+Extras in the offExtras field will always turn off when the primary extra is enabled.
+
+When the primary extra is turned off, the offExtras are unaffected.
+
+```lua
+offExtras = {6, 7}
+```
+
+#### Example button
 
 ```lua
 {   -- the name/label that will show on the UI
@@ -50,13 +107,7 @@ Other than that, the process is pretty straight forward.
 },
 ```
 
-**Example Configuration**
-
-Each vehicle can have a minimum of 0 buttons, and a maximum of 9. Any buttons not configured will not show.
-
-Buttons cannot share the same primary extra.
-
-Keys don't have to be used in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted. However, they will render on the UI in ascending order left to right.
+## Full Setup Example
 
 
 
@@ -71,3 +122,13 @@ buttons = {
     {label = 'SCENE', key = 5, extra = 12, linkedExtras = {}, offExtras = {8}},
 }
 ```
+
+
+
+## Tips & Tricks
+
+* Any stages you create can also be used by any other feature of the resource. For example, if you create a stage extra that has an alternate pattern, you can then use that pattern as your brake pattern.
+* Stages are fully state aware, meaning if your alt pattern was enabled before you started braking, it will remain on after you finish braking. The same logic applies other features, except park patterns.
+* Each vehicle can have a maximum of 9. If none are configured for the vehicle, the UI will not show at all. Only buttons that are configured will appear on the UI.
+* No two buttons cannot share the same primary extra.
+* Keys don't have to be used in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted. However, they will render on the UI in ascending order left to right.

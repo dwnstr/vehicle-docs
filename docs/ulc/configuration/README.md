@@ -219,7 +219,7 @@ Remember, this is not the model name/spawn name. The resource name is the name o
 Restart ULC, and you should see that your config has loaded in the server console!\
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 10. Repeat for your other vehicles!
 {% endtab %}
