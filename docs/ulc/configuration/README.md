@@ -101,10 +101,11 @@ Let's get started!
 
 
 
-<pre class="language-lua"><code class="lang-lua"><strong>return { name = "",
+<pre class="language-lua"><code class="lang-lua"><strong>return { names = {"yourvehiclename"},
 </strong>    steadyBurnConfig = {
         forceOn = false,
         useTime = false,
+        disableWithLights = false,
         sbExtras = {}
     },
     parkConfig = {
@@ -152,12 +153,13 @@ ex. `name = "pd4"`\
 
 Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-patterns.md) settings to match your vehicle.&#x20;
 
-ex. If your vehicle has steady burns as extra 1 it should look like this:
+ex. If your vehicle has steady burns as extra 1 it could look like this:
 
 ```lua
 steadyBurnConfig = {
     forceOn = false,
     useTime = true,
+    disableWithLights = false,
     sbExtras = {1}
 },
 ```
@@ -258,6 +260,7 @@ return {names = {"sp20", "pd20"},
     steadyBurnConfig = {
         forceOn = false,
         useTime = false,
+        disableWithLights = false,
         sbExtras = {}
     },
      parkConfig = {
