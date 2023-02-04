@@ -150,7 +150,7 @@ ex. `name = "pd4"`\
 
 ### 4. Configure Vehicle Settings
 
-Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-extras.md) settings to match your vehicle.&#x20;
+Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-patterns.md) settings to match your vehicle.&#x20;
 
 ex. If your vehicle has steady burns as extra 1 it should look like this:
 
@@ -354,8 +354,8 @@ For detailed info about each feature and their config values see the below pages
 [cruise-lights.md](cruise-lights.md)
 {% endcontent-ref %}
 
-{% content-ref url="brake-extras.md" %}
-[brake-extras.md](brake-extras.md)
+{% content-ref url="brake-patterns.md" %}
+[brake-patterns.md](brake-patterns.md)
 {% endcontent-ref %}
 
 {% content-ref url="reverse-extras.md" %}

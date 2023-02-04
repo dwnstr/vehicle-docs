@@ -23,7 +23,7 @@
   * [Stage Controls](ulc/configuration/stage-controls.md)
   * [Park Patterns](ulc/configuration/park-patterns.md)
   * [Cruise Lights](ulc/configuration/cruise-lights.md)
-  * [Brake Extras](ulc/configuration/brake-extras.md)
+  * [Brake Extras](ulc/configuration/brake-patterns.md)
   * [Reverse Extras](ulc/configuration/reverse-extras.md)
   * [Horn Extras](ulc/configuration/horn-extras.md)
 * [In-Game Usage](ulc/in-game-usage.md)
