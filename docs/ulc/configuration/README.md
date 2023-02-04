@@ -5,6 +5,8 @@ description: An overview of ULC features and configuration values
 # Configuration
 
 {% embed url="https://youtu.be/FIF3qqRY0Ts" %}
+ode
+{% endembed %}
 
 \
 ULC was designed to be as user-friendly as possible.&#x20;
@@ -23,9 +25,7 @@ _**Most settings can be left at their default value.**_&#x20;
 If you are using Luxart Vehicle Controls or a similar resource that plays a tone when lights are turned on, you should set `muteBeepForLights` to `true.`
 {% endhint %}
 
-{% code title="config.lua" overflow="wrap" %}
-```lua
--- whether to mute the tone that plays when lights are turned on, use if you have another resources that already plays a tone.
+<pre class="language-lua" data-title="config.lua" data-overflow="wrap"><code class="lang-lua">-- whether to mute the tone that plays when lights are turned on, use if you have another resources that already plays a tone.
 muteBeepForLights = true,
 -- global toggle for UI (affects all clients)
 hideHud = false,
@@ -54,14 +54,8 @@ SteadyBurnSettings = {
     -- delay between checks, this can be very long, it will only make it more realistic
     delay = 10,
 },
-
-BrakeSettings = {
-    -- brake effect will only be applied if vehicle was traveling above this speed
-    speedThreshold = 30
-},
-...
-```
-{% endcode %}
+<strong>...
+</strong></code></pre>
 
 ## 2. Configure your first vehicle
 
@@ -128,6 +122,11 @@ Let's get started!
         useBrakes = false,
         brakeExtras = {}
     },
+    reverseConfig = {
+        useReverse = false,
+        speedThreshold = 3,
+        reverseExtras = {}
+    },
 
     --[[ example button
         {label = 'STAGE 2', key = 5, extra = 8, linkedExtras = {}, offExtras = {1, 2}},
@@ -151,7 +150,7 @@ ex. `name = "pd4"`\
 
 ### 4. Configure Vehicle Settings
 
-Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-patterns.md) settings to match your vehicle.&#x20;
+Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-extras.md) settings to match your vehicle.&#x20;
 
 ex. If your vehicle has steady burns as extra 1 it should look like this:
 
@@ -180,7 +179,7 @@ buttons = {
 }
 ```
 
-This example vehicle has extra 8 as it's stage 2 pattern, extra 9 as it's traffic advisor, and extra 10 as takedown lights. I assigned these extras to keys 1, 2 and 3 on the numpad.
+This example vehicle has extra 8 as it's stage 2 pattern, extra 9 as it's traffic advisor, and extra 10 as take-down lights. I assigned these extras to keys 1, 2 and 3 on the numpad.
 
 
 
@@ -214,7 +213,7 @@ Remember, this is not the model name/spawn name. The resource name is the name o
 
 
 
-### 9. Thats it!
+### 9. That's it!
 
 Restart ULC, and you should see that your config has loaded in the server console!\
 
@@ -237,16 +236,25 @@ This method is messier, but is totally acceptable if the vehicle you are setting
 
 ## Configuring a Vehicle Pack
 
-{% hint style="info" %}
-For resources with more than a single vehicle you can simply add multiple comma-separated configurations to a `ulc.lua` file.
-{% endhint %}
+If multiple vehicles in the same pack can use _**the same ULC configuration settings**_, you can simply include all of the spawn names in the `names` field of a single configuration in the ulc.lua file.
+
+Ex:
+
+```lua
+{names = {"sp20", "sp20"},
+...
+```
+
+If there are vehicles in the pack that don't share _**the same configuration settings**_, you need to add a another configuration to the ulc.lua file.\
+\
+See [the example](./#multi-config-ulc.lua-example) below.
 
 <details>
 
 <summary>Multi-Config ulc.lua Example</summary>
 
 ```lua
-return {name = "sp20",
+return {names = {"sp20", "pd20"},
     steadyBurnConfig = {
         forceOn = false,
         useTime = false,
@@ -265,6 +273,7 @@ return {name = "sp20",
     },
     brakeConfig = {
         useBrakes = false,
+        speedThreshold = 3,
         brakeExtras = {}
     },
   -- example button
@@ -277,7 +286,7 @@ return {name = "sp20",
         {label = 'SCENE',key = 9,extra = 12, offExtras = {}},
     }
 },
-{name = 'pdram', -- Vehicle Spawn Name
+{names = {'pdram'}, -- Vehicle Spawn Names
         
 	steadyBurnConfig = {
 		forceOn = false,
@@ -300,6 +309,7 @@ return {name = "sp20",
 
 	brakeConfig = {
 		useBrakes = false,
+		speedThreshold = 3,
 		brakeExtras = {}
 	},
 
@@ -344,8 +354,12 @@ For detailed info about each feature and their config values see the below pages
 [cruise-lights.md](cruise-lights.md)
 {% endcontent-ref %}
 
-{% content-ref url="brake-patterns.md" %}
-[brake-patterns.md](brake-patterns.md)
+{% content-ref url="brake-extras.md" %}
+[brake-extras.md](brake-extras.md)
+{% endcontent-ref %}
+
+{% content-ref url="reverse-extras.md" %}
+[reverse-extras.md](reverse-extras.md)
 {% endcontent-ref %}
 
 {% content-ref url="horn-extras.md" %}

@@ -29,16 +29,17 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 * Stage Controls
 * Park Patterns
 * Smart Cruise Lights
-* Brake Patterns
+* Brake Extras
+* Reverse Extras
 * Horn Extras
 
 <details>
 
 <summary>Coming Soon</summary>
 
-* Smart stage controls
+Nothing planned!
 
-&#x20;[Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
+[Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
 
 </details>
 
