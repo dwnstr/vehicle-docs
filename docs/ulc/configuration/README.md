@@ -101,7 +101,15 @@ Let's get started!
 
 
 
-<pre class="language-lua"><code class="lang-lua"><strong>return { names = {"yourvehiclename"},
+<pre class="language-lua"><code class="lang-lua"><strong>--[[ 
+</strong>Ultimate Lighting Controller Config
+<strong>the ULC resource is required to use this configuration
+</strong><strong>get the resource here: https://github.com/Flohhhhh/ultimate-lighting-controller/releases/latest
+</strong><strong>
+</strong><strong>To learn how to setup and use ULC visit here: https://docs.dwnstr.com/ulc/overview
+</strong><strong>]]
+</strong>
+<strong>return { names = {"yourvehiclename"},
 </strong>    steadyBurnConfig = {
         forceOn = false,
         useTime = false,
