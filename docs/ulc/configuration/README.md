@@ -129,11 +129,11 @@ Let's get started!
     },
     brakeConfig = {
         useBrakes = false,
+        speedThreshold = 3,
         brakeExtras = {}
     },
     reverseConfig = {
         useReverse = false,
-        speedThreshold = 3,
         reverseExtras = {}
     },
 
