@@ -49,7 +49,7 @@ The string will always be rendered in all-caps on the UI.
 label = 'STAGE 2',
 ```
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (2).png>)
 
 #### key
 

@@ -97,82 +97,34 @@ Let's get started!
 
 ###
 
-### 2. Open your new file and paste the below content.
+### 2. Open the [ULC Generator](https://ulc.dwnstr.com)
 
+This tool will help you generate ulc.lua files easily.
 
-
-<pre class="language-lua"><code class="lang-lua"><strong>--[[ 
-</strong>Ultimate Lighting Controller Config
-<strong>the ULC resource is required to use this configuration
-</strong><strong>get the resource here: https://github.com/Flohhhhh/ultimate-lighting-controller/releases/latest
-</strong><strong>
-</strong><strong>To learn how to setup and use ULC visit here: https://docs.dwnstr.com/ulc/overview
-</strong><strong>]]
-</strong>
-<strong>return { names = {"yourvehiclename"},
-</strong>    steadyBurnConfig = {
-        forceOn = false,
-        useTime = false,
-        disableWithLights = false,
-        sbExtras = {}
-    },
-    parkConfig = {
-        usePark = false,
-        useSync = false,
-        syncWith = { "" },
-        pExtras = {},
-        dExtras = {}
-    },
-    hornConfig = {
-        useHorn = false,
-        hornExtras = {}
-    },
-    brakeConfig = {
-        useBrakes = false,
-        speedThreshold = 3,
-        brakeExtras = {}
-    },
-    reverseConfig = {
-        useReverse = false,
-        reverseExtras = {}
-    },
-
-    --[[ example button
-        {label = 'STAGE 2', key = 5, extra = 8, linkedExtras = {}, offExtras = {1, 2}},
-    ]]
-
-    buttons = { --paste your buttons below
-
-
-    }
-}
-</code></pre>
-
-
+{% embed url="https://ulc.dwnstr.com" %}
 
 ### 3. Define the [model name](#user-content-fn-1)[^1]&#x20;
 
-Add the name of your vehicle model at `name = ""`&#x20;
+Add the name of your vehicle model.\
 
-ex. `name = "pd4"`\
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+Remember: the [model name](#user-content-fn-2)[^2] is not the same as the [resource name!](#user-content-fn-3)[^3]
+{% endhint %}
+
+
+
 
 
 ### 4. Configure Vehicle Settings
 
 Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-patterns.md) settings to match your vehicle.&#x20;
 
-ex. If your vehicle has steady burns as extra 1 it could look like this:
+For example, if extra 1 on your vehicle is steady burns/cruise lights, it could look like this:
 
-```lua
-steadyBurnConfig = {
-    forceOn = false,
-    useTime = true,
-    disableWithLights = false,
-    sbExtras = {1}
-},
-```
-
-I left `forceOn = false` since I want the steady burns to be on at night only. You can view full details about each config value in the pages for each section.
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -180,16 +132,7 @@ I left `forceOn = false` since I want the steady burns to be on at night only. Y
 
 For details on stage control buttons you can view the [Stage Controls page.](stage-controls.md) Here's an example of how it could look.
 
-```lua
-buttons = {
-    {label = 'STAGE 2', key = 1, extra = 8, linkedExtras = {10, 11}, offExtras = {9}},
-    {label = 'TA', key = 2, extra = 9, linkedExtras = {}, offExtras = {}},
-    {label = 'AUX1', key = 3, extra = 10, linkedExtras = {}, offExtras = {}},
-    {label = 'TKD', key = 5, extra = 12, linkedExtras = {}, offExtras = {8}},
-}
-```
-
-This example vehicle has extra 8 as it's stage 2 pattern, extra 9 as it's traffic advisor, and extra 10 as take-down lights. I assigned these extras to keys 1, 2 and 3 on the numpad.
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -228,7 +171,7 @@ Remember, this is not the model name/spawn name. The resource name is the name o
 Restart ULC, and you should see that your config has loaded in the server console!\
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 10. Repeat for your other vehicles!
 {% endtab %}
@@ -380,3 +323,7 @@ For detailed info about each feature and their config values see the below pages
 
 
 [^1]: Model name is not the same as resource name! The model name is the name of the .ytf files.
+
+[^2]: The model name is the name of the .ytf files.
+
+[^3]: The resource name is the name of the folder containing the files.
