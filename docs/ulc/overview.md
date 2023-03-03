@@ -28,6 +28,7 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 
 * Stage Controls
 * Park Patterns
+* Park Pattern Sync
 * Smart Cruise Lights
 * Brake Extras
 * Reverse Extras
@@ -37,7 +38,10 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 
 <summary>Coming Soon</summary>
 
-Nothing planned!
+* UI Overhaul
+  * UI Choices
+  * Moveable/Scalable UI
+* Sound choices
 
 [Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
 

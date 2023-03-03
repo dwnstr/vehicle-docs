@@ -49,7 +49,7 @@ The string will always be rendered in all-caps on the UI.
 label = 'STAGE 2',
 ```
 
-![](<../../.gitbook/assets/image (2).png>)
+![](../../.gitbook/assets/image.png)
 
 #### key
 
@@ -130,5 +130,5 @@ buttons = {
 * Any stages you create can also be used by any other feature of the resource. For example, if you create a stage extra that has an alternate pattern, you can then use that pattern as your brake pattern.
 * Stages are fully state aware, meaning if your alt pattern was enabled before you started braking, it will remain on after you finish braking. The same logic applies other features, except park patterns.
 * Each vehicle can have a maximum of 9. If none are configured for the vehicle, the UI will not show at all. Only buttons that are configured will appear on the UI.
-* No two buttons cannot share the same primary extra.
-* Keys don't have to be used in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted. However, they will render on the UI in ascending order left to right.
+* No two buttons can share the same primary extra.
+* Keys don't have to be listed in order or sequentially. You could use 5, 3, 1, 7, 2 if you wanted. However, they will render on the UI in ascending order left to right.

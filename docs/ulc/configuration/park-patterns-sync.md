@@ -1,4 +1,4 @@
-# Park Patterns
+# Park Patterns/Sync
 
 Park patterns allow you to automatically enable or disable extras based on the speed of the vehicle.
 
@@ -45,6 +45,8 @@ parkConfig = {
     useSync = true
 
     -- vehicles that this vehicle with sync with
+    -- you do not need to include the vehicle itself
+    -- if your config is for more than one vehicle include all of them here
     -- accepts: table of vehicle spawn names
     syncWith = {'police', 'police2'}
 

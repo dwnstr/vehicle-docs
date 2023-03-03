@@ -120,11 +120,11 @@ Remember: the [model name](#user-content-fn-2)[^2] is not the same as the [resou
 
 ### 4. Configure Vehicle Settings
 
-Review the [steady burn](cruise-lights.md), [park](park-patterns.md), [horn](horn-extras.md), and [brake](brake-patterns.md) settings to match your vehicle.&#x20;
+Review the [steady burn](cruise-lights.md), [park](park-patterns-sync.md), [horn](horn-extras.md), and [brake](brake-patterns.md) settings to match your vehicle.&#x20;
 
 For example, if extra 1 on your vehicle is steady burns/cruise lights, it could look like this:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -132,7 +132,7 @@ For example, if extra 1 on your vehicle is steady burns/cruise lights, it could 
 
 For details on stage control buttons you can view the [Stage Controls page.](stage-controls.md) Here's an example of how it could look.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -171,7 +171,7 @@ Remember, this is not the model name/spawn name. The resource name is the name o
 Restart ULC, and you should see that your config has loaded in the server console!\
 
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 10. Repeat for your other vehicles!
 {% endtab %}
@@ -300,8 +300,8 @@ For detailed info about each feature and their config values see the below pages
 [stage-controls.md](stage-controls.md)
 {% endcontent-ref %}
 
-{% content-ref url="park-patterns.md" %}
-[park-patterns.md](park-patterns.md)
+{% content-ref url="park-patterns-sync.md" %}
+[park-patterns-sync.md](park-patterns-sync.md)
 {% endcontent-ref %}
 
 {% content-ref url="cruise-lights.md" %}
