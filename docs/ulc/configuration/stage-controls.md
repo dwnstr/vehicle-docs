@@ -49,7 +49,7 @@ The string will always be rendered in all-caps on the UI.
 label = 'STAGE 2',
 ```
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (1).png>)
 
 #### key
 
@@ -79,6 +79,20 @@ linkedExtras = {9, 10},
 If the player turns on extra 8, then extra 9 and 10 will also turn on. If you turn off extra 9 or 10, then press the key to disable 8, all 3 extras will be off.\
 \
 &#x20;Linked extras can be controlled independently from the primary extra, but when the state of the primary extra is changed by the player, the linked extras will match it.
+
+#### oppositeExtras
+
+Extras specified as oppositeExtras will be set to the opposite of the state of the button when the key is pressed.
+
+```lua
+oppositeExtras = {5}
+```
+
+Whenever the stage is enabled extra 5 will turn off.&#x20;
+
+Whenever the stage is disabled extra 5 will turn on.
+
+
 
 #### offExtras
 

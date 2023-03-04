@@ -21,6 +21,7 @@
 * [Getting Started](ulc/overview.md)
 * [Configuration](ulc/configuration/README.md)
   * [Stage Controls](ulc/configuration/stage-controls.md)
+  * [Default Stages](ulc/configuration/default-stages.md)
   * [Park Patterns/Sync](ulc/configuration/park-patterns-sync.md)
   * [Cruise Lights](ulc/configuration/cruise-lights.md)
   * [Brake Extras](ulc/configuration/brake-patterns.md)

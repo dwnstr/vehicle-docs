@@ -25,7 +25,9 @@ _**Most settings can be left at their default value.**_&#x20;
 If you are using Luxart Vehicle Controls or a similar resource that plays a tone when lights are turned on, you should set `muteBeepForLights` to `true.`
 {% endhint %}
 
-<pre class="language-lua" data-title="config.lua" data-overflow="wrap"><code class="lang-lua">-- whether to mute the tone that plays when lights are turned on, use if you have another resources that already plays a tone.
+{% code title="config.lua" overflow="wrap" %}
+```lua
+-- whether to mute the tone that plays when lights are turned on, use if you have another resources that already plays a tone.
 muteBeepForLights = true,
 -- global toggle for UI (affects all clients)
 hideHud = false,
@@ -54,8 +56,9 @@ SteadyBurnSettings = {
     -- delay between checks, this can be very long, it will only make it more realistic
     delay = 10,
 },
-<strong>...
-</strong></code></pre>
+...
+```
+{% endcode %}
 
 ## 2. Configure your first vehicle
 
@@ -132,7 +135,7 @@ For example, if extra 1 on your vehicle is steady burns/cruise lights, it could 
 
 For details on stage control buttons you can view the [Stage Controls page.](stage-controls.md) Here's an example of how it could look.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -206,8 +209,7 @@ See [the example](./#multi-config-ulc.lua-example) below.
 
 <summary>Multi-Config ulc.lua Example</summary>
 
-```lua
-return {names = {"sp20", "pd20"},
+<pre class="language-lua"><code class="lang-lua">return {names = {"sp20", "pd20"},
     steadyBurnConfig = {
         forceOn = false,
         useTime = false,
@@ -233,48 +235,49 @@ return {names = {"sp20", "pd20"},
   -- example button
   -- {label = 'STAGE 2', key = 5, extra = 8},
     buttons = {
-        {label = 'stage 2', key = 5, extra = 8, offExtras = {10, 11}},
+    	{label = 'stage 2', key = 5, extra = 8, offExtras = {10, 11}},
         {label = 'TA', key = 6, extra = 9, offExtras = {}},
         {label = 'AUX1', key = 7, extra = 10, offExtras = {}},
         {label = 'AUX 2',key = 8,extra = 11, offExtras = {}},
         {label = 'SCENE',key = 9,extra = 12, offExtras = {}},
     }
-},
-{names = {'pdram'}, -- Vehicle Spawn Names
-        
+<strong>},
+</strong>{names = {'pdram'},
 	steadyBurnConfig = {
-		forceOn = false,
-		useTime = false,
-		sbExtras = {}
-	},
-
-	parkConfig = {
-		usePark = true,
-		useSync = false,
-		syncWith = {},
-		pExtras = {9},
-		dExtras = {}
-	},
-
-	hornConfig = {
-		useHorn = true,
-		hornExtras = {12}
-	},
-
-	brakeConfig = {
-		useBrakes = false,
-		speedThreshold = 3,
-		brakeExtras = {}
-	},
-
-	buttons = {
-		{label = 'AUX', key = 5, extra = 8, offExtras = {}},
-		{label = 'TA L', key = 6, extra = 9, offExtras = {}},
-		{label = 'TA R', key = 7, extra = 10, offExtras = {}},
-		{label = 'TKD', key = 8, extra = 11, offExtras = {}},
-	}
+        forceOn = false,
+        useTime = false,
+        disableWithLights = false,
+        sbExtras = {}
+    },
+     parkConfig = {
+        usePark = true,
+        useSync = true,
+        syncWith = {'sp20', 'sp18chrg'},
+        pExtras = {10, 11},
+        dExtras = {}
+    },
+    hornConfig = {
+        useHorn = true,
+        hornExtras = {12}
+    },
+    brakeConfig = {
+        useBrakes = false,
+        speedThreshold = 3,
+        brakeExtras = {}
+    },
+  -- example button
+  -- {label = 'STAGE 2', key = 5, extra = 8},
+    buttons = {
+    	{label = 'stage 2', key = 5, extra = 8, offExtras = {10, 11}},
+        {label = 'TA', key = 6, extra = 9, offExtras = {}},
+        {label = 'AUX1', key = 7, extra = 10, offExtras = {}},
+        {label = 'AUX 2',key = 8,extra = 11, offExtras = {}},
+        {label = 'SCENE',key = 9,extra = 12, offExtras = {}},
+    }
 }
-```
+</code></pre>
+
+Note the comma after the first config object!
 
 
 
