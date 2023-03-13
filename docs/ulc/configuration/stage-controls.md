@@ -2,8 +2,6 @@
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/ulc_stages.png" alt=""><figcaption></figcaption></figure>
-
 ## What are Stage Controls?
 
 Stage Controls, or "Buttons" as they are referenced in the code, are the bread and butter of ULC. They enable you to provide the player with key-bindings that will interact directly with vehicle lighting extras in real time.&#x20;
