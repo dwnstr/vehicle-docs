@@ -5,8 +5,6 @@ description: An overview of ULC features and configuration values
 # Configuration
 
 {% embed url="https://youtu.be/FIF3qqRY0Ts" %}
-ode
-{% endembed %}
 
 \
 ULC was designed to be as user-friendly as possible.&#x20;
@@ -127,7 +125,7 @@ Review the [steady burn](cruise-lights.md), [park](park-patterns-sync.md), [horn
 
 For example, if extra 1 on your vehicle is steady burns/cruise lights, it could look like this:
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -1,5 +1,7 @@
 # Stage Controls
 
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../.gitbook/assets/ulc_stages.png" alt=""><figcaption></figcaption></figure>
 
 ## What are Stage Controls?
@@ -49,7 +51,7 @@ The string will always be rendered in all-caps on the UI.
 label = 'STAGE 2',
 ```
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 #### key
 
@@ -58,6 +60,23 @@ The key defines the numpad key that the button will be bound to.
 ```lua
 key = 5,
 ```
+
+#### color
+
+Color defines the color of the button when active.
+
+Default value: `'green'`
+
+```lua
+color = 'green'
+```
+
+Possible values:
+
+* 'green'
+* 'blue'
+* 'red'
+* 'amber'
 
 #### extra
 
@@ -104,6 +123,20 @@ When the primary extra is turned off, the offExtras are unaffected.
 offExtras = {6, 7}
 ```
 
+#### repair
+
+Default value: `false`
+
+Setting repair to `true` will make the vehicle repair itself whenever this stage is enabled. This effect is disabled while the vehicle is damaged, or when a door is open.\
+\
+This is important for high poly extras, or extras with collisions. If you want to avoid this limitation, make sure to not include collisions in your lighting extras.
+
+```lua
+repair = true
+-- or
+repair = false
+```
+
 #### Example button
 
 ```lua
@@ -129,11 +162,11 @@ Example:&#x20;
 
 ```lua
 buttons = {
-    {label = 'STAGE 2', key = 1, extra = 8, linkedExtras = {10, 11}, offExtras = {}},
-    {label = 'TA', key = 2, extra = 9, linkedExtras = {}, offExtras = {}},
-    {label = 'AUX1', key = 3, extra = 10, linkedExtras = {}, offExtras = {}},
-    {label = 'AUX 2', key = 4, extra = 11, linkedExtras = {}, offExtras = {}},
-    {label = 'SCENE', key = 5, extra = 12, linkedExtras = {}, offExtras = {8}},
+    {label = 'STAGE 2', key = 1, extra = 8, color = 'green', linkedExtras = {10, 11}, offExtras = {}},
+    {label = 'TA', key = 2, extra = 9, color = 'amber', linkedExtras = {}, offExtras = {}},
+    {label = 'AUX1', key = 3, extra = 10, color = 'green', linkedExtras = {}, offExtras = {}},
+    {label = 'AUX 2', key = 4, extra = 11, color = 'green', linkedExtras = {}, offExtras = {}},
+    {label = 'SCENE', key = 5, extra = 12, color = 'green', linkedExtras = {}, offExtras = {8}},
 }
 ```
 

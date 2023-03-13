@@ -38,9 +38,8 @@ Each vehicle can use just one feature, or 3, or all of them. It's completely up 
 
 <summary>Coming Soon</summary>
 
-* UI Overhaul
-  * UI Choices
-  * Moveable/Scalable UI
+* Smart Icons to replace some labels
+* TA Display on HUD
 * Sound choices
 
 [Join our Discord](https://discord.gg/dwnstr-fivem) to make a suggestion!
