@@ -4,7 +4,7 @@ description: Ultimate Lighting Controller Intro
 
 # Getting Started
 
-<figure><img src="../.gitbook/assets/209438952-b931af04-f7b5-45bb-b2df-514d6c28d751.png" alt=""><figcaption></figcaption></figure>
+![](https://user-images.githubusercontent.com/48927090/224608424-52e9505c-adc2-47dd-b5ab-30a5f933427f.png)
 
 ## ULC Overview
 
