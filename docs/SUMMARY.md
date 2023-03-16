@@ -2,7 +2,7 @@
 
 * [🏡 Home](README.md)
 * [⏩ Walkthrough](Tutorial.md)
-* [Join Discord](https://discord.gg/dwnstr-fivem)
+* [Join Discord](https://discord.gg/zH3k624aSv)
 
 ## 📄 Data Files
 
