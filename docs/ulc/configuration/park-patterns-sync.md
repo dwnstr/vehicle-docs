@@ -2,6 +2,8 @@
 
 Park patterns allow you to automatically enable or disable extras based on the speed of the vehicle.
 
+Park pattern will enable 2 seconds after vehicle is parked.
+
 The feature is intended for use with park patterns, that is, enabling a park pattern stage extra when the vehicle comes to a full stop. However, you can specify the speed threshold to enable the extras when the vehicle is going below a certain speed if you want to.
 
 **How to Create a Park Pattern**

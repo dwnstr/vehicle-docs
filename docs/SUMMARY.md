@@ -24,6 +24,7 @@
   * [Default Stages](ulc/configuration/default-stages.md)
   * [Park Patterns/Sync](ulc/configuration/park-patterns-sync.md)
   * [Cruise Lights](ulc/configuration/cruise-lights.md)
+  * [Door Extras](ulc/configuration/door-extras.md)
   * [Brake Extras](ulc/configuration/brake-patterns.md)
   * [Reverse Extras](ulc/configuration/reverse-extras.md)
   * [Horn Extras](ulc/configuration/horn-extras.md)
